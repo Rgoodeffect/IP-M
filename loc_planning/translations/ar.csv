@@ -1,0 +1,142 @@
+A department cannot be its own parent,لا يمكن أن تكون الجهة تابعة لنفسها
+Active,نشط
+Activity Report Period Type,دورية تقرير النشاط
+Activity Reporting,تقرير النشاط
+Activity Reports,تقارير النشاط
+All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقاً
+Annual,سنوي
+Applied,مطبّق
+Applied On,تاريخ التطبيق
+Apply,تطبيق
+Approved documents cannot be deleted. Cancel the document with a reason instead.,لا يمكن حذف المستندات المعتمدة. يمكن إلغاؤها مع ذكر السبب.
+Assignments,الربط
+Base Font Size (pt),حجم الخط الأساسي (نقطة)
+Base font size must be between 8 and 20,حجم الخط الأساسي يجب أن يكون بين 8 و 20
+Budget Thresholds,عتبات تنفيذ الموازنة
+Budget thresholds must satisfy 0 ≤ slow execution < limit exceeded ≤ 100,يجب أن تكون العتبات: 0 ≤ بطء التنفيذ < تجاوز الحد ≤ 100
+Cancellation Reason Required,سبب الإلغاء مطلوب
+Certificate Validity (months),مدة صلاحية الشهادة (أشهر)
+Close Period,إغلاق الفترة
+Closed,مغلقة
+Closed By,أُغلقت بواسطة
+Closed On,تاريخ الإغلاق
+Closing the period locks all data linked to it. Continue?,إغلاق الفترة يمنع تعديل كل البيانات المرتبطة بها. هل تريد المتابعة؟
+Code,الرمز
+Company,الشركة
+Company Logo,شعار الشركة
+Cost Center,مركز التكلفة
+Create Periods for Year,إنشاء فترات السنة
+Create Supplier on Certificate Approval,إنشاء مورد عند اعتماد الشهادة
+Cylinder,أسطوانة
+Deadline (days after period end),الموعد النهائي (أيام بعد نهاية الفترة)
+Deadline Override (days after period end),الموعد النهائي الخاص (أيام بعد نهاية الفترة)
+Deadline days cannot be negative,عدد أيام الموعد النهائي لا يمكن أن يكون سالباً
+Department,إدارة
+Department / Office,الجهة
+Department Coordinator,منسق إدارة
+Department Name,اسم الجهة
+Department Type,نوع الجهة
+Department {0} already exists,الجهة {0} موجودة مسبقاً
+Description,الوصف
+Display Order,ترتيب العرض
+ERPNext Department,القسم في ERPNext
+ERPNext Link,الربط مع ERPNext
+Executive Viewer,الإدارة العليا
+Expiry Alert (days before),التنبيه قبل انتهاء الشهادة بـ (أيام)
+Fallback Font Family,الخط البديل
+Finance Budget,الإدارة المالية - الموازنة
+Fonts and Printing,الخطوط والطباعة
+From Date,من تاريخ
+Fuel,وقود
+Fuel Product,المنتج
+Gas,غاز
+General,عام
+Half-Yearly,نصف سنوي
+Head,المسؤول
+Help,مساعدة
+Home,الرئيسية
+Include Sub-Departments,تشمل الجهات التابعة
+Invalid Thresholds,عتبات غير صحيحة
+Invalid period type {0},نوع فترة غير صحيح {0}
+Invalid status,حالة غير صحيحة
+Invalid year {0},سنة غير صحيحة {0}
+Investment Registry,سجل الشركات
+Investment Section,قسم الاستثمار
+Is Group,تتبعها جهات
+LOC Department,الجهة
+LOC Planning,منظومة التخطيط والاستثمار
+LOC Planning Director,مدير إدارة الاستثمار والتخطيط الاستراتيجي
+LOC Planning Settings,إعدادات منظومة التخطيط والاستثمار
+LOC Region,المنطقة
+LOC User Assignment,ربط مستخدم
+LOC User Setup,ربط المستخدمين بالأدوار والجهات
+Leave empty to use the default in LOC Planning Settings,اتركه فارغاً لاستخدام القيمة العامة في إعدادات المنظومة
+Limit Exceeded Above (%),تجاوز الحد أعلى من (%)
+Litre,لتر
+Lock Data of Closed Periods,منع تعديل بيانات الفترات المغلقة
+Lubricant,زيوت
+Maximum Overdue Reminders,أقصى عدد لتذكيرات التأخير
+"Month 1-12, quarter 1-4 or half 1-2",الشهر 1-12 أو الربع 1-4 أو النصف 1-2
+Monthly,شهري
+Monthly Station Data Due Day (of following month),يوم استحقاق بيانات المحطات الشهرية (من الشهر التالي)
+Not Allowed,غير مسموح
+Office,مكتب
+Official Company Name,الاسم الرسمي للشركة
+Open,مفتوحة
+Other,أخرى
+Parent Department,الجهة الأم
+Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون مُعلَّمة بأنها تتبعها جهات
+Pending,بانتظار التطبيق
+Period Closed,الفترة مغلقة
+Period No.,رقم الفترة
+Period Type,نوع الفترة
+Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
+Please enter the cancellation reason before cancelling.,يرجى إدخال سبب الإلغاء قبل الإلغاء.
+Product Code,رمز المنتج
+Product Group,مجموعة المنتج
+Product Name,اسم المنتج
+Quarterly,ربع سنوي
+Region,المنطقة
+Region Code,رمز المنطقة
+Region Name,اسم المنطقة
+Remarks,ملاحظات
+Remind Days Before Deadline,التذكير قبل الموعد بـ (أيام)
+Reopen Period,إعادة فتح الفترة
+Reopening the period allows its data to be changed again. Continue?,إعادة فتح الفترة تسمح بتعديل بياناتها مجدداً. هل تريد المتابعة؟
+Repeat Reminder Every (days) After Deadline,تكرار التذكير بعد الموعد كل (أيام)
+Report Font Family,خط التقارير
+Report Font File (TTF/OTF),ملف خط التقارير (TTF/OTF)
+Report Footer Text,نص تذييل التقارير
+Report Header Text,نص ترويسة التقارير
+Reporting Currency,عملة التقارير
+Reporting Period,الفترة
+Reporting Periods,الفترات
+Reporting period {0} is closed. Changes to its data are not allowed.,الفترة {0} مغلقة ولا يُسمح بتعديل بياناتها.
+Requires Activity Report,مطلوب منه تقرير نشاط
+Role,الدور
+Row {0}: a department or sales office is required for role {1},الصف {0}: يجب تحديد الجهة أو مكتب المبيعات للدور {1}
+Row {0}: role {1} is not a role of this system,الصف {0}: الدور {1} ليس من أدوار المنظومة
+Row {0}: {1} is not a sales office,الصف {0}: {1} ليس مكتب مبيعات
+Sales Office,مكتب مبيعات
+Sales Office User,مكتب مبيعات
+Section,قسم
+Settings,الإعدادات
+Slow Execution Below (%),بطء التنفيذ أقل من (%)
+Station data due day must be between 1 and 28,يوم استحقاق بيانات المحطات يجب أن يكون بين 1 و 28
+Stations,المحطات
+Statistics & Data,قسم الإحصاء والبيانات
+Status,الحالة
+Strategic Planning,قسم التخطيط الاستراتيجي
+Supplier Group,مجموعة الموردين
+Title,العنوان
+To Date,إلى تاريخ
+Unit,وحدة
+Unit of Measure,وحدة القياس
+User,المستخدم
+View Tree,عرض الشجرة
+Year,السنة
+You are not allowed to create reporting periods.,ليست لديك صلاحية إنشاء الفترات.
+You are not allowed to open or close reporting periods.,ليست لديك صلاحية فتح أو إغلاق الفترات.
+{0} assignments applied,تم تطبيق {0} ربط
+{0} cannot be negative,{0} لا يمكن أن يكون سالباً
+{0} periods created for {1},تم إنشاء {0} فترة لسنة {1}

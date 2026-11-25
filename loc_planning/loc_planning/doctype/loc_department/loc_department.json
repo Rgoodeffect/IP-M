@@ -1,0 +1,332 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "",
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "department_name",
+  "department_type",
+  "parent_loc_department",
+  "is_group",
+  "column_break_1",
+  "region",
+  "head_user",
+  "department_code",
+  "is_active",
+  "section_reporting",
+  "requires_activity_report",
+  "column_break_2",
+  "report_deadline_days",
+  "section_erpnext",
+  "company",
+  "erpnext_department",
+  "column_break_3",
+  "cost_center",
+  "lft",
+  "rgt",
+  "old_parent"
+ ],
+ "fields": [
+  {
+   "fieldname": "department_name",
+   "fieldtype": "Data",
+   "label": "Department Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "department_type",
+   "fieldtype": "Select",
+   "label": "Department Type",
+   "reqd": 1,
+   "options": "Company\nDepartment\nOffice\nSales Office\nSection\nUnit",
+   "default": "Department",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "parent_loc_department",
+   "fieldtype": "Link",
+   "label": "Parent Department",
+   "options": "LOC Department",
+   "in_standard_filter": 1,
+   "ignore_user_permissions": 1
+  },
+  {
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "region",
+   "fieldtype": "Link",
+   "label": "Region",
+   "options": "LOC Region",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "mandatory_depends_on": "eval:doc.department_type=='Sales Office'"
+  },
+  {
+   "fieldname": "head_user",
+   "fieldtype": "Link",
+   "label": "Head",
+   "options": "User"
+  },
+  {
+   "fieldname": "department_code",
+   "fieldtype": "Data",
+   "label": "Code"
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Active",
+   "default": "1"
+  },
+  {
+   "fieldname": "section_reporting",
+   "fieldtype": "Section Break",
+   "label": "Activity Reporting"
+  },
+  {
+   "fieldname": "requires_activity_report",
+   "fieldtype": "Check",
+   "label": "Requires Activity Report",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "report_deadline_days",
+   "fieldtype": "Int",
+   "label": "Deadline Override (days after period end)",
+   "depends_on": "requires_activity_report",
+   "description": "Leave empty to use the default in LOC Planning Settings"
+  },
+  {
+   "fieldname": "section_erpnext",
+   "fieldtype": "Section Break",
+   "label": "ERPNext Link",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "erpnext_department",
+   "fieldtype": "Link",
+   "label": "ERPNext Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "label": "Left",
+   "hidden": 1,
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "label": "Right",
+   "hidden": 1,
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "LOC Department",
+   "hidden": 1,
+   "read_only": 1,
+   "ignore_user_permissions": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2026-11-25 16:36:29.144582",
+ "modified_by": "Administrator",
+ "module": "LOC Planning",
+ "name": "LOC Department",
+ "naming_rule": "By script",
+ "nsm_parent_field": "parent_loc_department",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "LOC Planning Director",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Strategic Planning",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Statistics & Data",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Investment Section",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Finance Budget",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Executive Viewer",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Department Coordinator",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Sales Office User",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  }
+ ],
+ "search_fields": "department_type,region",
+ "show_title_field_in_link": 0,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "department_name",
+ "track_changes": 1
+}

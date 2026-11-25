@@ -1,0 +1,396 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_general",
+  "company",
+  "official_company_name",
+  "reporting_currency",
+  "column_break_1",
+  "company_logo",
+  "section_print",
+  "report_font_family",
+  "report_font_file",
+  "column_break_2",
+  "fallback_font_family",
+  "base_font_size",
+  "report_header_text",
+  "report_footer_text",
+  "section_budget",
+  "slow_execution_threshold",
+  "column_break_3",
+  "over_execution_threshold",
+  "section_activity",
+  "activity_report_period_type",
+  "activity_report_deadline_days",
+  "column_break_4",
+  "reminder_days_before",
+  "reminder_repeat_days_after",
+  "max_overdue_reminders",
+  "section_stations",
+  "station_data_due_day",
+  "section_investment",
+  "certificate_validity_months",
+  "certificate_expiry_alert_days",
+  "column_break_5",
+  "auto_create_supplier",
+  "supplier_group",
+  "section_periods",
+  "enforce_period_lock",
+  "column_break_6",
+  "periods_year",
+  "create_periods"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_general",
+   "fieldtype": "Section Break",
+   "label": "General"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "official_company_name",
+   "fieldtype": "Data",
+   "label": "Official Company Name",
+   "default": "شركة ليبيا للنفط"
+  },
+  {
+   "fieldname": "reporting_currency",
+   "fieldtype": "Link",
+   "label": "Reporting Currency",
+   "options": "Currency",
+   "default": "LYD"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company_logo",
+   "fieldtype": "Attach Image",
+   "label": "Company Logo"
+  },
+  {
+   "fieldname": "section_print",
+   "fieldtype": "Section Break",
+   "label": "Fonts and Printing"
+  },
+  {
+   "fieldname": "report_font_family",
+   "fieldtype": "Data",
+   "label": "Report Font Family",
+   "default": "Fanan"
+  },
+  {
+   "fieldname": "report_font_file",
+   "fieldtype": "Attach",
+   "label": "Report Font File (TTF/OTF)"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fallback_font_family",
+   "fieldtype": "Data",
+   "label": "Fallback Font Family",
+   "default": "Noto Naskh Arabic"
+  },
+  {
+   "fieldname": "base_font_size",
+   "fieldtype": "Int",
+   "label": "Base Font Size (pt)",
+   "default": "12"
+  },
+  {
+   "fieldname": "report_header_text",
+   "fieldtype": "Small Text",
+   "label": "Report Header Text"
+  },
+  {
+   "fieldname": "report_footer_text",
+   "fieldtype": "Small Text",
+   "label": "Report Footer Text"
+  },
+  {
+   "fieldname": "section_budget",
+   "fieldtype": "Section Break",
+   "label": "Budget Thresholds"
+  },
+  {
+   "fieldname": "slow_execution_threshold",
+   "fieldtype": "Percent",
+   "label": "Slow Execution Below (%)",
+   "default": "40"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "over_execution_threshold",
+   "fieldtype": "Percent",
+   "label": "Limit Exceeded Above (%)",
+   "default": "80"
+  },
+  {
+   "fieldname": "section_activity",
+   "fieldtype": "Section Break",
+   "label": "Activity Reports"
+  },
+  {
+   "fieldname": "activity_report_period_type",
+   "fieldtype": "Select",
+   "label": "Activity Report Period Type",
+   "options": "Monthly\nQuarterly\nHalf-Yearly\nAnnual",
+   "default": "Quarterly"
+  },
+  {
+   "fieldname": "activity_report_deadline_days",
+   "fieldtype": "Int",
+   "label": "Deadline (days after period end)",
+   "default": "15"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reminder_days_before",
+   "fieldtype": "Int",
+   "label": "Remind Days Before Deadline",
+   "default": "3"
+  },
+  {
+   "fieldname": "reminder_repeat_days_after",
+   "fieldtype": "Int",
+   "label": "Repeat Reminder Every (days) After Deadline",
+   "default": "2"
+  },
+  {
+   "fieldname": "max_overdue_reminders",
+   "fieldtype": "Int",
+   "label": "Maximum Overdue Reminders",
+   "default": "5"
+  },
+  {
+   "fieldname": "section_stations",
+   "fieldtype": "Section Break",
+   "label": "Stations"
+  },
+  {
+   "fieldname": "station_data_due_day",
+   "fieldtype": "Int",
+   "label": "Monthly Station Data Due Day (of following month)",
+   "default": "10"
+  },
+  {
+   "fieldname": "section_investment",
+   "fieldtype": "Section Break",
+   "label": "Investment Registry"
+  },
+  {
+   "fieldname": "certificate_validity_months",
+   "fieldtype": "Int",
+   "label": "Certificate Validity (months)",
+   "default": "12"
+  },
+  {
+   "fieldname": "certificate_expiry_alert_days",
+   "fieldtype": "Int",
+   "label": "Expiry Alert (days before)",
+   "default": "30"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "auto_create_supplier",
+   "fieldtype": "Check",
+   "label": "Create Supplier on Certificate Approval"
+  },
+  {
+   "fieldname": "supplier_group",
+   "fieldtype": "Link",
+   "label": "Supplier Group",
+   "options": "Supplier Group",
+   "depends_on": "auto_create_supplier"
+  },
+  {
+   "fieldname": "section_periods",
+   "fieldtype": "Section Break",
+   "label": "Reporting Periods"
+  },
+  {
+   "fieldname": "enforce_period_lock",
+   "fieldtype": "Check",
+   "label": "Lock Data of Closed Periods",
+   "default": "1"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "periods_year",
+   "fieldtype": "Int",
+   "label": "Year"
+  },
+  {
+   "fieldname": "create_periods",
+   "fieldtype": "Button",
+   "label": "Create Periods for Year",
+   "depends_on": "periods_year"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-25 16:39:09.172129",
+ "modified_by": "Administrator",
+ "module": "LOC Planning",
+ "name": "LOC Planning Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "LOC Planning Director",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Strategic Planning",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Statistics & Data",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Investment Section",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Finance Budget",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Executive Viewer",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Department Coordinator",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  },
+  {
+   "role": "Sales Office User",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

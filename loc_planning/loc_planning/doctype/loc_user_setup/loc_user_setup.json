@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "help_html",
+  "assignments"
+ ],
+ "fields": [
+  {
+   "fieldname": "help_html",
+   "fieldtype": "HTML",
+   "label": "Help",
+   "options": "<p>أضف صفاً لكل مستخدم ودوره وجهته ثم اضغط <b>تطبيق</b>. تُمنح الأدوار ويُقيَّد الوصول إلى سجلات الجهة (والمنطقة) المحددة فقط عبر صلاحيات المستخدم.</p>"
+  },
+  {
+   "fieldname": "assignments",
+   "fieldtype": "Table",
+   "label": "Assignments",
+   "options": "LOC User Assignment"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-11-25 16:31:25.954809",
+ "modified_by": "Administrator",
+ "module": "LOC Planning",
+ "name": "LOC User Setup",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "LOC Planning Director",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

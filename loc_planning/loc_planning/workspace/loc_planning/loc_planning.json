@@ -1,0 +1,241 @@
+{
+ "app": "loc_planning",
+ "charts": [],
+ "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC User Setup\", \"col\": 3}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
+ "creation": "2026-11-25 12:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "briefcase",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "LOC Planning",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Settings",
+   "link_count": 6,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "LOC Planning Settings",
+   "link_count": 0,
+   "link_to": "LOC Planning Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": ""
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "LOC Department",
+   "link_count": 0,
+   "link_to": "LOC Department",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": ""
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "LOC Region",
+   "link_count": 0,
+   "link_to": "LOC Region",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": ""
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Reporting Period",
+   "link_count": 0,
+   "link_to": "Reporting Period",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": ""
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Fuel Product",
+   "link_count": 0,
+   "link_to": "Fuel Product",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": ""
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "LOC User Setup",
+   "link_count": 0,
+   "link_to": "LOC User Setup",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link",
+   "dependencies": ""
+  }
+ ],
+ "modified": "2026-11-25 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "LOC Planning",
+ "name": "LOC Planning",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 50.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Reporting Period",
+   "link_to": "Reporting Period",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "Tree",
+   "label": "LOC Department",
+   "link_to": "LOC Department",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "LOC Planning Settings",
+   "link_to": "LOC Planning Settings",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "LOC User Setup",
+   "link_to": "LOC User Setup",
+   "type": "DocType"
+  }
+ ],
+ "sidebar_items": [
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "house",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Home",
+   "link_to": "LOC Planning",
+   "link_type": "Workspace",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 0,
+   "collapsible": 1,
+   "icon": "settings",
+   "indent": 1,
+   "keep_closed": 0,
+   "label": "Settings",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Section Break"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "LOC Planning Settings",
+   "link_to": "LOC Planning Settings",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "LOC Department",
+   "link_to": "LOC Department",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "LOC Region",
+   "link_to": "LOC Region",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Reporting Period",
+   "link_to": "Reporting Period",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "Fuel Product",
+   "link_to": "Fuel Product",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "child": 1,
+   "collapsible": 1,
+   "icon": "",
+   "indent": 0,
+   "keep_closed": 0,
+   "label": "LOC User Setup",
+   "link_to": "LOC User Setup",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  }
+ ],
+ "standard": 1,
+ "title": "LOC Planning",
+ "type": "Workspace"
+}

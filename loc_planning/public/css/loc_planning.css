@@ -1,0 +1,7 @@
+/* LOC Planning desk tweaks (RTL friendly). Print/PDF styles live in the print formats. */
+[dir="rtl"] .loc-amount,
+.loc-amount {
+	direction: ltr;
+	unicode-bidi: embed;
+	font-variant-numeric: tabular-nums;
+}

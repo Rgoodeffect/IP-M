@@ -1,0 +1,42 @@
+# Messages used in Python / JS code (source,translation). Labels come from the DocType specs.
+LOC Planning,منظومة التخطيط والاستثمار
+Home,الرئيسية
+Settings,الإعدادات
+Open,مفتوحة
+Closed,مغلقة
+Close Period,إغلاق الفترة
+Reopen Period,إعادة فتح الفترة
+Remarks,ملاحظات
+Closing the period locks all data linked to it. Continue?,إغلاق الفترة يمنع تعديل كل البيانات المرتبطة بها. هل تريد المتابعة؟
+Reopening the period allows its data to be changed again. Continue?,إعادة فتح الفترة تسمح بتعديل بياناتها مجدداً. هل تريد المتابعة؟
+Reporting period {0} is closed. Changes to its data are not allowed.,الفترة {0} مغلقة ولا يُسمح بتعديل بياناتها.
+Period Closed,الفترة مغلقة
+Please enter the cancellation reason before cancelling.,يرجى إدخال سبب الإلغاء قبل الإلغاء.
+Cancellation Reason Required,سبب الإلغاء مطلوب
+Approved documents cannot be deleted. Cancel the document with a reason instead.,لا يمكن حذف المستندات المعتمدة. يمكن إلغاؤها مع ذكر السبب.
+Not Allowed,غير مسموح
+You are not allowed to open or close reporting periods.,ليست لديك صلاحية فتح أو إغلاق الفترات.
+You are not allowed to create reporting periods.,ليست لديك صلاحية إنشاء الفترات.
+Invalid status,حالة غير صحيحة
+Invalid period type {0},نوع فترة غير صحيح {0}
+Invalid year {0},سنة غير صحيحة {0}
+Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
+{0} periods created for {1},تم إنشاء {0} فترة لسنة {1}
+All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقاً
+Department {0} already exists,الجهة {0} موجودة مسبقاً
+A department cannot be its own parent,لا يمكن أن تكون الجهة تابعة لنفسها
+Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون مُعلَّمة بأنها تتبعها جهات
+Deadline days cannot be negative,عدد أيام الموعد النهائي لا يمكن أن يكون سالباً
+View Tree,عرض الشجرة
+Budget thresholds must satisfy 0 ≤ slow execution < limit exceeded ≤ 100,يجب أن تكون العتبات: 0 ≤ بطء التنفيذ < تجاوز الحد ≤ 100
+Invalid Thresholds,عتبات غير صحيحة
+{0} cannot be negative,{0} لا يمكن أن يكون سالباً
+Station data due day must be between 1 and 28,يوم استحقاق بيانات المحطات يجب أن يكون بين 1 و 28
+Base font size must be between 8 and 20,حجم الخط الأساسي يجب أن يكون بين 8 و 20
+Row {0}: role {1} is not a role of this system,الصف {0}: الدور {1} ليس من أدوار المنظومة
+Row {0}: a department or sales office is required for role {1},الصف {0}: يجب تحديد الجهة أو مكتب المبيعات للدور {1}
+Row {0}: {1} is not a sales office,الصف {0}: {1} ليس مكتب مبيعات
+Apply,تطبيق
+{0} assignments applied,تم تطبيق {0} ربط
+Litre,لتر
+Cylinder,أسطوانة

@@ -1,0 +1,30 @@
+{
+	"_comment": "Initial organisation structure (Western region). Order matters: parents first.",
+	"root": {"department_name": "شركة ليبيا للنفط", "department_type": "Company"},
+	"departments": [
+		{"department_name": "إدارة الاستثمار والتخطيط الاستراتيجي", "department_type": "Department", "is_group": 1, "requires_activity_report": 1},
+		{"department_name": "قسم الاستثمار", "department_type": "Section", "parent": "إدارة الاستثمار والتخطيط الاستراتيجي"},
+		{"department_name": "قسم التخطيط الاستراتيجي", "department_type": "Section", "parent": "إدارة الاستثمار والتخطيط الاستراتيجي"},
+		{"department_name": "قسم الإحصاء والبيانات", "department_type": "Section", "parent": "إدارة الاستثمار والتخطيط الاستراتيجي"},
+		{"department_name": "إدارة الموارد البشرية", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة العمليات المالية", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة العمليات التجارية", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة عمليات التشغيل", "department_type": "Department", "is_group": 1, "requires_activity_report": 1},
+		{"department_name": "النقل", "department_type": "Section", "parent": "إدارة عمليات التشغيل"},
+		{"department_name": "إدارة الشؤون الفنية", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة تقنية المعلومات", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة المشتريات والمخازن", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة الأمن والسلامة والصحة المهنية وحماية البيئة", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "إدارة التفتيش", "department_type": "Department", "requires_activity_report": 1},
+		{"department_name": "مكتب مجلس الإدارة", "department_type": "Office", "requires_activity_report": 1},
+		{"department_name": "مكتب المدير العام", "department_type": "Office", "requires_activity_report": 1},
+		{"department_name": "المكتب القانوني", "department_type": "Office", "requires_activity_report": 1},
+		{"department_name": "مكتب المراجعة الداخلية", "department_type": "Office", "requires_activity_report": 1},
+		{"department_name": "مكتب مبيعات طرابلس الكبرى", "department_type": "Sales Office"},
+		{"department_name": "مكتب مبيعات المنطقة الوسطى مصراتة", "department_type": "Sales Office"},
+		{"department_name": "مكتب مبيعات المنطقة الغربية الزاوية", "department_type": "Sales Office"},
+		{"department_name": "مكتب مبيعات الجبل الغربي", "department_type": "Sales Office"},
+		{"department_name": "مكتب مبيعات المنطقة الجنوبية سبها", "department_type": "Sales Office"}
+	],
+	"default_region": "الغربية"
+}
