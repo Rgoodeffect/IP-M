@@ -25,7 +25,7 @@ APP = os.path.join(ROOT, "loc_planning")
 SPEC_DIR = os.path.join(ROOT, "dev_tools", "doctype_specs")
 sys.path.insert(0, SPEC_DIR)
 
-SPEC_MODULES = ["phase1", "phase2", "phase3"]
+SPEC_MODULES = ["phase1", "phase2", "phase3", "phase4"]
 MODULE_FOLDERS = {
 	"LOC Planning": "loc_planning",
 	"Budget": "budget",

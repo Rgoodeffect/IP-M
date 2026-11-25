@@ -4,6 +4,18 @@ WORKSPACE = "LOC Planning"
 
 SECTIONS = [
 	(
+		"Budget",
+		"wallet",
+		[
+			("Budget Execution Position", "Report", "Budget Execution Position"),
+			("Approved Budget", "DocType", "Approved Budget"),
+			("Budget Revision", "DocType", "Budget Revision"),
+			("Budget Execution Entry", "DocType", "Budget Execution Entry"),
+			("Budget Item", "DocType", "Budget Item"),
+			("Budget Chapter", "DocType", "Budget Chapter"),
+		],
+	),
+	(
 		"Stations and Support Activities",
 		"fuel",
 		[
@@ -44,6 +56,8 @@ SECTIONS = [
 ]
 
 SHORTCUTS = [
+	("Budget Execution Position", "Report", "Budget Execution Position", ""),
+	("Budget Execution Entry", "DocType", "Budget Execution Entry", "List"),
 	("Station Monthly Data", "DocType", "Station Monthly Data", "List"),
 	("Station Data Import", "DocType", "Station Data Import", "List"),
 	("Registered Company", "DocType", "Registered Company", "List"),
@@ -55,6 +69,7 @@ SHORTCUTS = [
 ]
 
 SECTION_AR = {
+	"Budget": "الموازنة",
 	"Stations and Support Activities": "المحطات والأنشطة المساندة",
 	"Investment Section": "قسم الاستثمار",
 	"Settings": "الإعدادات",

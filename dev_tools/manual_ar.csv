@@ -122,3 +122,51 @@ Station,المحطة
 Sales Office,مكتب المبيعات
 Region,المنطقة
 Monthly data of {0} stations for {1} is not submitted yet (due {2}),لم ترفع البيانات الشهرية لعدد {0} محطة عن {1} (تاريخ الاستحقاق {2})
+Add at least one GL account when the source is the General Ledger,أضف حسابا واحدا على الأقل عند اختيار دفتر الأستاذ مصدرا
+Row {0}: account {1} belongs to another company,الصف {0}: الحساب {1} يتبع شركة أخرى
+Row {0}: account {1} must be an expense or asset account,الصف {0}: الحساب {1} يجب أن يكون حساب مصروفات أو أصول
+Row {0}: cost center {1} belongs to another company,الصف {0}: مركز التكلفة {1} يتبع شركة أخرى
+Row {0}: duplicate account mapping,الصف {0}: ربط حساب مكرر
+Row {0}: account {1} is already mapped to item {2},الصف {0}: الحساب {1} مربوط مسبقا بالبند {2}
+Row {0}: item {1} is entered twice,الصف {0}: البند {1} مكرر
+An approved budget for {0} / {1} already exists: {2}. Use a budget revision instead.,توجد موازنة معتمدة لسنة {0} / {1}: {2}. استخدم تعديل الموازنة بدلا من ذلك.
+Cancel the revisions of this budget first: {0},يجب إلغاء تعديلات هذه الموازنة أولا: {0}
+Please select a submitted approved budget,يرجى اختيار موازنة معتمدة
+The revision date must be in {0},يجب أن يكون تاريخ التعديل ضمن سنة {0}
+Row {0}: amount must be greater than zero,الصف {0}: يجب أن تكون القيمة أكبر من صفر
+Row {0}: a transfer needs both a source and a destination item,الصف {0}: المناقلة تتطلب بندا مصدرا وبندا مستلما
+Row {0}: source and destination items are the same,الصف {0}: البند المصدر هو نفسه البند المستلم
+Row {0}: an increase needs a destination item only,الصف {0}: الزيادة تتطلب بندا مستلما فقط
+Row {0}: a decrease needs a source item only,الصف {0}: التخفيض يتطلب بندا مصدرا فقط
+Item {0}: only {1} is available for reduction,البند {0}: المتاح للتخفيض {1} فقط
+Insufficient Balance,الرصيد غير كاف
+Item {0} is not active,البند {0} غير نشط
+The executed amount of item {0} is taken from the General Ledger. Only commitments can be entered here.,قيمة المنفذ للبند {0} تحتسب من دفتر الأستاذ العام. يمكن هنا إدخال الالتزامات فقط.
+Amount must be greater than zero,يجب أن تكون القيمة أكبر من صفر
+Item {0} has exceeded its approved amount for {1} by {2},تجاوز البند {0} القيمة المعتمدة للمنطقة {1} بمقدار {2}
+Budget Exceeded,تجاوز الموازنة
+You are not allowed to view the budget position,ليست لديك صلاحية الاطلاع على موقف الموازنة
+You are not allowed to view budget amounts,ليست لديك صلاحية الاطلاع على القيم المالية للموازنة
+Chapter / Item,الباب / البند
+Source,المصدر
+Approved,المعتمد
+Total Approved,إجمالي المعتمد
+Revisions,التعديلات
+Commitments,الالتزامات
+Executed,المنفذ
+Total Executed,إجمالي المنفذ
+Remaining,المتبقي
+Execution %,نسبة التنفيذ
+Slow Execution,بطء تنفيذ
+Within Plan,ضمن الخطة
+Limit Exceeded,تجاوز الحد
+Not Budgeted,غير مدرج بالموازنة
+Not Classified,غير مصنف
+Grand Total,الإجمالي العام
+Up to Date,حتى تاريخ
+Show East / West Separately,عرض الشرقية والغربية منفصلة
+Budget Execution Position,الموقف التنفيذي للموازنة
+Budget,الموازنة
+Manual Entries,قيود التنفيذ اليدوية
+General Ledger,دفتر الأستاذ العام
+LYD,د.ل
