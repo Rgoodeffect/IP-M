@@ -3,25 +3,32 @@
   "Approved",
   "Cancelled",
   "Draft",
+  "Included in Report",
   "Issued",
+  "Manager Review",
   "Pending Approval",
   "Pending Review",
+  "Planning Approval",
   "Rejected",
   "Requested",
   "Returned",
+  "Statistics Review",
   "Under Review"
  ],
  "actions": [
   "Approve",
   "Cancel",
+  "Include in Report",
   "Reject",
   "Reopen",
   "Return for Revision",
   "Send for Approval",
-  "Submit for Review"
+  "Submit for Review",
+  "Submit to Manager"
  ],
  "workflows": [
   "Registration Certificate Approval",
-  "Station Monthly Data Approval"
+  "Station Monthly Data Approval",
+  "Department Activity Approval"
  ]
 }

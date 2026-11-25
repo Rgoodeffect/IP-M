@@ -187,5 +187,162 @@
     "allow_self_approval": 1
    }
   ]
+ },
+ {
+  "doctype": "Workflow",
+  "name": "Department Activity Approval",
+  "workflow_name": "Department Activity Approval",
+  "document_type": "Department Activity Submission",
+  "is_active": 1,
+  "override_status": 0,
+  "send_email_alert": 0,
+  "enable_action_confirmation": 1,
+  "workflow_state_field": "workflow_state",
+  "modified": "2026-11-25 12:00:00.000000",
+  "states": [
+   {
+    "state": "Draft",
+    "doc_status": "0",
+    "allow_edit": "Department Coordinator",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Manager Review",
+    "doc_status": "0",
+    "allow_edit": "Department Coordinator",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Statistics Review",
+    "doc_status": "0",
+    "allow_edit": "Statistics & Data",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Planning Approval",
+    "doc_status": "0",
+    "allow_edit": "Strategic Planning",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Returned",
+    "doc_status": "0",
+    "allow_edit": "Department Coordinator",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Approved",
+    "doc_status": "1",
+    "allow_edit": "Strategic Planning",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Included in Report",
+    "doc_status": "1",
+    "allow_edit": "Strategic Planning",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Cancelled",
+    "doc_status": "2",
+    "allow_edit": "Strategic Planning",
+    "is_optional_state": 0
+   }
+  ],
+  "transitions": [
+   {
+    "state": "Draft",
+    "action": "Submit to Manager",
+    "next_state": "Manager Review",
+    "allowed": "Department Coordinator",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Returned",
+    "action": "Submit to Manager",
+    "next_state": "Manager Review",
+    "allowed": "Department Coordinator",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Manager Review",
+    "action": "Approve",
+    "next_state": "Statistics Review",
+    "allowed": "Department Coordinator",
+    "allow_self_approval": 1,
+    "condition": "not doc.department_head or doc.department_head == frappe.session.user"
+   },
+   {
+    "state": "Manager Review",
+    "action": "Return for Revision",
+    "next_state": "Returned",
+    "allowed": "Department Coordinator",
+    "allow_self_approval": 1,
+    "condition": "not doc.department_head or doc.department_head == frappe.session.user"
+   },
+   {
+    "state": "Statistics Review",
+    "action": "Send for Approval",
+    "next_state": "Planning Approval",
+    "allowed": "Statistics & Data",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Statistics Review",
+    "action": "Return for Revision",
+    "next_state": "Returned",
+    "allowed": "Statistics & Data",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Planning Approval",
+    "action": "Approve",
+    "next_state": "Approved",
+    "allowed": "Strategic Planning",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Planning Approval",
+    "action": "Approve",
+    "next_state": "Approved",
+    "allowed": "LOC Planning Director",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Planning Approval",
+    "action": "Return for Revision",
+    "next_state": "Returned",
+    "allowed": "Strategic Planning",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Planning Approval",
+    "action": "Return for Revision",
+    "next_state": "Returned",
+    "allowed": "LOC Planning Director",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Approved",
+    "action": "Include in Report",
+    "next_state": "Included in Report",
+    "allowed": "Strategic Planning",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Approved",
+    "action": "Cancel",
+    "next_state": "Cancelled",
+    "allowed": "Strategic Planning",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Approved",
+    "action": "Cancel",
+    "next_state": "Cancelled",
+    "allowed": "LOC Planning Director",
+    "allow_self_approval": 1
+   }
+  ]
  }
 ]

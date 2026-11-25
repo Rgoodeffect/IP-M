@@ -3,11 +3,22 @@ A department cannot be its own parent,لا يمكن أن تكون الجهة ت�
 Account,الحساب
 Achievement %,نسبة التحقيق
 Active,نشط
+Activities,الأنشطة
+Activities Carried Out,الأنشطة المنفذة
 Activity,النشاط
+Activity Domain,مجال النشاط
+Activity Indicator Template,قالب مؤشرات الإدارة
+Activity Indicator Template Line,مؤشر
+Activity Report,تقرير النشاط
 Activity Report Period Type,دورية تقرير النشاط
 Activity Reporting,تقرير النشاط
 Activity Reports,تقارير النشاط
+Activity Submission Indicator,مؤشر رقمي
+Activity Submission Item,نشاط
 Activity Type,النشاط المساند
+Activity report {0} awaits your review,تقرير النشاط {0} بانتظار مراجعتك
+Activity report {0} was approved,اعتمد تقرير النشاط {0}
+Activity report {0} was returned for revision,أرجع تقرير النشاط {0} للتعديل
 Activity {0} is listed more than once,النشاط {0} مكرر
 Actual Expense,صرف فعلي
 Actual Sales,المبيعات الفعلية
@@ -31,9 +42,11 @@ Approved,معتمدة
 Approved Amount,القيمة المعتمدة
 Approved Budget,الموازنة المعتمدة
 Approved Budget Line,بند معتمد
+Approved On,تاريخ الاعتماد
 Approved documents cannot be deleted. Cancel the document with a reason instead.,لا يمكن حذف المستندات المعتمدة. يمكن إلغاؤها مع ذكر السبب.
 Assignments,الربط
 Attachment,المرفق
+Average of the activities with a target,متوسط الأنشطة ذات المستهدف
 Base Font Size (pt),حجم الخط الأساسي (نقطة)
 Base font size must be between 8 and 20,حجم الخط الأساسي يجب أن يكون بين 8 و 20
 Blacklisted,محظورة
@@ -98,6 +111,7 @@ Cylinder,أسطوانة
 Data Status,حالة البيانات
 Data for this month is already approved,بيانات هذا الشهر معتمدة مسبقا
 Date,التاريخ
+Days Late,أيام التأخير
 Days Overdue,أيام التأخير
 Days in Status,أيام في الحالة
 Days to Expiry,الأيام المتبقية
@@ -107,19 +121,29 @@ Deadline days cannot be negative,عدد أيام الموعد النهائي ل�
 Decrease,تخفيض
 Department,إدارة
 Department / Office,الجهة
+Department Activity Approval,اعتماد نماذج نشاط الإدارات
+Department Activity Status,حالة تقارير الإدارات
+Department Activity Submission,نموذج نشاط الإدارة
 Department Coordinator,منسق إدارة
+Department Head,مدير الإدارة
+Department Indicators,المؤشرات الرقمية للإدارة
 Department Name,اسم الجهة
 Department Type,نوع الجهة
 Department {0} already exists,الجهة {0} موجودة مسبقا
+Departments,الإدارات
 Description,الوصف
+Difficulties and Obstacles,الصعوبات والمعوقات
+Difficulties and Plan,الصعوبات والخطة
 Display Order,ترتيب العرض
 Document,المستند
 Document No.,رقم المستند
 Document Type,نوع المستند
 Documents,المستندات
+Domain,المجال
 Download Template,تحميل القالب
 Draft,مسودة
-Due Date,تاريخ الاستحقاق
+Due Date,الموعد النهائي
+Due date: {0},الموعد النهائي: {0}
 ERPNext Department,القسم في ERPNext
 ERPNext Link,الربط مع ERPNext
 ERPNext Supplier,المورد في ERPNext
@@ -169,7 +193,11 @@ Inactive,غير نشطة
 Include Approved Stations,تضمين المحطات المعتمدة
 Include Sub-Departments,تشمل الجهات التابعة
 Include Unapproved Data,تضمين البيانات غير المعتمدة
+Include in Report,إدراج في التقرير
+Included in Report,مدرجة في التقرير
 Increase,زيادة
+Indicator,المؤشر
+Indicators,المؤشرات
 Insufficient Balance,الرصيد غير كاف
 Invalid Thresholds,عتبات غير صحيحة
 Invalid number: {0},رقم غير صحيح: {0}
@@ -198,6 +226,7 @@ LOC User Assignment,ربط مستخدم
 LOC User Setup,ربط المستخدمين بالأدوار والجهات
 LYD,د.ل
 Last Safety Inspection,آخر تفتيش سلامة
+Late,المتأخرة
 Latitude,خط العرض
 Leave empty to include all stations you can access,اتركه فارغا لتشمل كل المحطات المتاحة لك
 Leave empty to number automatically,اتركه فارغا ليرقم تلقائيا
@@ -214,6 +243,7 @@ Lock Data of Closed Periods,منع تعديل بيانات الفترات الم
 Log,السجل
 Longitude,خط الطول
 Lubricant,زيوت
+Manager Review,مراجعة مدير الإدارة
 Manual Entries,قيود التنفيذ اليدوية
 Map,الخريطة
 Maximum Overdue Reminders,أقصى عدد لتذكيرات التأخير
@@ -255,6 +285,8 @@ Operation,التشغيل
 Operation Start Date,تاريخ التشغيل
 Operation Type,نوع التشغيل
 Other,أخرى
+Overall Achievement,نسبة الإنجاز العامة
+Overdue: the activity report of {0} for {1} was due on {2},متأخر: كان موعد تسليم تقرير نشاط {0} عن {1} هو {2}
 Owner Department,الإدارة المالكة
 Parent Department,الجهة الأم
 Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون معلمة بأنها تتبعها جهات
@@ -262,18 +294,26 @@ Partially Imported,استيراد جزئي
 Pending,بانتظار التطبيق
 Pending Approval,بانتظار الاعتماد
 Pending Review,بانتظار المراجعة
+Period,الفترة
 Period Closed,الفترة مغلقة
 Period No.,رقم الفترة
 Period Type,نوع الفترة
 Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
 Phone,الهاتف
+Plan for the Next Period,خطة الفترة القادمة
+Planning Approval,اعتماد التخطيط الاستراتيجي
 Please attach the Excel file first,يرجى إرفاق ملف Excel أولا
 Please enter the cancellation reason before cancelling.,يرجى إدخال سبب الإلغاء قبل الإلغاء.
 Please enter the reason for the status {0},يرجى إدخال سبب الحالة {0}
 Please select a monthly period,يرجى اختيار فترة شهرية
+Please select a period,يرجى اختيار الفترة
+Please select a period of type {0},يرجى اختيار فترة من نوع {0}
 Please select a submitted approved budget,يرجى اختيار موازنة معتمدة
 Please select the certificate being renewed,يرجى اختيار الشهادة المراد تجديدها
+Please write the review comment,يرجى كتابة ملاحظات المراجعة
 Please write the review comment explaining what must be corrected before returning the data.,يرجى كتابة ملاحظات المراجعة وبيان المطلوب تصحيحه قبل إرجاع البيانات.
+Please write the review comment explaining what must be corrected before returning the report.,يرجى كتابة ملاحظات المراجعة وبيان المطلوب تصحيحه قبل إرجاع التقرير.
+Prepared By,المعد
 Processing...,جار المعالجة...
 Product,المنتج
 Product Code,رمز المنتج
@@ -306,6 +346,7 @@ Rejected,مرفوضة
 Remaining,المتبقي
 Remarks,ملاحظات
 Remind Days Before Deadline,التذكير قبل الموعد (بالأيام)
+Reminder: the activity report of {0} for {1} is due on {2},تذكير: موعد تسليم تقرير نشاط {0} عن {1} هو {2}
 Renew,تجديد
 Renewal,تجديد
 Renewal Of,تجديد للشهادة
@@ -326,8 +367,10 @@ Representative Phone,هاتف الممثل
 Request Date,تاريخ الطلب
 Request Type,نوع الطلب
 Requested,طلب
+Required Reports,التقارير المطلوبة
 Required for Certificate,مطلوب لإصدار الشهادة
 Required when returning the data for revision,إلزامية عند إرجاع البيانات للتعديل
+Required when returning the submission for revision,إلزامية عند إرجاع النموذج للتعديل
 Requires Activity Report,مطلوب منه تقرير نشاط
 Result,النتيجة
 Return for Revision,إرجاع للتعديل
@@ -393,6 +436,7 @@ Station {0} not found,المحطة {0} غير موجودة
 Stations,المحطات
 Stations and Support Activities,المحطات والأنشطة المساندة
 Statistics & Data,قسم الإحصاء والبيانات
+Statistics Review,مراجعة قسم الإحصاء والبيانات
 Status,الحالة
 Status Reason,سبب الحالة
 Status Since,تاريخ الحالة
@@ -406,7 +450,10 @@ Stopped Days in Period,أيام التوقف خلال الفترة
 Stopped Stations,المحطات المتوقفة
 Stopped days cannot exceed {0},أيام التوقف لا يمكن أن تتجاوز {0}
 Strategic Planning,قسم التخطيط الاستراتيجي
+Submission,النموذج
 Submit for Review,إرسال للمراجعة
+Submit to Manager,إرسال لمدير الإدارة
+Submitted On,تاريخ الإرسال
 Summary,الملخص
 Superseded,مجددة
 Supplier Group,مجموعة الموردين
@@ -419,12 +466,14 @@ Tanks,الخزانات
 Tanks and Equipment,الخزانات والمعدات
 Target,المستهدف
 Tax No.,الرقم الضريبي
+The activity report of {0} for {1} already exists: {2},تقرير نشاط {0} عن {1} موجود مسبقا: {2}
 The executed amount of item {0} is taken from the General Ledger. Only commitments can be entered here.,قيمة المنفذ للبند {0} تحتسب من دفتر الأستاذ العام. يمكن هنا إدخال الالتزامات فقط.
 The following required documents are missing or expired: {0},المستندات المطلوبة التالية غير مرفقة أو منتهية: {0}
 The renewed certificate belongs to another company,الشهادة المراد تجديدها تخص شركة أخرى
 The revision date must be in {0},يجب أن يكون تاريخ التعديل ضمن سنة {0}
 The start month is after the end month,شهر البداية بعد شهر النهاية
 This file is not a station data template. Please download the template again.,هذا الملف ليس قالب بيانات المحطات. يرجى تحميل القالب مجددا.
+This report is {0} days late,هذا التقرير متأخر {0} يوما
 Title,العنوان
 To Date,إلى تاريخ
 To Item,إلى البند
@@ -451,6 +500,7 @@ Valid Certificates,الشهادات السارية
 Validate,تحقق
 Validated,تم التحقق
 "Validation only, nothing was saved.",تحقق فقط، لم يحفظ شيء.
+Value,القيمة
 Variance,الفرق
 Verification,التحقق
 Verification Base URL,رابط موقع التحقق
@@ -467,10 +517,12 @@ You are not allowed to enter data for station {0},ليست لديك صلاحية
 You are not allowed to open or close reporting periods.,ليست لديك صلاحية فتح أو إغلاق الفترات.
 You are not allowed to view budget amounts,ليست لديك صلاحية الاطلاع على القيم المالية للموازنة
 You are not allowed to view the budget position,ليست لديك صلاحية الاطلاع على موقف الموازنة
+You cannot return this report at its current stage,لا يمكنك إرجاع هذا التقرير في مرحلته الحالية
 e.g. a coordinating unit,مثال: منسقية الخدمات
 {0} assignments applied,تم تطبيق {0} ربط
 {0} cannot be negative,{0} لا يمكن أن يكون سالبا
 {0} is not a sales office,{0} ليس مكتب مبيعات
+{0} is not required to submit an activity report,{0} غير مطلوب منه تقرير نشاط
 {0} periods created for {1},تم إنشاء {0} فترة لسنة {1}
 {0} registration certificates expire within {1} days,{0} شهادة إثبات قيد تنتهي خلال {1} يوما
 {0} {1} is already registered for company {2},{0} {1} مسجل مسبقا للشركة {2}

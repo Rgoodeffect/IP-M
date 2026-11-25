@@ -170,3 +170,27 @@ Budget,الموازنة
 Manual Entries,قيود التنفيذ اليدوية
 General Ledger,دفتر الأستاذ العام
 LYD,د.ل
+The activity report of {0} for {1} already exists: {2},تقرير نشاط {0} عن {1} موجود مسبقا: {2}
+{0} is not required to submit an activity report,{0} غير مطلوب منه تقرير نشاط
+Please select a period of type {0},يرجى اختيار فترة من نوع {0}
+Please write the review comment explaining what must be corrected before returning the report.,يرجى كتابة ملاحظات المراجعة وبيان المطلوب تصحيحه قبل إرجاع التقرير.
+Please write the review comment,يرجى كتابة ملاحظات المراجعة
+You cannot return this report at its current stage,لا يمكنك إرجاع هذا التقرير في مرحلته الحالية
+Activity report {0} was returned for revision,أرجع تقرير النشاط {0} للتعديل
+Activity report {0} awaits your review,تقرير النشاط {0} بانتظار مراجعتك
+Activity report {0} was approved,اعتمد تقرير النشاط {0}
+This report is {0} days late,هذا التقرير متأخر {0} يوما
+Due date: {0},الموعد النهائي: {0}
+Return for Revision,إرجاع للتعديل
+"Reminder: the activity report of {0} for {1} is due on {2}",تذكير: موعد تسليم تقرير نشاط {0} عن {1} هو {2}
+"Overdue: the activity report of {0} for {1} was due on {2}",متأخر: كان موعد تسليم تقرير نشاط {0} عن {1} هو {2}
+Please select a period,يرجى اختيار الفترة
+Submission,النموذج
+Departments,الإدارات
+Required Reports,التقارير المطلوبة
+Received,المستلمة
+Late,المتأخرة
+Department Activity Status,حالة تقارير الإدارات
+Activity Report,تقرير النشاط
+Department,الإدارة
+Period,الفترة

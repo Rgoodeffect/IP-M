@@ -25,7 +25,7 @@ APP = os.path.join(ROOT, "loc_planning")
 SPEC_DIR = os.path.join(ROOT, "dev_tools", "doctype_specs")
 sys.path.insert(0, SPEC_DIR)
 
-SPEC_MODULES = ["phase1", "phase2", "phase3", "phase4"]
+SPEC_MODULES = ["phase1", "phase2", "phase3", "phase4", "phase5"]
 MODULE_FOLDERS = {
 	"LOC Planning": "loc_planning",
 	"Budget": "budget",
@@ -226,11 +226,20 @@ def write_workflow_fixtures(tr):
 			doc["states"].append(
 				{"state": state, "doc_status": str(docstatus), "allow_edit": role, "is_optional_state": 0}
 			)
-		for src, action, dst, role in spec["transitions"]:
+		for transition in spec["transitions"]:
+			src, action, dst, role = transition[:4]
+			condition = transition[4] if len(transition) > 4 else None
 			actions.add(action)
-			doc["transitions"].append(
-				{"state": src, "action": action, "next_state": dst, "allowed": role, "allow_self_approval": 1}
-			)
+			row = {
+				"state": src,
+				"action": action,
+				"next_state": dst,
+				"allowed": role,
+				"allow_self_approval": 1,
+			}
+			if condition:
+				row["condition"] = condition
+			doc["transitions"].append(row)
 		workflows.append(doc)
 
 	for state, ar in wf.STATE_AR.items():

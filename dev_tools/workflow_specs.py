@@ -47,6 +47,40 @@ MONTHLY_DATA_TRANSITIONS = [
 	("Approved", "Cancel", "Cancelled", SD),
 ]
 
+DC = "Department Coordinator"
+SP = "Strategic Planning"
+
+# Only the department's own head may act at the manager stage (any coordinator of the
+# department when no head is set on the department).
+IS_HEAD = "not doc.department_head or doc.department_head == frappe.session.user"
+
+ACTIVITY_STATES = [
+	("Draft", 0, DC, "Info"),
+	("Manager Review", 0, DC, "Primary"),
+	("Statistics Review", 0, SD, "Warning"),
+	("Planning Approval", 0, SP, "Warning"),
+	("Returned", 0, DC, "Danger"),
+	("Approved", 1, SP, "Success"),
+	("Included in Report", 1, SP, "Success"),
+	("Cancelled", 2, SP, "Danger"),
+]
+
+ACTIVITY_TRANSITIONS = [
+	("Draft", "Submit to Manager", "Manager Review", DC),
+	("Returned", "Submit to Manager", "Manager Review", DC),
+	("Manager Review", "Approve", "Statistics Review", DC, IS_HEAD),
+	("Manager Review", "Return for Revision", "Returned", DC, IS_HEAD),
+	("Statistics Review", "Send for Approval", "Planning Approval", SD),
+	("Statistics Review", "Return for Revision", "Returned", SD),
+	("Planning Approval", "Approve", "Approved", SP),
+	("Planning Approval", "Approve", "Approved", DIR),
+	("Planning Approval", "Return for Revision", "Returned", SP),
+	("Planning Approval", "Return for Revision", "Returned", DIR),
+	("Approved", "Include in Report", "Included in Report", SP),
+	("Approved", "Cancel", "Cancelled", SP),
+	("Approved", "Cancel", "Cancelled", DIR),
+]
+
 WORKFLOWS = [
 	{
 		"name": "Registration Certificate Approval",
@@ -59,6 +93,12 @@ WORKFLOWS = [
 		"document_type": "Station Monthly Data",
 		"states": MONTHLY_DATA_STATES,
 		"transitions": MONTHLY_DATA_TRANSITIONS,
+	},
+	{
+		"name": "Department Activity Approval",
+		"document_type": "Department Activity Submission",
+		"states": ACTIVITY_STATES,
+		"transitions": ACTIVITY_TRANSITIONS,
 	},
 ]
 
@@ -73,6 +113,10 @@ STATE_AR = {
 	"Pending Review": "بانتظار المراجعة",
 	"Returned": "مرجعة للتعديل",
 	"Approved": "معتمدة",
+	"Manager Review": "مراجعة مدير الإدارة",
+	"Statistics Review": "مراجعة قسم الإحصاء والبيانات",
+	"Planning Approval": "اعتماد التخطيط الاستراتيجي",
+	"Included in Report": "مدرجة في التقرير",
 }
 
 ACTION_AR = {
@@ -83,9 +127,12 @@ ACTION_AR = {
 	"Reject": "رفض",
 	"Reopen": "إعادة فتح",
 	"Cancel": "إلغاء",
+	"Submit to Manager": "إرسال لمدير الإدارة",
+	"Include in Report": "إدراج في التقرير",
 }
 
 WORKFLOW_AR = {
 	"Registration Certificate Approval": "اعتماد شهادة إثبات القيد",
 	"Station Monthly Data Approval": "اعتماد البيانات الشهرية للمحطات",
+	"Department Activity Approval": "اعتماد نماذج نشاط الإدارات",
 }

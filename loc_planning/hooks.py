@@ -52,6 +52,7 @@ scheduler_events = {
 	"daily": [
 		"loc_planning.investment_registry.tasks.daily",
 		"loc_planning.stations.tasks.daily",
+		"loc_planning.activity_report.tasks.daily",
 	],
 }
 

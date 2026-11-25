@@ -4,6 +4,16 @@ WORKSPACE = "LOC Planning"
 
 SECTIONS = [
 	(
+		"Activity Report",
+		"clipboard-list",
+		[
+			("Department Activity Submission", "DocType", "Department Activity Submission"),
+			("Department Activity Status", "Report", "Department Activity Status"),
+			("Activity Indicator Template", "DocType", "Activity Indicator Template"),
+			("Activity Domain", "DocType", "Activity Domain"),
+		],
+	),
+	(
 		"Budget",
 		"wallet",
 		[
@@ -56,6 +66,8 @@ SECTIONS = [
 ]
 
 SHORTCUTS = [
+	("Department Activity Submission", "DocType", "Department Activity Submission", "List"),
+	("Department Activity Status", "Report", "Department Activity Status", ""),
 	("Budget Execution Position", "Report", "Budget Execution Position", ""),
 	("Budget Execution Entry", "DocType", "Budget Execution Entry", "List"),
 	("Station Monthly Data", "DocType", "Station Monthly Data", "List"),
@@ -69,6 +81,7 @@ SHORTCUTS = [
 ]
 
 SECTION_AR = {
+	"Activity Report": "تقرير النشاط",
 	"Budget": "الموازنة",
 	"Stations and Support Activities": "المحطات والأنشطة المساندة",
 	"Investment Section": "قسم الاستثمار",

@@ -13,6 +13,12 @@
  },
  {
   "doctype": "Workflow Action Master",
+  "name": "Include in Report",
+  "workflow_action_name": "Include in Report",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow Action Master",
   "name": "Reject",
   "workflow_action_name": "Reject",
   "modified": "2026-11-25 12:00:00.000000"
@@ -39,6 +45,12 @@
   "doctype": "Workflow Action Master",
   "name": "Submit for Review",
   "workflow_action_name": "Submit for Review",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow Action Master",
+  "name": "Submit to Manager",
+  "workflow_action_name": "Submit to Manager",
   "modified": "2026-11-25 12:00:00.000000"
  }
 ]

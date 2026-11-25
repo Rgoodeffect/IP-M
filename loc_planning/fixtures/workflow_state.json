@@ -22,9 +22,23 @@
  },
  {
   "doctype": "Workflow State",
+  "name": "Included in Report",
+  "workflow_state_name": "Included in Report",
+  "style": "Success",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
   "name": "Issued",
   "workflow_state_name": "Issued",
   "style": "Success",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Manager Review",
+  "workflow_state_name": "Manager Review",
+  "style": "Primary",
   "modified": "2026-11-25 12:00:00.000000"
  },
  {
@@ -38,6 +52,13 @@
   "doctype": "Workflow State",
   "name": "Pending Review",
   "workflow_state_name": "Pending Review",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Planning Approval",
+  "workflow_state_name": "Planning Approval",
   "style": "Warning",
   "modified": "2026-11-25 12:00:00.000000"
  },
@@ -60,6 +81,13 @@
   "name": "Returned",
   "workflow_state_name": "Returned",
   "style": "Danger",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Statistics Review",
+  "workflow_state_name": "Statistics Review",
+  "style": "Warning",
   "modified": "2026-11-25 12:00:00.000000"
  },
  {
