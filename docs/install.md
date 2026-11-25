@@ -64,6 +64,26 @@ bench --site <site> execute loc_planning.install.seed_master_data
 - على الخادم: نفذ `bench setup-chrome`.
 - أو استخدم Chromium موجودا مسبقا: `bench config set-common-config -c chromium_path '"/path/to/chrome"'`.
 
+## لوحة المؤشرات والأدوار
+
+| الصفحة | لمن |
+|---|---|
+| لوحة المؤشرات (`/app/loc-dashboard`) | أدوار الإدارة |
+| بوابة مكتب المبيعات | دور مكتب المبيعات |
+| بوابة منسق الإدارة | دور منسق إدارة |
+
+مساحة العمل الرئيسية "منظومة التخطيط والاستثمار" تظهر لأدوار الإدارة فقط.
+
+دور "LOC General Manager" (المدير العام) يعتمد تقرير النشاط المتكامل. للاطلاع على كل شيء أعطه أيضا دور "الإدارة العليا".
+
+## بيانات تجريبية (اختياري، لموقع تجريبي فقط)
+
+```bash
+bench --site <site> execute loc_planning.demo_data.stations.load --kwargs "{'year': 2026, 'months': 10}"
+bench --site <site> execute loc_planning.demo_data.budget.load --kwargs "{'year': 2026}"
+bench --site <site> execute loc_planning.demo_data.activity.load
+```
+
 ## التحقق
 
 ```bash

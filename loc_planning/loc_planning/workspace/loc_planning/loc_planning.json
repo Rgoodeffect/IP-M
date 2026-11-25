@@ -1,7 +1,20 @@
 {
  "app": "loc_planning",
- "charts": [],
- "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort000\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Activity Report\", \"col\": 3}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Submission\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Status\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Position\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Entry\", \"col\": 3}}, {\"id\": \"locshort005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Monthly Data\", \"col\": 3}}, {\"id\": \"locshort006\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Data Import\", \"col\": 3}}, {\"id\": \"locshort007\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registered Company\", \"col\": 3}}, {\"id\": \"locshort008\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registration Certificate\", \"col\": 3}}, {\"id\": \"locshort009\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Registry\", \"col\": 3}}, {\"id\": \"locshort010\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0000\", \"type\": \"card\", \"data\": {\"card_name\": \"Activity Report\", \"col\": 4}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Budget\", \"col\": 4}}, {\"id\": \"loccard0002\", \"type\": \"card\", \"data\": {\"card_name\": \"Stations and Support Activities\", \"col\": 4}}, {\"id\": \"loccard0003\", \"type\": \"card\", \"data\": {\"card_name\": \"Investment Section\", \"col\": 4}}, {\"id\": \"loccard0004\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
+ "charts": [
+  {
+   "chart_name": "LOC Monthly Sales Trend",
+   "label": "LOC Monthly Sales Trend"
+  },
+  {
+   "chart_name": "LOC Sales by Product",
+   "label": "LOC Sales by Product"
+  },
+  {
+   "chart_name": "LOC Budget by Chapter",
+   "label": "LOC Budget by Chapter"
+  }
+ ],
+ "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort000\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Activity Report\", \"col\": 3}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Submission\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Status\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Position\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Entry\", \"col\": 3}}, {\"id\": \"locshort005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Monthly Data\", \"col\": 3}}, {\"id\": \"locshort006\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Data Import\", \"col\": 3}}, {\"id\": \"locshort007\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registered Company\", \"col\": 3}}, {\"id\": \"locshort008\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registration Certificate\", \"col\": 3}}, {\"id\": \"locshort009\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Registry\", \"col\": 3}}, {\"id\": \"locshort010\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locnumc000\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"LOC Fuel Sales\", \"col\": 4}}, {\"id\": \"locnumc001\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"LOC Budget Execution\", \"col\": 4}}, {\"id\": \"locnumc002\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"LOC Operating Stations\", \"col\": 4}}, {\"id\": \"locnumc003\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"LOC Reports Received\", \"col\": 4}}, {\"id\": \"locnumc004\", \"type\": \"number_card\", \"data\": {\"number_card_name\": \"LOC Certificates Issued\", \"col\": 4}}, {\"id\": \"locchart00\", \"type\": \"chart\", \"data\": {\"chart_name\": \"LOC Monthly Sales Trend\", \"col\": 6}}, {\"id\": \"locchart01\", \"type\": \"chart\", \"data\": {\"chart_name\": \"LOC Sales by Product\", \"col\": 6}}, {\"id\": \"locchart02\", \"type\": \"chart\", \"data\": {\"chart_name\": \"LOC Budget by Chapter\", \"col\": 6}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0000\", \"type\": \"card\", \"data\": {\"card_name\": \"Activity Report\", \"col\": 4}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Budget\", \"col\": 4}}, {\"id\": \"loccard0002\", \"type\": \"card\", \"data\": {\"card_name\": \"Stations and Support Activities\", \"col\": 4}}, {\"id\": \"loccard0003\", \"type\": \"card\", \"data\": {\"card_name\": \"Investment Section\", \"col\": 4}}, {\"id\": \"loccard0004\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
  "creation": "2026-11-25 12:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
@@ -406,17 +419,63 @@
    "type": "Link"
   }
  ],
- "modified": "2026-11-25 21:03:16.393246",
+ "modified": "2026-11-25 21:39:32.447435",
  "modified_by": "Administrator",
  "module": "LOC Planning",
  "name": "LOC Planning",
- "number_cards": [],
+ "number_cards": [
+  {
+   "label": "LOC Fuel Sales",
+   "number_card_name": "LOC Fuel Sales"
+  },
+  {
+   "label": "LOC Budget Execution",
+   "number_card_name": "LOC Budget Execution"
+  },
+  {
+   "label": "LOC Operating Stations",
+   "number_card_name": "LOC Operating Stations"
+  },
+  {
+   "label": "LOC Reports Received",
+   "number_card_name": "LOC Reports Received"
+  },
+  {
+   "label": "LOC Certificates Issued",
+   "number_card_name": "LOC Certificates Issued"
+  }
+ ],
  "owner": "Administrator",
  "parent_page": "",
  "public": 1,
  "quick_lists": [],
  "restrict_to_domain": "",
- "roles": [],
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "LOC Planning Director"
+  },
+  {
+   "role": "Strategic Planning"
+  },
+  {
+   "role": "Statistics & Data"
+  },
+  {
+   "role": "Investment Section"
+  },
+  {
+   "role": "Finance Budget"
+  },
+  {
+   "role": "Executive Viewer"
+  },
+  {
+   "role": "LOC General Manager"
+  }
+ ],
  "sequence_id": 50.0,
  "shortcuts": [
   {
@@ -523,6 +582,54 @@
    "keep_closed": 0,
    "label": "Home",
    "link_to": "LOC Planning",
+   "link_type": "Workspace",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 0,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "chart-column",
+   "indent": 0,
+   "is_default_module": 0,
+   "keep_closed": 0,
+   "label": "LOC Dashboard",
+   "link_to": "loc-dashboard",
+   "link_type": "Page",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 0,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "fuel",
+   "indent": 0,
+   "is_default_module": 0,
+   "keep_closed": 0,
+   "label": "Sales Office Portal",
+   "link_to": "Sales Office Portal",
+   "link_type": "Workspace",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 0,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "clipboard-list",
+   "indent": 0,
+   "is_default_module": 0,
+   "keep_closed": 0,
+   "label": "Department Coordinator Portal",
+   "link_to": "Department Coordinator Portal",
    "link_type": "Workspace",
    "open_in_new_tab": 0,
    "show_arrow": 0,

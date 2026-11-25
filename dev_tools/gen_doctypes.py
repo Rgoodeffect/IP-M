@@ -354,6 +354,11 @@ def write_navigation(tr):
 		}
 
 	items = [link("Home", "Workspace", name, icon="house")]
+	for label, ltype, target, icon in getattr(nav, "TOP_LINKS", []):
+		item = link(label, ltype, target, icon=icon)
+		item["is_default_module"] = 0
+		items.append(item)
+		tr.add(label, nav.SECTION_AR.get(label))
 	ws_links, content = (
 		[],
 		[
@@ -368,6 +373,12 @@ def write_navigation(tr):
 		content.append(
 			{"id": f"locshort{i:03d}", "type": "shortcut", "data": {"shortcut_name": label, "col": 3}}
 		)
+	for i, card in enumerate(getattr(nav, "NUMBER_CARDS", [])):
+		content.append(
+			{"id": f"locnumc{i:03d}", "type": "number_card", "data": {"number_card_name": card, "col": 4}}
+		)
+	for i, chart in enumerate(getattr(nav, "CHARTS", [])):
+		content.append({"id": f"locchart{i:02d}", "type": "chart", "data": {"chart_name": chart, "col": 6}})
 	content.append({"id": "locspacer01", "type": "spacer", "data": {"col": 12}})
 	for i, (section, icon, links) in enumerate(nav.SECTIONS):
 		tr.add(section, nav.SECTION_AR.get(section))
@@ -421,7 +432,7 @@ def write_navigation(tr):
 	]
 	workspace = {
 		"app": "loc_planning",
-		"charts": [],
+		"charts": [{"chart_name": c, "label": c} for c in getattr(nav, "CHARTS", [])],
 		"content": json.dumps(content, ensure_ascii=False),
 		"creation": ts,
 		"custom_blocks": [],
@@ -437,13 +448,13 @@ def write_navigation(tr):
 		"modified_by": "Administrator",
 		"module": "LOC Planning",
 		"name": name,
-		"number_cards": [],
+		"number_cards": [{"label": c, "number_card_name": c} for c in getattr(nav, "NUMBER_CARDS", [])],
 		"owner": "Administrator",
 		"parent_page": "",
 		"public": 1,
 		"quick_lists": [],
 		"restrict_to_domain": "",
-		"roles": [],
+		"roles": [{"role": r} for r in getattr(nav, "WORKSPACE_ROLES", [])],
 		"sequence_id": 50.0,
 		"shortcuts": shortcuts,
 		"sidebar_items": items,
@@ -466,10 +477,48 @@ def write_navigation(tr):
 		"standard": 1,
 		"title": name,
 	}
-	for doc, rel in (
+	documents = [
 		(workspace, ("loc_planning", "workspace", scrub(name), scrub(name) + ".json")),
 		(sidebar, ("loc_planning", "sidebar", scrub(name), scrub(name) + ".json")),
-	):
+	]
+	for portal in getattr(nav, "PORTALS", []):
+		tr.add(portal["name"], portal["title_ar"])
+		p_content = [
+			{
+				"id": "pheader01",
+				"type": "header",
+				"data": {"text": f'<span class="h4"><b>{portal["title_ar"]}</b></span>', "col": 12},
+			},
+			{"id": "pparagraph", "type": "paragraph", "data": {"text": portal["intro_ar"], "col": 12}},
+		]
+		for i, (label, _lt, _to, _view) in enumerate(portal["shortcuts"]):
+			p_content.append(
+				{"id": f"pshort{i:03d}", "type": "shortcut", "data": {"shortcut_name": label, "col": 4}}
+			)
+		p_ws = dict(workspace)
+		p_ws.update(
+			{
+				"charts": [],
+				"number_cards": [],
+				"content": json.dumps(p_content, ensure_ascii=False),
+				"label": portal["name"],
+				"name": portal["name"],
+				"title": portal["name"],
+				"links": [],
+				"icon": portal["icon"],
+				"roles": [{"role": r} for r in portal["roles"]],
+				"sequence_id": 51.0,
+				"shortcuts": [
+					{"color": "Grey", "doc_view": view, "label": label, "link_to": target, "type": lt}
+					for label, lt, target, view in portal["shortcuts"]
+				],
+			}
+		)
+		p_ws.pop("modified", None)
+		documents.append(
+			(p_ws, ("loc_planning", "workspace", scrub(portal["name"]), scrub(portal["name"]) + ".json"))
+		)
+	for doc, rel in documents:
 		path = os.path.join(APP, *rel)
 		os.makedirs(os.path.dirname(path), exist_ok=True)
 		modified = None

@@ -14,11 +14,22 @@
 | 4 | الموازنة والموقف التنفيذي | منجزة |
 | 5 | نشاط الإدارات + Workflow + التذكير | منجزة |
 | 6 | تقرير النشاط المتكامل (PDF/Word) | منجزة |
-| 7 | لوحة المؤشرات + الأدلة | — |
+| 7 | لوحة المؤشرات + الأدلة | منجزة |
 
 ## التثبيت
 
-انظر [`docs/install.md`](docs/install.md)، ودليل الترحيل من Access في [`docs/migration_access.md`](docs/migration_access.md).
+## الأدلة
+
+| الدليل | المحتوى |
+|---|---|
+| [`docs/install.md`](docs/install.md) | التثبيت والإعداد الأولي |
+| [`docs/user_guide.md`](docs/user_guide.md) | دليل المستخدم المختصر لكل دور |
+| [`docs/migration_access.md`](docs/migration_access.md) | الترحيل من Access |
+| [`docs/stations.md`](docs/stations.md) | المحطات والبيانات الشهرية |
+| [`docs/budget.md`](docs/budget.md) | الموقف التنفيذي للموازنة |
+| [`docs/activity_reports.md`](docs/activity_reports.md) | نشاط الإدارات |
+| [`docs/company_activity_report.md`](docs/company_activity_report.md) | التقرير المتكامل |
+| [`docs/acceptance.md`](docs/acceptance.md) | معايير القبول والاختبارات |
 
 ```bash
 bench get-app https://github.com/Rgoodeffect/ip-m --branch <branch>
@@ -42,6 +53,7 @@ loc_planning/                 # الحزمة (app)
   utils/print_utils.py        # الخط والشعار والتواريخ في المخرجات الرسمية
   investment_registry/        # سجل الشركات، الشهادات، الترحيل، المهام اليومية
   www/verify-certificate.*    # صفحة التحقق العامة من الشهادة
+  dashboard/                  # لوحة المؤشرات (صفحة + بطاقات + رسوم) بصلاحيات المستخدم
   activity_report/            # نماذج نشاط الإدارات، التقرير المتكامل (المصادر، اللقطات، PDF وWord)
   budget/                     # الموازنة، التعديلات، قيود التنفيذ، الربط بدفتر الأستاذ، الموقف التنفيذي
   stations/                   # المحطات، البيانات الشهرية، الاستيراد من Excel، التقارير، التذكير

@@ -245,3 +245,24 @@ Value,القيمة
 Unit,الوحدة
 Indicator,المؤشر
 Executed,المنفذ
+LOC Dashboard,لوحة المؤشرات
+LOC Fuel Sales,مبيعات الوقود (لتر)
+LOC Budget Execution,نسبة تنفيذ الموازنة
+LOC Operating Stations,المحطات العاملة
+LOC Reports Received,تقارير الإدارات المستلمة
+LOC Certificates Issued,الشهادات الصادرة
+LOC Monthly Sales Trend,المستهدف مقابل الفعلي شهريا
+LOC Sales by Product,توزيع المبيعات حسب المنتج
+LOC Budget by Chapter,تنفيذ الموازنة حسب الباب
+Create the reporting periods first (LOC Planning Settings),أنشئ الفترات أولا من إعدادات المنظومة
+Period {0} not found,الفترة {0} غير موجودة
+Fuel Sales (Litre),مبيعات الوقود (لتر)
+Achievement,التحقيق
+Budget Execution,تنفيذ الموازنة
+Operating Stations,المحطات العاملة
+Department Reports Received,تقارير الإدارات المستلمة
+Certificates Issued,الشهادات الصادرة
+Target vs actual fuel sales by month (Litre),المستهدف مقابل الفعلي لمبيعات الوقود شهريا (لتر)
+Fuel sales by product,مبيعات الوقود حسب المنتج
+Budget execution by chapter,تنفيذ الموازنة حسب الباب
+Refresh,تحديث

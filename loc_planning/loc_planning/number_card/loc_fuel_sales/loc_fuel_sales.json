@@ -1,0 +1,22 @@
+{
+ "color": "Blue",
+ "creation": "2026-11-26 12:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "document_type": "Station Monthly Data",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "label": "LOC Fuel Sales",
+ "method": "loc_planning.dashboard.api.card_fuel_sales",
+ "modified": "2026-11-26 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "LOC Planning",
+ "name": "LOC Fuel Sales",
+ "owner": "Administrator",
+ "show_percentage_stats": 0,
+ "type": "Custom"
+}

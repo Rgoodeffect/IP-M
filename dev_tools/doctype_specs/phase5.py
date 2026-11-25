@@ -15,7 +15,7 @@ DOMAIN = {
 		("is_active", "Check", ("Active", "نشط"), {"default": "1", "in_list_view": 1}),
 	],
 	"permissions": [perm(SM, full=True), perm(SP, full=True), perm(DIR, full=True)]
-	+ read_perms([SD, DC, EV, FB, INV, SO]),
+	+ read_perms([SD, DC, EV]),
 }
 
 TEMPLATE_LINE = {

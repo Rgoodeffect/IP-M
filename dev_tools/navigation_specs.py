@@ -84,9 +84,70 @@ SHORTCUTS = [
 ]
 
 SECTION_AR = {
+	"LOC Dashboard": "لوحة المؤشرات",
+	"Sales Office Portal": "بوابة مكتب المبيعات",
+	"Department Coordinator Portal": "بوابة منسق الإدارة",
 	"Activity Report": "تقرير النشاط",
 	"Budget": "الموازنة",
 	"Stations and Support Activities": "المحطات والأنشطة المساندة",
 	"Investment Section": "قسم الاستثمار",
 	"Settings": "الإعدادات",
 }
+
+
+# Management roles see the main workspace (dashboard, cards, charts); operational roles get
+# their own short portal. Frappe filters every sidebar link by the user's permissions.
+WORKSPACE_ROLES = [
+	"System Manager",
+	"LOC Planning Director",
+	"Strategic Planning",
+	"Statistics & Data",
+	"Investment Section",
+	"Finance Budget",
+	"Executive Viewer",
+	"LOC General Manager",
+]
+
+TOP_LINKS = [
+	("LOC Dashboard", "Page", "loc-dashboard", "chart-column"),
+	("Sales Office Portal", "Workspace", "Sales Office Portal", "fuel"),
+	("Department Coordinator Portal", "Workspace", "Department Coordinator Portal", "clipboard-list"),
+]
+
+NUMBER_CARDS = [
+	"LOC Fuel Sales",
+	"LOC Budget Execution",
+	"LOC Operating Stations",
+	"LOC Reports Received",
+	"LOC Certificates Issued",
+]
+
+CHARTS = ["LOC Monthly Sales Trend", "LOC Sales by Product", "LOC Budget by Chapter"]
+
+PORTALS = [
+	{
+		"name": "Sales Office Portal",
+		"title_ar": "بوابة مكتب المبيعات",
+		"intro_ar": "محطات مكتبك وبياناتها الشهرية: الإدخال، والاستيراد من Excel، ومتابعة ما لم يرفع بعد.",
+		"icon": "fuel",
+		"roles": ["Sales Office User"],
+		"shortcuts": [
+			("Station Monthly Data", "DocType", "Station Monthly Data", "List"),
+			("Station Data Import", "DocType", "Station Data Import", "List"),
+			("Fuel Station", "DocType", "Fuel Station", "List"),
+			("Missing Station Data", "Report", "Missing Station Data", ""),
+			("Station Sales Analysis", "Report", "Station Sales Analysis", ""),
+		],
+	},
+	{
+		"name": "Department Coordinator Portal",
+		"title_ar": "بوابة منسق الإدارة",
+		"intro_ar": "نموذج نشاط إدارتك للفترة الحالية وحالته والموعد النهائي. تصلك التذكيرات والملاحظات في الإشعارات.",
+		"icon": "clipboard-list",
+		"roles": ["Department Coordinator"],
+		"shortcuts": [
+			("Department Activity Submission", "DocType", "Department Activity Submission", "List"),
+			("Department Activity Status", "Report", "Department Activity Status", ""),
+		],
+	},
+]

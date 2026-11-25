@@ -1,6 +1,7 @@
 A company with a similar name is already registered: {0},توجد شركة مسجلة باسم مشابه: {0}
 A department cannot be its own parent,لا يمكن أن تكون الجهة تابعة لنفسها
 Account,الحساب
+Achievement,التحقيق
 Achievement %,نسبة التحقيق
 Active,نشط
 Active companies,الشركات النشطة
@@ -60,6 +61,7 @@ Blacklisted,محظورة
 Budget,الموازنة
 Budget Chapter,باب الموازنة
 Budget Exceeded,تجاوز الموازنة
+Budget Execution,تنفيذ الموازنة
 Budget Execution Entry,قيد تنفيذ الموازنة
 Budget Execution Position,الموقف التنفيذي للموازنة
 Budget Item,بند الموازنة
@@ -68,6 +70,7 @@ Budget Position,الموقف التنفيذي للموازنة
 Budget Revision,تعديل / مناقلة الموازنة
 Budget Revision Line,سطر تعديل الموازنة
 Budget Thresholds,عتبات تنفيذ الموازنة
+Budget execution by chapter,تنفيذ الموازنة حسب الباب
 Budget thresholds must satisfy 0 ≤ slow execution < limit exceeded ≤ 100,يجب أن تكون العتبات: 0 ≤ بطء التنفيذ < تجاوز الحد ≤ 100
 Cancel,إلغاء
 Cancel the revisions of this budget first: {0},يجب إلغاء تعديلات هذه الموازنة أولا: {0}
@@ -83,6 +86,7 @@ Certificate No. Series,نمط رقم الشهادة
 Certificate Status,حالة الشهادة
 Certificate Validity (months),مدة صلاحية الشهادة (أشهر)
 Certificates,الشهادات
+Certificates Issued,الشهادات الصادرة
 Certificates issued - comparison,الشهادات الصادرة - مقارنة
 Certificates issued in the period,الشهادات الصادرة خلال الفترة
 Chamber of Commerce No.,رقم القيد بالغرفة التجارية
@@ -125,6 +129,7 @@ Coordinated By,عن طريق
 Cost Center,مركز التكلفة
 Create Periods for Year,إنشاء فترات السنة
 Create Supplier on Certificate Approval,إنشاء مورد عند اعتماد الشهادة
+Create the reporting periods first (LOC Planning Settings),أنشئ الفترات أولا من إعدادات المنظومة
 Created,أنشئت
 Created: {0} | Updated: {1} | Skipped: {2} | Errors: {3},أنشئت: {0} | حدثت: {1} | تخطي: {2} | أخطاء: {3}
 Current Certificate,الشهادة الحالية
@@ -150,10 +155,12 @@ Department Activity Approval,اعتماد نماذج نشاط الإدارات
 Department Activity Status,حالة تقارير الإدارات
 Department Activity Submission,نموذج نشاط الإدارة
 Department Coordinator,منسق إدارة
+Department Coordinator Portal,بوابة منسق الإدارة
 Department Head,مدير الإدارة
 Department Indicators,المؤشرات الرقمية للإدارة
 Department Name,اسم الجهة
 Department Reports,تقارير الإدارات
+Department Reports Received,تقارير الإدارات المستلمة
 Department Type,نوع الجهة
 Department {0} already exists,الجهة {0} موجودة مسبقا
 Departments,الإدارات
@@ -203,8 +210,10 @@ From Item,من البند
 From Month,من شهر
 Fuel,وقود
 Fuel Product,المنتج
+Fuel Sales (Litre),مبيعات الوقود (لتر)
 Fuel Station,محطة وقود
 Fuel Station Tank,خزان
+Fuel sales by product,مبيعات الوقود حسب المنتج
 GL Accounts,حسابات دفتر الأستاذ
 Gas,غاز
 General,عام
@@ -252,12 +261,21 @@ Item {0} has exceeded its approved amount for {1} by {2},تجاوز البند {
 Item {0} is not active,البند {0} غير نشط
 Item {0}: only {1} is available for reduction,البند {0}: المتاح للتخفيض {1} فقط
 Items,البنود
+LOC Budget Execution,نسبة تنفيذ الموازنة
+LOC Budget by Chapter,تنفيذ الموازنة حسب الباب
+LOC Certificates Issued,الشهادات الصادرة
+LOC Dashboard,لوحة المؤشرات
 LOC Department,الجهة
+LOC Fuel Sales,مبيعات الوقود (لتر)
 LOC General Manager,المدير العام
+LOC Monthly Sales Trend,المستهدف مقابل الفعلي شهريا
+LOC Operating Stations,المحطات العاملة
 LOC Planning,منظومة التخطيط والاستثمار
 LOC Planning Director,مدير إدارة الاستثمار والتخطيط الاستراتيجي
 LOC Planning Settings,إعدادات منظومة التخطيط والاستثمار
 LOC Region,المنطقة
+LOC Reports Received,تقارير الإدارات المستلمة
+LOC Sales by Product,توزيع المبيعات حسب المنتج
 LOC User Assignment,ربط مستخدم
 LOC User Setup,ربط المستخدمين بالأدوار والجهات
 LYD,د.ل
@@ -326,6 +344,7 @@ Opening + Received - Sales - Closing,أول المدة + الوارد - المب
 Opening Stock,مخزون أول المدة
 Operated By,الجهة المشغلة
 Operating,عاملة
+Operating Stations,المحطات العاملة
 Operation,التشغيل
 Operation Start Date,تاريخ التشغيل
 Operation Type,نوع التشغيل
@@ -345,6 +364,7 @@ Period Closed,الفترة مغلقة
 Period No.,رقم الفترة
 Period Type,نوع الفترة
 Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
+Period {0} not found,الفترة {0} غير موجودة
 Phone,الهاتف
 Plan for the Next Period,خطة الفترة القادمة
 Planning Approval,اعتماد التخطيط الاستراتيجي
@@ -378,6 +398,7 @@ Received,الوارد
 Reference,المستند المرجعي
 Reference Date,تاريخ المستند المرجعي
 Reference No.,رقم المستند المرجعي
+Refresh,تحديث
 Refresh Data,تحديث البيانات
 Refresh the report data before sending it for review,حدث بيانات التقرير قبل إرساله للمراجعة
 Region,المنطقة
@@ -465,6 +486,7 @@ Row {0}: source and destination items are the same,الصف {0}: البند ال
 Row {0}: {1} is not a sales office,الصف {0}: {1} ليس مكتب مبيعات
 Sales Data,المبيعات حسب المنتج والمنطقة
 Sales Office,مكتب مبيعات
+Sales Office Portal,بوابة مكتب المبيعات
 Sales Office User,مكتب مبيعات
 Sales and Stock,المبيعات والمخزون
 Sales by Region,المبيعات حسب المنطقة
@@ -538,6 +560,7 @@ Tanks,الخزانات
 Tanks and Equipment,الخزانات والمعدات
 Target,المستهدف
 Target and actual sales,المستهدف والمبيعات الفعلية
+Target vs actual fuel sales by month (Litre),المستهدف مقابل الفعلي لمبيعات الوقود شهريا (لتر)
 Tax No.,الرقم الضريبي
 Template,القالب
 Template Name,اسم القالب
