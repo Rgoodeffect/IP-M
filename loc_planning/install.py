@@ -42,6 +42,7 @@ def seed_master_data():
 	seed_simple("Support Activity Type", "activity_type_name", "support_activity_types.json")
 	seed_simple("Budget Chapter", "chapter_name", "budget_chapters.json")
 	seed_simple("Budget Item", "item_name", "budget_items.json")
+	seed_simple("Activity Report Template", "template_name", "activity_report_templates.json")
 	from loc_planning.loc_planning.doctype.loc_planning_settings.loc_planning_settings import apply_defaults
 
 	apply_defaults()

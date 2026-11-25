@@ -9,4 +9,11 @@ PRINT_FORMATS = [
 		"margins": (12, 12, 12, 12),
 		"page_number": "Hide",
 	},
+	{
+		"name": "Company Activity Report",
+		"doc_type": "Company Activity Report",
+		"module": "Activity Report",
+		"margins": (15, 15, 15, 15),
+		"page_number": "Bottom Center",
+	},
 ]

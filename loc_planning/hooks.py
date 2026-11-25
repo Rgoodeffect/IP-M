@@ -16,6 +16,7 @@ LOC_ROLES = [
 	"Sales Office User",
 	"Finance Budget",
 	"Executive Viewer",
+	"LOC General Manager",
 ]
 
 
@@ -45,6 +46,7 @@ jinja = {
 		"loc_planning.investment_registry.utils.verification_url",
 		"loc_planning.utils.print_utils.get_print_settings",
 		"loc_planning.utils.print_utils.format_arabic_date",
+		"loc_planning.activity_report.render.get_report_context",
 	],
 }
 

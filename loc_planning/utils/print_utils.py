@@ -31,6 +31,18 @@ def get_print_settings():
 	)
 
 
+class arabic_output:
+	"""Official outputs are always Arabic, whatever the language of the user producing them."""
+
+	def __enter__(self):
+		self.previous = getattr(frappe.local, "lang", None)
+		frappe.local.lang = "ar"
+		return self
+
+	def __exit__(self, *exc):
+		frappe.local.lang = self.previous
+
+
 def format_arabic_date(value):
 	"""25 نوفمبر 2026 — month name in Arabic, Western digits."""
 	if not value:

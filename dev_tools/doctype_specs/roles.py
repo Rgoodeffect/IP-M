@@ -9,8 +9,9 @@ DC = "Department Coordinator"
 SO = "Sales Office User"
 FB = "Finance Budget"
 EV = "Executive Viewer"
+GM = "LOC General Manager"
 
-ALL_LOC_ROLES = [DIR, SP, SD, INV, DC, SO, FB, EV]
+ALL_LOC_ROLES = [DIR, SP, SD, INV, DC, SO, FB, EV, GM]
 
 ROLE_LABELS_AR = {
 	DIR: "مدير إدارة الاستثمار والتخطيط الاستراتيجي",
@@ -21,6 +22,7 @@ ROLE_LABELS_AR = {
 	SO: "مكتب مبيعات",
 	FB: "الإدارة المالية - الموازنة",
 	EV: "الإدارة العليا",
+	GM: "المدير العام",
 }
 
 

@@ -81,6 +81,26 @@ ACTIVITY_TRANSITIONS = [
 	("Approved", "Cancel", "Cancelled", DIR),
 ]
 
+GM = "LOC General Manager"
+
+REPORT_STATES = [
+	("Draft", 0, SP, "Info"),
+	("Director Review", 0, DIR, "Primary"),
+	("General Manager Approval", 0, GM, "Warning"),
+	("Approved", 1, GM, "Success"),
+	("Cancelled", 2, GM, "Danger"),
+]
+
+REPORT_TRANSITIONS = [
+	("Draft", "Submit for Review", "Director Review", SP),
+	("Draft", "Submit for Review", "Director Review", DIR),
+	("Director Review", "Send for Approval", "General Manager Approval", DIR),
+	("Director Review", "Return for Revision", "Draft", DIR),
+	("General Manager Approval", "Approve", "Approved", GM),
+	("General Manager Approval", "Return for Revision", "Draft", GM),
+	("Approved", "Cancel", "Cancelled", GM),
+]
+
 WORKFLOWS = [
 	{
 		"name": "Registration Certificate Approval",
@@ -100,6 +120,12 @@ WORKFLOWS = [
 		"states": ACTIVITY_STATES,
 		"transitions": ACTIVITY_TRANSITIONS,
 	},
+	{
+		"name": "Company Activity Report Approval",
+		"document_type": "Company Activity Report",
+		"states": REPORT_STATES,
+		"transitions": REPORT_TRANSITIONS,
+	},
 ]
 
 STATE_AR = {
@@ -117,6 +143,8 @@ STATE_AR = {
 	"Statistics Review": "مراجعة قسم الإحصاء والبيانات",
 	"Planning Approval": "اعتماد التخطيط الاستراتيجي",
 	"Included in Report": "مدرجة في التقرير",
+	"Director Review": "مراجعة مدير الإدارة",
+	"General Manager Approval": "اعتماد المدير العام",
 }
 
 ACTION_AR = {
@@ -135,4 +163,5 @@ WORKFLOW_AR = {
 	"Registration Certificate Approval": "اعتماد شهادة إثبات القيد",
 	"Station Monthly Data Approval": "اعتماد البيانات الشهرية للمحطات",
 	"Department Activity Approval": "اعتماد نماذج نشاط الإدارات",
+	"Company Activity Report Approval": "اعتماد تقرير نشاط الشركة",
 }

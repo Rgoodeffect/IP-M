@@ -2,7 +2,9 @@
  "states": [
   "Approved",
   "Cancelled",
+  "Director Review",
   "Draft",
+  "General Manager Approval",
   "Included in Report",
   "Issued",
   "Manager Review",
@@ -29,6 +31,7 @@
  "workflows": [
   "Registration Certificate Approval",
   "Station Monthly Data Approval",
-  "Department Activity Approval"
+  "Department Activity Approval",
+  "Company Activity Report Approval"
  ]
 }

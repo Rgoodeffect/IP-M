@@ -7,3 +7,5 @@
 loc_planning.patches.v0_2.seed_investment_registry
 loc_planning.patches.v0_3.seed_stations
 loc_planning.patches.v0_4.seed_budget
+loc_planning.patches.v0_6.seed_report_template
+loc_planning.patches.v0_6.rename_report_data_sources

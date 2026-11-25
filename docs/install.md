@@ -30,7 +30,7 @@ bench build --app loc_planning
 
 | ما ينشأ | المصدر | ملاحظات |
 |---|---|---|
-| الأدوار الثمانية | `fixtures/role.json` | تنشأ أيضا في `after_install` / `after_migrate` |
+| الأدوار التسعة (الثمانية + المدير العام) | `fixtures/role.json` | تنشأ أيضا في `after_install` / `after_migrate` |
 | المنطقتان (الغربية W، الشرقية E) | `setup_data/regions.json` | |
 | الهيكل التنظيمي (24 جهة) | `setup_data/departments.json` | للمنطقة الغربية |
 | المنتجات الأربعة | `setup_data/fuel_products.json` | الوقود باللتر، الغاز بالأسطوانة (وحدة `Cylinder`) |

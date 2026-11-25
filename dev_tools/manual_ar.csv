@@ -194,3 +194,54 @@ Department Activity Status,حالة تقارير الإدارات
 Activity Report,تقرير النشاط
 Department,الإدارة
 Period,الفترة
+LOC General Manager,المدير العام
+Unknown data source {0},مصدر بيانات غير معروف {0}
+Write the text of this section,اكتب نص هذا القسم
+No approved station data for this period,لا توجد بيانات محطات معتمدة لهذه الفترة
+{0} station-months without approved data,{0} محطة/شهر بدون بيانات معتمدة
+No stations registered,لا توجد محطات مسجلة
+No approved budget for {0},لا توجد موازنة معتمدة لسنة {0}
+Not approved yet: {0},لم تعتمد بعد: {0}
+The report of {0} for this period is not approved yet,تقرير {0} لهذه الفترة لم يعتمد بعد
+No difficulties text yet,لم يكتب نص الصعوبات بعد
+Activity Report,تقرير النشاط
+The report is approved; its data can no longer be refreshed,التقرير معتمد ولا يمكن تحديث بياناته
+Refresh the report data before sending it for review,حدث بيانات التقرير قبل إرساله للمراجعة
+The following sections are not ready:,الأقسام التالية غير جاهزة:
+Report Not Ready,التقرير غير جاهز
+Section order numbers must be unique,يجب ألا تتكرر أرقام ترتيب الأقسام
+Row {0}: select the source department,الصف {0}: اختر الإدارة المصدر
+Not allowed,غير مسموح
+Company-wide,الشركة ككل
+Region: {0},المنطقة: {0}
+No data,لا توجد بيانات
+Change,التغير
+Sales by Region,المبيعات حسب المنطقة
+Sales by Sales Office,المبيعات حسب مكتب المبيعات
+Target and actual sales,المستهدف والمبيعات الفعلية
+Operating,عاملة
+Support Activities Revenue,إيرادات الأنشطة المساندة
+Stations by Status,المحطات حسب الحالة
+Stations by Operation Type,المحطات حسب نوع التشغيل
+Approved and executed by chapter,المعتمد والمنفذ حسب الباب
+Average Achievement,متوسط الإنجاز
+Department Reports,تقارير الإدارات
+Companies registered in the period,الشركات المسجلة خلال الفترة
+Certificates issued in the period,الشهادات الصادرة خلال الفترة
+Renewals,التجديدات
+Active companies,الشركات النشطة
+Certificates issued - comparison,الشهادات الصادرة - مقارنة
+Certificates,الشهادات
+New companies by classification,الشركات الجديدة حسب التصنيف
+Companies,الشركات
+Plans for the next period,خطط الفترة القادمة
+Refresh Data,تحديث البيانات
+Collecting data...,جار جمع البيانات...
+Download Word,تحميل Word
+Readiness,الجاهزية
+Incomplete sections:,الأقسام غير المكتملة:
+Activity,النشاط
+Value,القيمة
+Unit,الوحدة
+Indicator,المؤشر
+Executed,المنفذ

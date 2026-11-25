@@ -7,10 +7,12 @@ SECTIONS = [
 		"Activity Report",
 		"clipboard-list",
 		[
+			("Company Activity Report", "DocType", "Company Activity Report"),
 			("Department Activity Submission", "DocType", "Department Activity Submission"),
 			("Department Activity Status", "Report", "Department Activity Status"),
 			("Activity Indicator Template", "DocType", "Activity Indicator Template"),
 			("Activity Domain", "DocType", "Activity Domain"),
+			("Activity Report Template", "DocType", "Activity Report Template"),
 		],
 	),
 	(
@@ -66,6 +68,7 @@ SECTIONS = [
 ]
 
 SHORTCUTS = [
+	("Company Activity Report", "DocType", "Company Activity Report", "List"),
 	("Department Activity Submission", "DocType", "Department Activity Submission", "List"),
 	("Department Activity Status", "Report", "Department Activity Status", ""),
 	("Budget Execution Position", "Report", "Budget Execution Position", ""),

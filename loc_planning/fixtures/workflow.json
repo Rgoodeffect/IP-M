@@ -344,5 +344,100 @@
     "allow_self_approval": 1
    }
   ]
+ },
+ {
+  "doctype": "Workflow",
+  "name": "Company Activity Report Approval",
+  "workflow_name": "Company Activity Report Approval",
+  "document_type": "Company Activity Report",
+  "is_active": 1,
+  "override_status": 0,
+  "send_email_alert": 0,
+  "enable_action_confirmation": 1,
+  "workflow_state_field": "workflow_state",
+  "modified": "2026-11-25 12:00:00.000000",
+  "states": [
+   {
+    "state": "Draft",
+    "doc_status": "0",
+    "allow_edit": "Strategic Planning",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Director Review",
+    "doc_status": "0",
+    "allow_edit": "LOC Planning Director",
+    "is_optional_state": 0
+   },
+   {
+    "state": "General Manager Approval",
+    "doc_status": "0",
+    "allow_edit": "LOC General Manager",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Approved",
+    "doc_status": "1",
+    "allow_edit": "LOC General Manager",
+    "is_optional_state": 0
+   },
+   {
+    "state": "Cancelled",
+    "doc_status": "2",
+    "allow_edit": "LOC General Manager",
+    "is_optional_state": 0
+   }
+  ],
+  "transitions": [
+   {
+    "state": "Draft",
+    "action": "Submit for Review",
+    "next_state": "Director Review",
+    "allowed": "Strategic Planning",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Draft",
+    "action": "Submit for Review",
+    "next_state": "Director Review",
+    "allowed": "LOC Planning Director",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Director Review",
+    "action": "Send for Approval",
+    "next_state": "General Manager Approval",
+    "allowed": "LOC Planning Director",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Director Review",
+    "action": "Return for Revision",
+    "next_state": "Draft",
+    "allowed": "LOC Planning Director",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "General Manager Approval",
+    "action": "Approve",
+    "next_state": "Approved",
+    "allowed": "LOC General Manager",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "General Manager Approval",
+    "action": "Return for Revision",
+    "next_state": "Draft",
+    "allowed": "LOC General Manager",
+    "allow_self_approval": 1
+   },
+   {
+    "state": "Approved",
+    "action": "Cancel",
+    "next_state": "Cancelled",
+    "allowed": "LOC General Manager",
+    "allow_self_approval": 1
+   }
+  ]
  }
 ]

@@ -15,9 +15,23 @@
  },
  {
   "doctype": "Workflow State",
+  "name": "Director Review",
+  "workflow_state_name": "Director Review",
+  "style": "Primary",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
   "name": "Draft",
   "workflow_state_name": "Draft",
   "style": "Info",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "General Manager Approval",
+  "workflow_state_name": "General Manager Approval",
+  "style": "Warning",
   "modified": "2026-11-25 12:00:00.000000"
  },
  {

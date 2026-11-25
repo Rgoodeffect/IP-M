@@ -12,8 +12,8 @@ def period_bounds(filters):
 	def bound(name, field):
 		return frappe.db.get_value("Reporting Period", name, field) if name else None
 
-	start = bound(filters.get("from_period"), "from_date")
-	end = bound(filters.get("to_period"), "to_date")
+	start = filters.get("from_date") or bound(filters.get("from_period"), "from_date")
+	end = filters.get("to_date") or bound(filters.get("to_period"), "to_date")
 	if not start:
 		start = getdate(f"{getdate().year}-01-01")
 	if not end:
@@ -23,7 +23,7 @@ def period_bounds(filters):
 	return start, end
 
 
-def get_monthly_docs(filters, fields=None):
+def get_monthly_docs(filters, fields=None, ignore_permissions=False):
 	start, end = period_bounds(filters)
 	periods = frappe.get_all(
 		"Reporting Period",
@@ -37,7 +37,9 @@ def get_monthly_docs(filters, fields=None):
 	for key in ("region", "sales_office", "station"):
 		if filters.get(key):
 			conditions[key] = filters.get(key)
-	return frappe.get_list(
+	# a Python argument, never a filter: report filters come from the browser
+	getter = frappe.get_all if ignore_permissions else frappe.get_list
+	return getter(
 		"Station Monthly Data",
 		filters=conditions,
 		fields=fields
@@ -55,9 +57,9 @@ def get_monthly_docs(filters, fields=None):
 	)
 
 
-def get_product_rows(filters):
+def get_product_rows(filters, ignore_permissions=False):
 	"""One dict per (monthly document, product) with the parent's dimensions attached."""
-	docs = get_monthly_docs(filters)
+	docs = get_monthly_docs(filters, ignore_permissions=ignore_permissions)
 	if not docs:
 		return []
 	by_name = {d.name: d for d in docs}

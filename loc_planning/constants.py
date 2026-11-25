@@ -8,6 +8,7 @@ ROLE_DEPT_COORDINATOR = "Department Coordinator"
 ROLE_SALES_OFFICE = "Sales Office User"
 ROLE_FINANCE_BUDGET = "Finance Budget"
 ROLE_EXECUTIVE = "Executive Viewer"
+ROLE_GENERAL_MANAGER = "LOC General Manager"
 
 LOC_ROLES = (
 	ROLE_DIRECTOR,
@@ -18,6 +19,7 @@ LOC_ROLES = (
 	ROLE_SALES_OFFICE,
 	ROLE_FINANCE_BUDGET,
 	ROLE_EXECUTIVE,
+	ROLE_GENERAL_MANAGER,
 )
 
 # Roles allowed to open/close reporting periods

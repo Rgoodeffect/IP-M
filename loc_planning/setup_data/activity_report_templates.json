@@ -1,0 +1,56 @@
+[
+ {
+  "template_name": "تقرير النشاط الربع سنوي",
+  "report_title": "تقرير نشاط الشركة",
+  "is_default": 1,
+  "sections": [
+   {
+    "section_order": 1,
+    "title": "الملخص التنفيذي",
+    "data_source": "Editorial Text"
+   },
+   {
+    "section_order": 2,
+    "title": "المبيعات حسب المنتج والمنطقة",
+    "data_source": "Sales Data"
+   },
+   {
+    "section_order": 3,
+    "title": "النقل والتوزيع",
+    "data_source": "Department Indicators",
+    "source_department": "إدارة عمليات التشغيل"
+   },
+   {
+    "section_order": 4,
+    "title": "المحطات والأنشطة المساندة",
+    "data_source": "Stations Data"
+   },
+   {
+    "section_order": 5,
+    "title": "الموقف التنفيذي للموازنة",
+    "data_source": "Budget Position"
+   },
+   {
+    "section_order": 6,
+    "title": "نشاط الإدارات",
+    "data_source": "Department Activities"
+   },
+   {
+    "section_order": 7,
+    "title": "الاستثمار وتسجيل الشركات",
+    "data_source": "Registry Data"
+   },
+   {
+    "section_order": 8,
+    "title": "الموارد البشرية",
+    "data_source": "Department Indicators",
+    "source_department": "إدارة الموارد البشرية"
+   },
+   {
+    "section_order": 9,
+    "title": "الصعوبات والتوصيات",
+    "data_source": "Difficulties"
+   }
+  ]
+ }
+]

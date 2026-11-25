@@ -10,6 +10,7 @@ const LOC_ROLES = [
 	"Sales Office User",
 	"Finance Budget",
 	"Executive Viewer",
+	"LOC General Manager",
 ];
 
 frappe.ui.form.on("LOC User Setup", {

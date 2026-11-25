@@ -29,9 +29,10 @@ class IntegrationTestMasterData(IntegrationTestCase):
 			self.assertEqual(frappe.db.count(dt), count, dt)
 
 	def test_initial_structure(self):
-		self.assertEqual(frappe.db.count("LOC Department", {"department_type": "Department"}), 10)
-		self.assertEqual(frappe.db.count("LOC Department", {"department_type": "Office"}), 4)
-		self.assertEqual(frappe.db.count("LOC Department", {"department_type": "Sales Office"}), 5)
+		west = {"region": "الغربية"}  # other tests add departments in their own test region
+		self.assertEqual(frappe.db.count("LOC Department", {**west, "department_type": "Department"}), 10)
+		self.assertEqual(frappe.db.count("LOC Department", {**west, "department_type": "Office"}), 4)
+		self.assertEqual(frappe.db.count("LOC Department", {**west, "department_type": "Sales Office"}), 5)
 		sections = get_descendants(INVEST_DEPT, include_self=False)
 		self.assertEqual(len(sections), 3)
 		self.assertIn("قسم الإحصاء والبيانات", sections)

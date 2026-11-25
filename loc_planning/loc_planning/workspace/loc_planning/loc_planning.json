@@ -1,7 +1,7 @@
 {
  "app": "loc_planning",
  "charts": [],
- "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort000\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Submission\", \"col\": 3}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Status\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Position\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Entry\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Monthly Data\", \"col\": 3}}, {\"id\": \"locshort005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Data Import\", \"col\": 3}}, {\"id\": \"locshort006\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registered Company\", \"col\": 3}}, {\"id\": \"locshort007\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registration Certificate\", \"col\": 3}}, {\"id\": \"locshort008\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Registry\", \"col\": 3}}, {\"id\": \"locshort009\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort010\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0000\", \"type\": \"card\", \"data\": {\"card_name\": \"Activity Report\", \"col\": 4}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Budget\", \"col\": 4}}, {\"id\": \"loccard0002\", \"type\": \"card\", \"data\": {\"card_name\": \"Stations and Support Activities\", \"col\": 4}}, {\"id\": \"loccard0003\", \"type\": \"card\", \"data\": {\"card_name\": \"Investment Section\", \"col\": 4}}, {\"id\": \"loccard0004\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
+ "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort000\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Activity Report\", \"col\": 3}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Submission\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Department Activity Status\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Position\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Budget Execution Entry\", \"col\": 3}}, {\"id\": \"locshort005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Monthly Data\", \"col\": 3}}, {\"id\": \"locshort006\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Station Data Import\", \"col\": 3}}, {\"id\": \"locshort007\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registered Company\", \"col\": 3}}, {\"id\": \"locshort008\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registration Certificate\", \"col\": 3}}, {\"id\": \"locshort009\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Registry\", \"col\": 3}}, {\"id\": \"locshort010\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort011\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort012\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0000\", \"type\": \"card\", \"data\": {\"card_name\": \"Activity Report\", \"col\": 4}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Budget\", \"col\": 4}}, {\"id\": \"loccard0002\", \"type\": \"card\", \"data\": {\"card_name\": \"Stations and Support Activities\", \"col\": 4}}, {\"id\": \"loccard0003\", \"type\": \"card\", \"data\": {\"card_name\": \"Investment Section\", \"col\": 4}}, {\"id\": \"loccard0004\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
  "creation": "2026-11-25 12:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
@@ -17,9 +17,20 @@
    "hidden": 0,
    "is_query_report": 0,
    "label": "Activity Report",
-   "link_count": 4,
+   "link_count": 6,
    "onboard": 0,
    "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company Activity Report",
+   "link_count": 0,
+   "link_to": "Company Activity Report",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
   },
   {
    "dependencies": "",
@@ -61,6 +72,17 @@
    "label": "Activity Domain",
    "link_count": 0,
    "link_to": "Activity Domain",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Activity Report Template",
+   "link_count": 0,
+   "link_to": "Activity Report Template",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
@@ -384,7 +406,7 @@
    "type": "Link"
   }
  ],
- "modified": "2026-11-25 20:09:05.173092",
+ "modified": "2026-11-25 21:03:16.393246",
  "modified_by": "Administrator",
  "module": "LOC Planning",
  "name": "LOC Planning",
@@ -397,6 +419,13 @@
  "roles": [],
  "sequence_id": 50.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Company Activity Report",
+   "link_to": "Company Activity Report",
+   "type": "DocType"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
@@ -523,6 +552,22 @@
    "indent": 0,
    "is_default_module": 1,
    "keep_closed": 0,
+   "label": "Company Activity Report",
+   "link_to": "Company Activity Report",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
    "label": "Department Activity Submission",
    "link_to": "Department Activity Submission",
    "link_type": "DocType",
@@ -573,6 +618,22 @@
    "keep_closed": 0,
    "label": "Activity Domain",
    "link_to": "Activity Domain",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
+   "label": "Activity Report Template",
+   "link_to": "Activity Report Template",
    "link_type": "DocType",
    "open_in_new_tab": 0,
    "show_arrow": 0,
