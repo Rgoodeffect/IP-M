@@ -1,0 +1,6 @@
+[
+	{"product_name": "بنزين", "product_code": "GASOLINE", "product_group": "Fuel", "uom": "Litre", "display_order": 1},
+	{"product_name": "ديزل", "product_code": "DIESEL", "product_group": "Fuel", "uom": "Litre", "display_order": 2},
+	{"product_name": "كيروسين", "product_code": "KEROSENE", "product_group": "Fuel", "uom": "Litre", "display_order": 3},
+	{"product_name": "غاز مسال", "product_code": "LPG", "product_group": "Gas", "uom": "Cylinder", "display_order": 4}
+]

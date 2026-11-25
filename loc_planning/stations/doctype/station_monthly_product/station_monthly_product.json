@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product",
+  "target_qty",
+  "actual_qty",
+  "achievement_pct",
+  "opening_stock",
+  "received_qty",
+  "closing_stock",
+  "stock_variance",
+  "uom"
+ ],
+ "fields": [
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Fuel Product",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "target_qty",
+   "fieldtype": "Float",
+   "label": "Target",
+   "in_list_view": 1,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Float",
+   "label": "Actual Sales",
+   "in_list_view": 1,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "achievement_pct",
+   "fieldtype": "Percent",
+   "label": "Achievement %",
+   "read_only": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "opening_stock",
+   "fieldtype": "Float",
+   "label": "Opening Stock",
+   "in_list_view": 1,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "received_qty",
+   "fieldtype": "Float",
+   "label": "Received",
+   "in_list_view": 1,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "closing_stock",
+   "fieldtype": "Float",
+   "label": "Closing Stock",
+   "in_list_view": 1,
+   "non_negative": 1
+  },
+  {
+   "fieldname": "stock_variance",
+   "fieldtype": "Float",
+   "label": "Stock Variance",
+   "read_only": 1,
+   "description": "Opening + Received - Sales - Closing"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit of Measure",
+   "options": "UOM",
+   "fetch_from": "product.uom",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-25 18:46:29.869691",
+ "modified_by": "Administrator",
+ "module": "Stations",
+ "name": "Station Monthly Product",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

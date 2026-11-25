@@ -1,0 +1,42 @@
+/* LOC Planning desk tweaks (RTL friendly). Print/PDF styles live in the print formats. */
+[dir="rtl"] .loc-amount,
+.loc-amount {
+	direction: ltr;
+	unicode-bidi: embed;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Frappe DataTable keeps a hidden paste <textarea> far off-screen. Under RTL it lands
+   on the scrollable side and widens report pages, which then render blank. Pin it. */
+[dir="rtl"] .dt-paste-target {
+	position: fixed !important;
+	left: 0 !important;
+	right: auto !important;
+	top: 0 !important;
+	width: 1px !important;
+	height: 1px !important;
+	opacity: 0 !important;
+	pointer-events: none;
+}
+
+/* Frappe Charts measures label widths with a hidden <div> at top/left -9999px appended
+   to <body>. Under RTL the negative left becomes scrollable width (blank chart pages).
+   The negative top already keeps it out of view, so only reset the horizontal offset. */
+[dir="rtl"] body > div[style*="top: -9999px"][style*="left: -9999px"] {
+	left: 0 !important;
+}
+
+/* LOC dashboard page */
+.loc-dashboard .loc-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; margin: 8px 0 16px; }
+.loc-dashboard .loc-card { border: 1px solid var(--border-color); border-radius: 10px; padding: 14px; background: var(--card-bg); }
+.loc-dashboard .loc-card-label { color: var(--text-muted); font-size: 13px; }
+.loc-dashboard .loc-card-value { font-size: 26px; font-weight: 700; direction: ltr; unicode-bidi: embed; text-align: right; }
+.loc-dashboard .loc-card-sub { color: var(--text-muted); font-size: 12px; min-height: 16px; }
+.loc-dashboard .loc-charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 12px; }
+.loc-dashboard .loc-chart-box, .loc-dashboard .loc-table-box { border: 1px solid var(--border-color); border-radius: 10px; padding: 12px; background: var(--card-bg); }
+.loc-dashboard .loc-table-box { margin-top: 12px; }
+.loc-dashboard .loc-chart-title { font-weight: 600; margin-bottom: 6px; }
+.loc-dashboard .loc-status-table td, .loc-dashboard .loc-status-table th { font-size: 13px; }
+/* Frappe Charts lay out their axes left-to-right; under RTL the y-axis labels are clipped */
+.loc-dashboard .chart-container,
+.loc-dashboard .frappe-chart { direction: ltr; }

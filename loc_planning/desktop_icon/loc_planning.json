@@ -1,0 +1,21 @@
+{
+ "app": "loc_planning",
+ "creation": "2026-11-25 12:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Desktop Icon",
+ "hidden": 0,
+ "icon": "briefcase",
+ "icon_type": "Link",
+ "idx": 20,
+ "label": "LOC Planning",
+ "link_to": "LOC Planning",
+ "link_type": "Workspace Sidebar",
+ "modified": "2026-11-25 12:00:00.000000",
+ "modified_by": "Administrator",
+ "name": "LOC Planning",
+ "owner": "Administrator",
+ "parent_icon": "",
+ "restrict_removal": 0,
+ "roles": [],
+ "standard": 1
+}

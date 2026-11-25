@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_order",
+  "title",
+  "data_source",
+  "source_department",
+  "include",
+  "readiness",
+  "readiness_note",
+  "editorial_text",
+  "snapshot_json",
+  "snapshot_at"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_order",
+   "fieldtype": "Int",
+   "label": "Order",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "data_source",
+   "fieldtype": "Select",
+   "label": "Data Source",
+   "options": "Editorial Text\nSales Data\nStations Data\nBudget Position\nDepartment Activities\nDepartment Indicators\nRegistry Data\nDifficulties",
+   "reqd": 1,
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "source_department",
+   "fieldtype": "Link",
+   "label": "Source Department",
+   "options": "LOC Department",
+   "mandatory_depends_on": "eval:doc.data_source=='Department Indicators'"
+  },
+  {
+   "fieldname": "include",
+   "fieldtype": "Check",
+   "label": "Include",
+   "default": "1",
+   "in_list_view": 1,
+   "columns": 1
+  },
+  {
+   "fieldname": "readiness",
+   "fieldtype": "Select",
+   "label": "Readiness",
+   "options": "Ready\nIncomplete\nNot Refreshed",
+   "default": "Not Refreshed",
+   "read_only": 1,
+   "in_list_view": 1,
+   "columns": 2
+  },
+  {
+   "fieldname": "readiness_note",
+   "fieldtype": "Small Text",
+   "label": "Readiness Note",
+   "read_only": 1
+  },
+  {
+   "fieldname": "editorial_text",
+   "fieldtype": "Text Editor",
+   "label": "Editorial Text",
+   "allow_on_submit": 0
+  },
+  {
+   "fieldname": "snapshot_json",
+   "fieldtype": "Long Text",
+   "label": "Snapshot",
+   "read_only": 1,
+   "hidden": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "snapshot_at",
+   "fieldtype": "Datetime",
+   "label": "Snapshot Time",
+   "read_only": 1,
+   "no_copy": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-25 21:13:53.475288",
+ "modified_by": "Administrator",
+ "module": "Activity Report",
+ "name": "Activity Report Section",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

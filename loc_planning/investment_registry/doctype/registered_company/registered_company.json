@@ -1,0 +1,360 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 0,
+ "autoname": "",
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "registration_no",
+  "company_name",
+  "company_name_en",
+  "classification",
+  "column_break_1",
+  "status",
+  "status_reason",
+  "registration_date",
+  "activity_description",
+  "section_legal",
+  "commercial_register_no",
+  "tax_id",
+  "chamber_of_commerce_no",
+  "column_break_2",
+  "legal_representative",
+  "legal_representative_id",
+  "legal_representative_phone",
+  "section_contact",
+  "address",
+  "city",
+  "column_break_3",
+  "phone",
+  "email",
+  "website",
+  "section_documents",
+  "documents",
+  "section_certificate",
+  "current_certificate",
+  "certificate_expiry_date",
+  "column_break_4",
+  "certificate_status",
+  "supplier",
+  "section_migration",
+  "is_migrated",
+  "legacy_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "label": "Registration No.",
+   "unique": 1,
+   "no_copy": 1,
+   "set_only_once": 1,
+   "in_list_view": 1,
+   "description": "Leave empty to number automatically"
+  },
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "company_name_en",
+   "fieldtype": "Data",
+   "label": "Company Name (English)"
+  },
+  {
+   "fieldname": "classification",
+   "fieldtype": "Link",
+   "label": "Classification",
+   "options": "Company Classification",
+   "reqd": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nSuspended\nBlacklisted\nInactive",
+   "default": "Active",
+   "in_list_view": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "status_reason",
+   "fieldtype": "Small Text",
+   "label": "Status Reason",
+   "depends_on": "eval:doc.status!='Active'",
+   "mandatory_depends_on": "eval:['Suspended','Blacklisted'].includes(doc.status)"
+  },
+  {
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date",
+   "default": "Today"
+  },
+  {
+   "fieldname": "activity_description",
+   "fieldtype": "Small Text",
+   "label": "Activity"
+  },
+  {
+   "fieldname": "section_legal",
+   "fieldtype": "Section Break",
+   "label": "Legal Information"
+  },
+  {
+   "fieldname": "commercial_register_no",
+   "fieldtype": "Data",
+   "label": "Commercial Register No.",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax No.",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "chamber_of_commerce_no",
+   "fieldtype": "Data",
+   "label": "Chamber of Commerce No."
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "legal_representative",
+   "fieldtype": "Data",
+   "label": "Legal Representative"
+  },
+  {
+   "fieldname": "legal_representative_id",
+   "fieldtype": "Data",
+   "label": "Representative ID No."
+  },
+  {
+   "fieldname": "legal_representative_phone",
+   "fieldtype": "Data",
+   "label": "Representative Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_contact",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City",
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website",
+   "options": "URL"
+  },
+  {
+   "fieldname": "section_documents",
+   "fieldtype": "Section Break",
+   "label": "Documents"
+  },
+  {
+   "fieldname": "documents",
+   "fieldtype": "Table",
+   "label": "Documents",
+   "options": "Registered Company Document"
+  },
+  {
+   "fieldname": "section_certificate",
+   "fieldtype": "Section Break",
+   "label": "Certificate"
+  },
+  {
+   "fieldname": "current_certificate",
+   "fieldtype": "Link",
+   "label": "Current Certificate",
+   "options": "Registration Certificate",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "certificate_expiry_date",
+   "fieldtype": "Date",
+   "label": "Certificate Expiry",
+   "read_only": 1,
+   "no_copy": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "certificate_status",
+   "fieldtype": "Select",
+   "label": "Certificate Status",
+   "options": "None\nValid\nExpiring Soon\nExpired",
+   "default": "None",
+   "read_only": 1,
+   "no_copy": 1,
+   "in_standard_filter": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "ERPNext Supplier",
+   "options": "Supplier",
+   "no_copy": 1
+  },
+  {
+   "fieldname": "section_migration",
+   "fieldtype": "Section Break",
+   "label": "Migration",
+   "collapsible": 1
+  },
+  {
+   "fieldname": "is_migrated",
+   "fieldtype": "Check",
+   "label": "Migrated",
+   "read_only": 1,
+   "no_copy": 1
+  },
+  {
+   "fieldname": "legacy_id",
+   "fieldtype": "Data",
+   "label": "Legacy ID",
+   "read_only": 1,
+   "no_copy": 1
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "links": [],
+ "modified": "2026-11-25 17:07:58.676778",
+ "modified_by": "Administrator",
+ "module": "Investment Registry",
+ "name": "Registered Company",
+ "naming_rule": "By script",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Investment Section",
+   "permlevel": 0,
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 1,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "LOC Planning Director",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Strategic Planning",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  },
+  {
+   "role": "Executive Viewer",
+   "permlevel": 0,
+   "read": 1,
+   "write": 0,
+   "create": 0,
+   "delete": 0,
+   "submit": 0,
+   "cancel": 0,
+   "amend": 0,
+   "print": 1,
+   "email": 1,
+   "share": 0,
+   "report": 1,
+   "export": 1
+  }
+ ],
+ "search_fields": "company_name,classification,tax_id,commercial_register_no",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "company_name",
+ "track_changes": 1
+}

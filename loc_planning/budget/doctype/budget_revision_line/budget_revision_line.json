@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_import": 0,
+ "allow_rename": 0,
+ "creation": "2026-11-25 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_item",
+  "to_item",
+  "amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_item",
+   "fieldtype": "Link",
+   "label": "From Item",
+   "options": "Budget Item",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "to_item",
+   "fieldtype": "Link",
+   "label": "To Item",
+   "options": "Budget Item",
+   "in_list_view": 1,
+   "columns": 3
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount",
+   "options": "LYD",
+   "reqd": 1,
+   "in_list_view": 1,
+   "permlevel": 1,
+   "non_negative": 1,
+   "columns": 2
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-11-25 19:47:55.355356",
+ "modified_by": "Administrator",
+ "module": "Budget",
+ "name": "Budget Revision Line",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

@@ -1,0 +1,13 @@
+{
+ "creation": "2026-11-26 12:00:00.000000",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2026-11-26 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "LOC Planning",
+ "name": "LOC Sales by Product",
+ "owner": "Administrator",
+ "source_name": "LOC Sales by Product",
+ "timeseries": 0
+}

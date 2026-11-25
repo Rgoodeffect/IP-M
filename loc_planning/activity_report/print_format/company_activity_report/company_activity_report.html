@@ -1,0 +1,103 @@
+{#- Integrated company activity report. Content comes from the stored section snapshots
+    (loc_planning.activity_report.render); fonts, logo and names from LOC Planning Settings. -#}
+{%- set ctx = get_report_context(doc) -%}
+{%- set ps = ctx.ps -%}
+<style>
+	{{ ps.font_face }}
+	.car, .car * { font-family: {{ ps.font_stack }}; }
+	.car { direction: rtl; text-align: right; color: #1d2733; font-size: {{ ps.base_font_size }}pt; line-height: 1.7; }
+	.car .page { page-break-after: always; }
+	.car .cover { text-align: center; padding-top: 55mm; min-height: 230mm; position: relative; }
+	.car .cover img { max-height: 38mm; margin-bottom: 10mm; }
+	.car .cover .org { font-size: {{ ps.base_font_size + 8 }}pt; font-weight: bold; }
+	.car .cover .issuer { font-size: {{ ps.base_font_size + 3 }}pt; color: #3d4b5c; margin-top: 2mm; }
+	.car .cover .title { font-size: {{ ps.base_font_size + 16 }}pt; font-weight: bold; color: #1f4e79; margin-top: 25mm; }
+	.car .cover .period { font-size: {{ ps.base_font_size + 6 }}pt; margin-top: 6mm; }
+	.car .cover .scope { font-size: {{ ps.base_font_size + 1 }}pt; color: #5f6b7a; margin-top: 3mm; }
+	.car .cover .date { position: absolute; bottom: 10mm; left: 0; right: 0; color: #5f6b7a; }
+	.car .cover .line { width: 60%; margin: 8mm auto; border-top: 2px solid #1f4e79; }
+	.car h1.toc-title { font-size: {{ ps.base_font_size + 6 }}pt; color: #1f4e79; border-bottom: 2px solid #1f4e79; padding-bottom: 2mm; }
+	.car .toc { list-style: none; padding: 0; margin: 0; }
+	.car .toc li { padding: 2.5mm 0; border-bottom: 1px dotted #b8c4d1; font-size: {{ ps.base_font_size + 1 }}pt; }
+	.car .toc .no { display: inline-block; min-width: 10mm; color: #1f4e79; font-weight: bold; }
+	.car h2.section-title { font-size: {{ ps.base_font_size + 5 }}pt; color: #1f4e79; border-bottom: 2px solid #1f4e79;
+		padding-bottom: 1.5mm; margin: 8mm 0 4mm; page-break-after: avoid; }
+	.car h3 { font-size: {{ ps.base_font_size + 1 }}pt; margin: 5mm 0 2mm; page-break-after: avoid; color: #2b3a4a; }
+	.car .kpis { display: table; width: 100%; border-spacing: 2mm 0; margin: 2mm 0 4mm; page-break-inside: avoid; }
+	.car .kpi { display: table-cell; border: 1px solid #c9d4e0; border-radius: 2mm; padding: 2.5mm; text-align: center; background: #f5f8fb; }
+	.car .kpi .v { font-size: {{ ps.base_font_size + 5 }}pt; font-weight: bold; color: #1f4e79; direction: ltr; unicode-bidi: embed; }
+	.car .kpi .l { font-size: {{ ps.base_font_size - 1 }}pt; color: #3d4b5c; }
+	.car table.data { width: 100%; border-collapse: collapse; margin: 1mm 0 4mm; font-size: {{ ps.base_font_size - 1 }}pt; }
+	.car table.data thead { display: table-header-group; }
+	.car table.data tr { page-break-inside: avoid; }
+	.car table.data th { background: #1f4e79; color: #fff; padding: 1.8mm 2mm; border: 1px solid #1f4e79; font-weight: bold; }
+	.car table.data td { padding: 1.5mm 2mm; border: 1px solid #c9d4e0; vertical-align: top; }
+	.car table.data tr:nth-child(even) td { background: #f5f8fb; }
+	.car table.data.compact { font-size: {{ ps.base_font_size - 3 }}pt; }
+	.car table.data.compact th, .car table.data.compact td { padding: 1.2mm 1.2mm; }
+	.car table.data td.num { text-align: left; direction: ltr; unicode-bidi: embed; white-space: nowrap; }
+	.car table.data tr.bold td { font-weight: bold; background: #e6edf5; }
+	.car .chart { text-align: center; margin: 3mm 0 5mm; page-break-inside: avoid; }
+	.car .chart .caption { font-size: {{ ps.base_font_size - 1 }}pt; color: #3d4b5c; margin-bottom: 1mm; }
+	.car .editorial { text-align: justify; margin-bottom: 3mm; }
+	.car .note { color: #7a8794; font-style: italic; }
+	.car .draft-mark { position: fixed; top: 40%; left: 0; right: 0; text-align: center; font-size: 110pt;
+		color: rgba(200, 30, 30, 0.08); transform: rotate(-30deg); font-weight: bold; z-index: 0; }
+	.car .footer-text { text-align: center; font-size: {{ ps.base_font_size - 2 }}pt; color: #5f6b7a; margin-top: 8mm; }
+</style>
+
+<div class="car">
+	{%- if ctx.is_draft %}<div class="draft-mark">مسودة</div>{% endif %}
+
+	<div class="page cover">
+		{% if ps.logo %}<img src="{{ ps.logo }}" alt="">{% endif %}
+		<div class="org">{{ ps.company_name }}</div>
+		<div class="issuer">{{ ps.issuer_name }}</div>
+		{% if ps.header_text %}<div class="issuer">{{ ps.header_text }}</div>{% endif %}
+		<div class="title">{{ ctx.title }}</div>
+		<div class="line"></div>
+		<div class="period">{{ ctx.period_title }}</div>
+		<div class="scope">{{ ctx.scope }}</div>
+		<div class="date">{{ ctx.date }}</div>
+	</div>
+
+	<div class="page">
+		<h1 class="toc-title">المحتويات</h1>
+		<ul class="toc">
+			{% for s in ctx.sections %}<li><span class="no">{{ s.number }}.</span>{{ s.title }}</li>{% endfor %}
+		</ul>
+	</div>
+
+	{% for s in ctx.sections %}
+	<div class="section">
+		<h2 class="section-title">{{ s.number }}. {{ s.title }}</h2>
+		{% for b in s.blocks %}
+			{% if b.title %}<h3>{{ b.title }}</h3>{% endif %}
+			{% if b.type == "kpis" %}
+				<div class="kpis">
+					{% for item in b["items"] %}<div class="kpi"><div class="v">{{ item[1] }}</div><div class="l">{{ item[0] }}</div></div>{% endfor %}
+				</div>
+			{% elif b.type == "table" %}
+				<table class="data{{ ' compact' if b.compact else '' }}">
+					<thead><tr>{% for h in b.headers %}<th>{{ h }}</th>{% endfor %}</tr></thead>
+					<tbody>
+					{% for row in b.rows %}
+						<tr class="{{ 'bold' if b.bold_rows and loop.index0 in b.bold_rows else '' }}">
+						{% for cell in row %}<td class="{{ 'num' if b.numeric and b.numeric[loop.index0] else '' }}">{{ cell }}</td>{% endfor %}
+						</tr>
+					{% endfor %}
+					</tbody>
+				</table>
+			{% elif b.type == "chart" and b.svg %}
+				<div class="chart">{{ b.svg }}</div>
+			{% elif b.type == "html" %}
+				<div class="editorial">{{ b.html }}</div>
+			{% elif b.type == "note" %}
+				<p class="note">{{ b.text }}</p>
+			{% endif %}
+		{% endfor %}
+	</div>
+	{% endfor %}
+
+	{% if ps.footer_text %}<div class="footer-text">{{ ps.footer_text }}</div>{% endif %}
+</div>

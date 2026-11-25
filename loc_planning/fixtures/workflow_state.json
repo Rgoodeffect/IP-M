@@ -1,0 +1,114 @@
+[
+ {
+  "doctype": "Workflow State",
+  "name": "Approved",
+  "workflow_state_name": "Approved",
+  "style": "Success",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Cancelled",
+  "workflow_state_name": "Cancelled",
+  "style": "Danger",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Director Review",
+  "workflow_state_name": "Director Review",
+  "style": "Primary",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Draft",
+  "workflow_state_name": "Draft",
+  "style": "Info",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "General Manager Approval",
+  "workflow_state_name": "General Manager Approval",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Included in Report",
+  "workflow_state_name": "Included in Report",
+  "style": "Success",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Issued",
+  "workflow_state_name": "Issued",
+  "style": "Success",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Manager Review",
+  "workflow_state_name": "Manager Review",
+  "style": "Primary",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Pending Approval",
+  "workflow_state_name": "Pending Approval",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Pending Review",
+  "workflow_state_name": "Pending Review",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Planning Approval",
+  "workflow_state_name": "Planning Approval",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Rejected",
+  "workflow_state_name": "Rejected",
+  "style": "Danger",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Requested",
+  "workflow_state_name": "Requested",
+  "style": "Info",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Returned",
+  "workflow_state_name": "Returned",
+  "style": "Danger",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Statistics Review",
+  "workflow_state_name": "Statistics Review",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Under Review",
+  "workflow_state_name": "Under Review",
+  "style": "Primary",
+  "modified": "2026-11-25 12:00:00.000000"
+ }
+]
