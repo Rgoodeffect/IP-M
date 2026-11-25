@@ -101,7 +101,7 @@ DEPARTMENT = {
 				"depends_on": "requires_activity_report",
 				"description": (
 					"Leave empty to use the default in LOC Planning Settings",
-					"اتركه فارغاً لاستخدام القيمة العامة في إعدادات المنظومة",
+					"اتركه فارغا لاستخدام القيمة العامة في إعدادات المنظومة",
 				),
 			},
 		),
@@ -191,7 +191,7 @@ REPORTING_PERIOD = {
 		(
 			"closed_by",
 			"Link",
-			("Closed By", "أُغلقت بواسطة"),
+			("Closed By", "أغلقت بواسطة"),
 			{"options": "User", "read_only": 1, "no_copy": 1},
 		),
 		("column_break_2", "Column Break", None, {}),
@@ -301,7 +301,7 @@ SETTINGS = {
 		(
 			"reminder_days_before",
 			"Int",
-			("Remind Days Before Deadline", "التذكير قبل الموعد بـ (أيام)"),
+			("Remind Days Before Deadline", "التذكير قبل الموعد (بالأيام)"),
 			{"default": "3"},
 		),
 		(
@@ -336,7 +336,7 @@ SETTINGS = {
 		(
 			"certificate_expiry_alert_days",
 			"Int",
-			("Expiry Alert (days before)", "التنبيه قبل انتهاء الشهادة بـ (أيام)"),
+			("Expiry Alert (days before)", "التنبيه قبل انتهاء الشهادة (بالأيام)"),
 			{"default": "30"},
 		),
 		("column_break_5", "Column Break", None, {}),
@@ -351,6 +351,51 @@ SETTINGS = {
 			"Link",
 			("Supplier Group", "مجموعة الموردين"),
 			{"options": "Supplier Group", "depends_on": "auto_create_supplier"},
+		),
+		("section_certificate", "Section Break", ("Registration Certificate", "شهادة إثبات القيد"), {}),
+		(
+			"company_registration_series",
+			"Data",
+			("Registration No. Series", "نمط رقم القيد"),
+			{
+				"default": "REG-.#####",
+				"description": (
+					"Used for new companies. Migrated numbers are kept as they are.",
+					"يستخدم للشركات الجديدة، وتبقى أرقام القيد المرحلة كما هي.",
+				),
+			},
+		),
+		(
+			"certificate_series",
+			"Data",
+			("Certificate No. Series", "نمط رقم الشهادة"),
+			{"default": "CERT-.YYYY.-.#####"},
+		),
+		("column_break_cert", "Column Break", None, {}),
+		(
+			"verification_base_url",
+			"Data",
+			("Verification Base URL", "رابط موقع التحقق"),
+			{
+				"options": "URL",
+				"description": (
+					"Public address used in the certificate QR code, e.g. https://erp.example.ly. "
+					"Leave empty to use this site's address.",
+					"العنوان العام المستخدم في رمز QR بالشهادة. اتركه فارغا لاستخدام عنوان هذا الموقع.",
+				),
+			},
+		),
+		(
+			"certificate_signatory_title",
+			"Data",
+			("Signatory Title", "صفة الموقع"),
+			{"default": "مدير إدارة الاستثمار والتخطيط الاستراتيجي"},
+		),
+		(
+			"certificate_issuer_name",
+			"Data",
+			("Issuing Department", "الجهة المصدرة"),
+			{"default": "إدارة الاستثمار والتخطيط الاستراتيجي"},
 		),
 		("section_periods", "Section Break", ("Reporting Periods", "الفترات"), {}),
 		(
@@ -402,7 +447,7 @@ USER_ASSIGNMENT = {
 			"Select",
 			("Status", "الحالة"),
 			{
-				"options": [("Pending", "بانتظار التطبيق"), ("Applied", "مطبّق")],
+				"options": [("Pending", "بانتظار التطبيق"), ("Applied", "مطبق")],
 				"default": "Pending",
 				"read_only": 1,
 				"in_list_view": 1,
@@ -428,8 +473,8 @@ USER_SETUP = {
 					"<p>Add one row per user, role and department, then press <b>Apply</b>. "
 					"Roles are granted and record access is restricted to the selected department "
 					"(and region) through User Permissions.</p>",
-					"<p>أضف صفاً لكل مستخدم ودوره وجهته ثم اضغط <b>تطبيق</b>. "
-					"تُمنح الأدوار ويُقيَّد الوصول إلى سجلات الجهة (والمنطقة) المحددة فقط عبر صلاحيات المستخدم.</p>",
+					"<p>أضف صفا لكل مستخدم ودوره وجهته ثم اضغط <b>تطبيق</b>. "
+					"تمنح الأدوار ويقيد الوصول إلى سجلات الجهة (والمنطقة) المحددة فقط عبر صلاحيات المستخدم.</p>",
 				)
 			},
 		),

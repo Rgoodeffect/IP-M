@@ -23,6 +23,10 @@ DEFAULTS = {
 	"certificate_validity_months": 12,
 	"certificate_expiry_alert_days": 30,
 	"enforce_period_lock": 1,
+	"company_registration_series": "REG-.#####",
+	"certificate_series": "CERT-.YYYY.-.#####",
+	"certificate_signatory_title": "مدير إدارة الاستثمار والتخطيط الاستراتيجي",
+	"certificate_issuer_name": "إدارة الاستثمار والتخطيط الاستراتيجي",
 }
 
 

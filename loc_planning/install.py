@@ -36,6 +36,8 @@ def seed_master_data():
 	seed_regions()
 	seed_fuel_products()
 	seed_departments()
+	seed_simple("Company Classification", "classification_name", "company_classifications.json")
+	seed_simple("Company Document Type", "document_type_name", "company_document_types.json")
 	from loc_planning.loc_planning.doctype.loc_planning_settings.loc_planning_settings import apply_defaults
 
 	apply_defaults()
@@ -67,6 +69,12 @@ def seed_fuel_products():
 	for row in _load("fuel_products.json"):
 		if not frappe.db.exists("Fuel Product", row["product_name"]):
 			frappe.get_doc({"doctype": "Fuel Product", **row}).insert(ignore_permissions=True)
+
+
+def seed_simple(doctype, key, filename):
+	for row in _load(filename):
+		if not frappe.db.exists(doctype, row[key]):
+			frappe.get_doc({"doctype": doctype, **row}).insert(ignore_permissions=True)
 
 
 def seed_departments():

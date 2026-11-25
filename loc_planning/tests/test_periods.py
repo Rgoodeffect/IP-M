@@ -92,3 +92,25 @@ class IntegrationTestReportingPeriod(IntegrationTestCase):
 		with self.set_user(user):
 			with self.assertRaises(frappe.PermissionError):
 				set_period_status(name, "Closed")
+
+
+class UnitTestArabicTexts(UnitTestCase):
+	def test_translations_and_seed_data_have_no_diacritics(self):
+		import glob
+		import os
+		import re
+
+		app = os.path.dirname(os.path.dirname(__file__))
+		pattern = re.compile("[ً-ْـ]")
+		files = [
+			os.path.join(app, "translations", "ar.csv"),
+			*glob.glob(os.path.join(app, "setup_data", "*.json")),
+		]
+		files += glob.glob(os.path.join(app, "**", "print_format", "*", "*.html"), recursive=True)
+		files += glob.glob(os.path.join(app, "www", "*.html"))
+		for path in files:
+			with open(path, encoding="utf-8") as fh:
+				for no, line in enumerate(fh, 1):
+					self.assertIsNone(
+						pattern.search(line), f"{os.path.relpath(path, app)}:{no}: {line.strip()}"
+					)

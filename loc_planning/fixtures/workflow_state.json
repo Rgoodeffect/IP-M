@@ -1,0 +1,44 @@
+[
+ {
+  "doctype": "Workflow State",
+  "name": "Cancelled",
+  "workflow_state_name": "Cancelled",
+  "style": "Danger",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Issued",
+  "workflow_state_name": "Issued",
+  "style": "Success",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Pending Approval",
+  "workflow_state_name": "Pending Approval",
+  "style": "Warning",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Rejected",
+  "workflow_state_name": "Rejected",
+  "style": "Danger",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Requested",
+  "workflow_state_name": "Requested",
+  "style": "Info",
+  "modified": "2026-11-25 12:00:00.000000"
+ },
+ {
+  "doctype": "Workflow State",
+  "name": "Under Review",
+  "workflow_state_name": "Under Review",
+  "style": "Primary",
+  "modified": "2026-11-25 12:00:00.000000"
+ }
+]

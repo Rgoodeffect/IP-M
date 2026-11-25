@@ -8,8 +8,8 @@ Close Period,إغلاق الفترة
 Reopen Period,إعادة فتح الفترة
 Remarks,ملاحظات
 Closing the period locks all data linked to it. Continue?,إغلاق الفترة يمنع تعديل كل البيانات المرتبطة بها. هل تريد المتابعة؟
-Reopening the period allows its data to be changed again. Continue?,إعادة فتح الفترة تسمح بتعديل بياناتها مجدداً. هل تريد المتابعة؟
-Reporting period {0} is closed. Changes to its data are not allowed.,الفترة {0} مغلقة ولا يُسمح بتعديل بياناتها.
+Reopening the period allows its data to be changed again. Continue?,إعادة فتح الفترة تسمح بتعديل بياناتها مجددا. هل تريد المتابعة؟
+Reporting period {0} is closed. Changes to its data are not allowed.,الفترة {0} مغلقة ولا يسمح بتعديل بياناتها.
 Period Closed,الفترة مغلقة
 Please enter the cancellation reason before cancelling.,يرجى إدخال سبب الإلغاء قبل الإلغاء.
 Cancellation Reason Required,سبب الإلغاء مطلوب
@@ -22,15 +22,15 @@ Invalid period type {0},نوع فترة غير صحيح {0}
 Invalid year {0},سنة غير صحيحة {0}
 Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
 {0} periods created for {1},تم إنشاء {0} فترة لسنة {1}
-All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقاً
-Department {0} already exists,الجهة {0} موجودة مسبقاً
+All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقا
+Department {0} already exists,الجهة {0} موجودة مسبقا
 A department cannot be its own parent,لا يمكن أن تكون الجهة تابعة لنفسها
-Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون مُعلَّمة بأنها تتبعها جهات
-Deadline days cannot be negative,عدد أيام الموعد النهائي لا يمكن أن يكون سالباً
+Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون معلمة بأنها تتبعها جهات
+Deadline days cannot be negative,عدد أيام الموعد النهائي لا يمكن أن يكون سالبا
 View Tree,عرض الشجرة
 Budget thresholds must satisfy 0 ≤ slow execution < limit exceeded ≤ 100,يجب أن تكون العتبات: 0 ≤ بطء التنفيذ < تجاوز الحد ≤ 100
 Invalid Thresholds,عتبات غير صحيحة
-{0} cannot be negative,{0} لا يمكن أن يكون سالباً
+{0} cannot be negative,{0} لا يمكن أن يكون سالبا
 Station data due day must be between 1 and 28,يوم استحقاق بيانات المحطات يجب أن يكون بين 1 و 28
 Base font size must be between 8 and 20,حجم الخط الأساسي يجب أن يكون بين 8 و 20
 Row {0}: role {1} is not a role of this system,الصف {0}: الدور {1} ليس من أدوار المنظومة
@@ -40,3 +40,29 @@ Apply,تطبيق
 {0} assignments applied,تم تطبيق {0} ربط
 Litre,لتر
 Cylinder,أسطوانة
+Please enter the reason for the status {0},يرجى إدخال سبب الحالة {0}
+{0} {1} is already registered for company {2},{0} {1} مسجل مسبقا للشركة {2}
+A company with a similar name is already registered: {0},توجد شركة مسجلة باسم مشابه: {0}
+Please select the certificate being renewed,يرجى اختيار الشهادة المراد تجديدها
+Only an issued certificate can be renewed,لا يمكن تجديد إلا شهادة صادرة
+The renewed certificate belongs to another company,الشهادة المراد تجديدها تخص شركة أخرى
+Expiry date cannot be before the issue date,لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ الإصدار
+Company already has a valid certificate {0}. Use a renewal request instead.,للشركة شهادة سارية {0}. استخدم طلب تجديد بدلا من ذلك.
+The following required documents are missing or expired: {0},المستندات المطلوبة التالية غير مرفقة أو منتهية: {0}
+Missing Documents,مستندات ناقصة
+Company {0} is {1}. A certificate cannot be issued.,حالة الشركة {0} هي {1}، ولا يمكن إصدار شهادة لها.
+{0} registration certificates expire within {1} days,{0} شهادة إثبات قيد تنتهي خلال {1} يوما
+Company Registry,سجل الشركات والموردين
+Days to Expiry,الأيام المتبقية
+Registered Companies,الشركات المسجلة
+Valid Certificates,الشهادات السارية
+Without Certificate,بدون شهادة
+Certificate Expiring Within (days),شهادات تنتهي خلال (يوم)
+Registered From,مسجلة من تاريخ
+Registered To,مسجلة حتى تاريخ
+Renew,تجديد
+Verification Page,صفحة التحقق
+"To cancel this certificate, enter the cancellation reason and save first.",لإلغاء الشهادة أدخل سبب الإلغاء واحفظ أولا.
+New Certificate Request,طلب شهادة جديد
+Certificate,الشهادة
+Investment Registry,سجل الشركات

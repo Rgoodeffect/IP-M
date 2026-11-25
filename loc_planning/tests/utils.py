@@ -95,3 +95,17 @@ def drop_guard_test_doctype():
 		finally:
 			frappe.flags.in_test_cleanup = False
 		frappe.db.commit()
+
+
+class as_user:
+	"""Context manager that runs code as another user and restores the session user."""
+
+	def __init__(self, user):
+		self.user = user
+
+	def __enter__(self):
+		self.previous = frappe.session.user
+		frappe.set_user(self.user)
+
+	def __exit__(self, *exc):
+		frappe.set_user(self.previous)

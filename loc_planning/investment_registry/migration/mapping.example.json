@@ -1,0 +1,59 @@
+{
+	"_comment": "Column mapping from the legacy Access database. Left side: field in the new system; right side: column name in the Access table / CSV file. Edit the table and column names to match the real database, then run a dry run first.",
+	"date_formats": ["%Y-%m-%d", "%Y-%m-%d %H:%M:%S", "%d/%m/%Y", "%m/%d/%y %H:%M:%S", "%m/%d/%Y"],
+	"default_classification": "",
+	"create_missing_classifications": true,
+	"companies": {
+		"table": "Companies",
+		"columns": {
+			"legacy_id": "ID",
+			"registration_no": "RegNo",
+			"company_name": "CompanyName",
+			"company_name_en": "CompanyNameEn",
+			"classification": "Classification",
+			"registration_date": "RegDate",
+			"activity_description": "Activity",
+			"commercial_register_no": "CommercialRegNo",
+			"tax_id": "TaxNo",
+			"chamber_of_commerce_no": "ChamberNo",
+			"legal_representative": "LegalRep",
+			"legal_representative_id": "LegalRepID",
+			"legal_representative_phone": "LegalRepPhone",
+			"address": "Address",
+			"city": "City",
+			"phone": "Phone",
+			"email": "Email",
+			"website": "Website",
+			"status": "Status",
+			"status_reason": "StatusReason"
+		},
+		"status_values": {
+			"نشطة": "Active",
+			"نشط": "Active",
+			"فعالة": "Active",
+			"موقوفة": "Suspended",
+			"محظورة": "Blacklisted",
+			"غير نشطة": "Inactive"
+		},
+		"classification_values": {}
+	},
+	"certificates": {
+		"table": "Certificates",
+		"columns": {
+			"company_ref": "CompanyID",
+			"certificate_no": "CertNo",
+			"issue_date": "IssueDate",
+			"expiry_date": "ExpiryDate",
+			"status": "Status",
+			"cancel_reason": "CancelReason"
+		},
+		"company_ref_field": "legacy_id",
+		"status_values": {
+			"صادرة": "Issued",
+			"سارية": "Issued",
+			"منتهية": "Expired",
+			"ملغاة": "Cancelled",
+			"ملغية": "Cancelled"
+		}
+	}
+}

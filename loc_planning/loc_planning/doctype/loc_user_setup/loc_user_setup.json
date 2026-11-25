@@ -14,7 +14,7 @@
    "fieldname": "help_html",
    "fieldtype": "HTML",
    "label": "Help",
-   "options": "<p>أضف صفاً لكل مستخدم ودوره وجهته ثم اضغط <b>تطبيق</b>. تُمنح الأدوار ويُقيَّد الوصول إلى سجلات الجهة (والمنطقة) المحددة فقط عبر صلاحيات المستخدم.</p>"
+   "options": "<p>أضف صفا لكل مستخدم ودوره وجهته ثم اضغط <b>تطبيق</b>. تمنح الأدوار ويقيد الوصول إلى سجلات الجهة (والمنطقة) المحددة فقط عبر صلاحيات المستخدم.</p>"
   },
   {
    "fieldname": "assignments",
@@ -26,7 +26,7 @@
  "index_web_pages_for_search": 0,
  "issingle": 1,
  "links": [],
- "modified": "2026-11-25 16:31:25.954809",
+ "modified": "2026-11-25 17:08:12.706478",
  "modified_by": "Administrator",
  "module": "LOC Planning",
  "name": "LOC User Setup",

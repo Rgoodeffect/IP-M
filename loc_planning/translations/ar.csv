@@ -1,48 +1,88 @@
+A company with a similar name is already registered: {0},توجد شركة مسجلة باسم مشابه: {0}
 A department cannot be its own parent,لا يمكن أن تكون الجهة تابعة لنفسها
 Active,نشط
+Activity,النشاط
 Activity Report Period Type,دورية تقرير النشاط
 Activity Reporting,تقرير النشاط
 Activity Reports,تقارير النشاط
-All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقاً
+Address,العنوان
+Address and Contact,العنوان والتواصل
+All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقا
+Amended From,معدلة من
 Annual,سنوي
-Applied,مطبّق
+Applied,مطبق
 Applied On,تاريخ التطبيق
 Apply,تطبيق
+Approve,اعتماد
 Approved documents cannot be deleted. Cancel the document with a reason instead.,لا يمكن حذف المستندات المعتمدة. يمكن إلغاؤها مع ذكر السبب.
 Assignments,الربط
+Attachment,المرفق
 Base Font Size (pt),حجم الخط الأساسي (نقطة)
 Base font size must be between 8 and 20,حجم الخط الأساسي يجب أن يكون بين 8 و 20
+Blacklisted,محظورة
 Budget Thresholds,عتبات تنفيذ الموازنة
 Budget thresholds must satisfy 0 ≤ slow execution < limit exceeded ≤ 100,يجب أن تكون العتبات: 0 ≤ بطء التنفيذ < تجاوز الحد ≤ 100
+Cancel,إلغاء
+Cancellation Reason,سبب الإلغاء
 Cancellation Reason Required,سبب الإلغاء مطلوب
+Cancelled,ملغاة
+Certificate,الشهادة
+Certificate Expiring Within (days),شهادات تنتهي خلال (يوم)
+Certificate Expiry,تاريخ انتهاء الشهادة
+Certificate No.,رقم الشهادة
+Certificate No. Series,نمط رقم الشهادة
+Certificate Status,حالة الشهادة
 Certificate Validity (months),مدة صلاحية الشهادة (أشهر)
+Chamber of Commerce No.,رقم القيد بالغرفة التجارية
+City,المدينة
+Classification,التصنيف
 Close Period,إغلاق الفترة
 Closed,مغلقة
-Closed By,أُغلقت بواسطة
+Closed By,أغلقت بواسطة
 Closed On,تاريخ الإغلاق
 Closing the period locks all data linked to it. Continue?,إغلاق الفترة يمنع تعديل كل البيانات المرتبطة بها. هل تريد المتابعة؟
 Code,الرمز
+Commercial Register No.,رقم السجل التجاري
 Company,الشركة
+Company Classification,تصنيف الشركة
+Company Document Type,نوع مستند الشركة
 Company Logo,شعار الشركة
+Company Name,اسم الشركة
+Company Name (English),اسم الشركة بالإنجليزية
+Company Registry,سجل الشركات والموردين
+Company already has a valid certificate {0}. Use a renewal request instead.,للشركة شهادة سارية {0}. استخدم طلب تجديد بدلا من ذلك.
+Company {0} is {1}. A certificate cannot be issued.,حالة الشركة {0} هي {1}، ولا يمكن إصدار شهادة لها.
 Cost Center,مركز التكلفة
 Create Periods for Year,إنشاء فترات السنة
 Create Supplier on Certificate Approval,إنشاء مورد عند اعتماد الشهادة
+Current Certificate,الشهادة الحالية
 Cylinder,أسطوانة
+Days to Expiry,الأيام المتبقية
 Deadline (days after period end),الموعد النهائي (أيام بعد نهاية الفترة)
 Deadline Override (days after period end),الموعد النهائي الخاص (أيام بعد نهاية الفترة)
-Deadline days cannot be negative,عدد أيام الموعد النهائي لا يمكن أن يكون سالباً
+Deadline days cannot be negative,عدد أيام الموعد النهائي لا يمكن أن يكون سالبا
 Department,إدارة
 Department / Office,الجهة
 Department Coordinator,منسق إدارة
 Department Name,اسم الجهة
 Department Type,نوع الجهة
-Department {0} already exists,الجهة {0} موجودة مسبقاً
+Department {0} already exists,الجهة {0} موجودة مسبقا
 Description,الوصف
 Display Order,ترتيب العرض
+Document No.,رقم المستند
+Document Type,نوع المستند
+Documents,المستندات
+Draft,مسودة
 ERPNext Department,القسم في ERPNext
 ERPNext Link,الربط مع ERPNext
+ERPNext Supplier,المورد في ERPNext
+Email,البريد الإلكتروني
 Executive Viewer,الإدارة العليا
-Expiry Alert (days before),التنبيه قبل انتهاء الشهادة بـ (أيام)
+Expired,منتهي
+Expiring Soon,قارب على الانتهاء
+Expiry Alert (days before),التنبيه قبل انتهاء الشهادة (بالأيام)
+Expiry Date,تاريخ الانتهاء
+Expiry date cannot be before the issue date,لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ الإصدار
 Fallback Font Family,الخط البديل
 Finance Budget,الإدارة المالية - الموازنة
 Fonts and Printing,الخطوط والطباعة
@@ -52,9 +92,11 @@ Fuel Product,المنتج
 Gas,غاز
 General,عام
 Half-Yearly,نصف سنوي
+Has Expiry Date,له تاريخ انتهاء
 Head,المسؤول
 Help,مساعدة
 Home,الرئيسية
+Inactive,غير نشطة
 Include Sub-Departments,تشمل الجهات التابعة
 Invalid Thresholds,عتبات غير صحيحة
 Invalid period type {0},نوع فترة غير صحيح {0}
@@ -63,6 +105,9 @@ Invalid year {0},سنة غير صحيحة {0}
 Investment Registry,سجل الشركات
 Investment Section,قسم الاستثمار
 Is Group,تتبعها جهات
+Issue Date,تاريخ الإصدار
+Issued,صادرة
+Issuing Department,الجهة المصدرة
 LOC Department,الجهة
 LOC Planning,منظومة التخطيط والاستثمار
 LOC Planning Director,مدير إدارة الاستثمار والتخطيط الاستراتيجي
@@ -70,39 +115,72 @@ LOC Planning Settings,إعدادات منظومة التخطيط والاستث�
 LOC Region,المنطقة
 LOC User Assignment,ربط مستخدم
 LOC User Setup,ربط المستخدمين بالأدوار والجهات
-Leave empty to use the default in LOC Planning Settings,اتركه فارغاً لاستخدام القيمة العامة في إعدادات المنظومة
+Leave empty to number automatically,اتركه فارغا ليرقم تلقائيا
+Leave empty to use the default in LOC Planning Settings,اتركه فارغا لاستخدام القيمة العامة في إعدادات المنظومة
+Legacy ID,المعرف في النظام السابق
+Legal Information,البيانات القانونية
+Legal Representative,الممثل القانوني
 Limit Exceeded Above (%),تجاوز الحد أعلى من (%)
 Litre,لتر
 Lock Data of Closed Periods,منع تعديل بيانات الفترات المغلقة
 Lubricant,زيوت
 Maximum Overdue Reminders,أقصى عدد لتذكيرات التأخير
+Migrated,مرحلة
+Migration,الترحيل
+Missing Documents,مستندات ناقصة
 "Month 1-12, quarter 1-4 or half 1-2",الشهر 1-12 أو الربع 1-4 أو النصف 1-2
 Monthly,شهري
 Monthly Station Data Due Day (of following month),يوم استحقاق بيانات المحطات الشهرية (من الشهر التالي)
+New,جديد
+New Certificate Request,طلب شهادة جديد
+No Expiry,بدون انتهاء
+None,لا توجد
 Not Allowed,غير مسموح
 Office,مكتب
 Official Company Name,الاسم الرسمي للشركة
+Only an issued certificate can be renewed,لا يمكن تجديد إلا شهادة صادرة
 Open,مفتوحة
 Other,أخرى
 Parent Department,الجهة الأم
-Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون مُعلَّمة بأنها تتبعها جهات
+Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون معلمة بأنها تتبعها جهات
 Pending,بانتظار التطبيق
+Pending Approval,بانتظار الاعتماد
 Period Closed,الفترة مغلقة
 Period No.,رقم الفترة
 Period Type,نوع الفترة
 Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
+Phone,الهاتف
 Please enter the cancellation reason before cancelling.,يرجى إدخال سبب الإلغاء قبل الإلغاء.
+Please enter the reason for the status {0},يرجى إدخال سبب الحالة {0}
+Please select the certificate being renewed,يرجى اختيار الشهادة المراد تجديدها
 Product Code,رمز المنتج
 Product Group,مجموعة المنتج
 Product Name,اسم المنتج
+"Public address used in the certificate QR code, e.g. https://erp.example.ly. Leave empty to use this site's address.",العنوان العام المستخدم في رمز QR بالشهادة. اتركه فارغا لاستخدام عنوان هذا الموقع.
 Quarterly,ربع سنوي
 Region,المنطقة
 Region Code,رمز المنطقة
 Region Name,اسم المنطقة
+Registered Companies,الشركات المسجلة
+Registered Company,شركة مسجلة
+Registered Company Document,مستند الشركة
+Registered From,مسجلة من تاريخ
+Registered To,مسجلة حتى تاريخ
+Registration Certificate,شهادة إثبات القيد
+Registration Certificate Approval,اعتماد شهادة إثبات القيد
+Registration Date,تاريخ القيد
+Registration No.,رقم القيد
+Registration No. Series,نمط رقم القيد
+Reject,رفض
+Rejected,مرفوضة
 Remarks,ملاحظات
-Remind Days Before Deadline,التذكير قبل الموعد بـ (أيام)
+Remind Days Before Deadline,التذكير قبل الموعد (بالأيام)
+Renew,تجديد
+Renewal,تجديد
+Renewal Of,تجديد للشهادة
+Reopen,إعادة فتح
 Reopen Period,إعادة فتح الفترة
-Reopening the period allows its data to be changed again. Continue?,إعادة فتح الفترة تسمح بتعديل بياناتها مجدداً. هل تريد المتابعة؟
+Reopening the period allows its data to be changed again. Continue?,إعادة فتح الفترة تسمح بتعديل بياناتها مجددا. هل تريد المتابعة؟
 Repeat Reminder Every (days) After Deadline,تكرار التذكير بعد الموعد كل (أيام)
 Report Font Family,خط التقارير
 Report Font File (TTF/OTF),ملف خط التقارير (TTF/OTF)
@@ -111,8 +189,17 @@ Report Header Text,نص ترويسة التقارير
 Reporting Currency,عملة التقارير
 Reporting Period,الفترة
 Reporting Periods,الفترات
-Reporting period {0} is closed. Changes to its data are not allowed.,الفترة {0} مغلقة ولا يُسمح بتعديل بياناتها.
+Reporting period {0} is closed. Changes to its data are not allowed.,الفترة {0} مغلقة ولا يسمح بتعديل بياناتها.
+Representative ID No.,رقم إثبات هوية الممثل
+Representative Phone,هاتف الممثل
+Request Date,تاريخ الطلب
+Request Type,نوع الطلب
+Requested,طلب
+Required for Certificate,مطلوب لإصدار الشهادة
 Requires Activity Report,مطلوب منه تقرير نشاط
+Return for Revision,إرجاع للتعديل
+Review,المراجعة
+Review Notes,ملاحظات المراجعة
 Role,الدور
 Row {0}: a department or sales office is required for role {1},الصف {0}: يجب تحديد الجهة أو مكتب المبيعات للدور {1}
 Row {0}: role {1} is not a role of this system,الصف {0}: الدور {1} ليس من أدوار المنظومة
@@ -120,23 +207,46 @@ Row {0}: {1} is not a sales office,الصف {0}: {1} ليس مكتب مبيعا�
 Sales Office,مكتب مبيعات
 Sales Office User,مكتب مبيعات
 Section,قسم
+Send for Approval,إرسال للاعتماد
 Settings,الإعدادات
+Signatory Title,صفة الموقع
 Slow Execution Below (%),بطء التنفيذ أقل من (%)
 Station data due day must be between 1 and 28,يوم استحقاق بيانات المحطات يجب أن يكون بين 1 و 28
 Stations,المحطات
 Statistics & Data,قسم الإحصاء والبيانات
 Status,الحالة
+Status Reason,سبب الحالة
 Strategic Planning,قسم التخطيط الاستراتيجي
+Submit for Review,إرسال للمراجعة
+Superseded,مجددة
 Supplier Group,مجموعة الموردين
+Suspended,موقوفة
+Tax No.,الرقم الضريبي
+The following required documents are missing or expired: {0},المستندات المطلوبة التالية غير مرفقة أو منتهية: {0}
+The renewed certificate belongs to another company,الشهادة المراد تجديدها تخص شركة أخرى
 Title,العنوان
 To Date,إلى تاريخ
+"To cancel this certificate, enter the cancellation reason and save first.",لإلغاء الشهادة أدخل سبب الإلغاء واحفظ أولا.
+Under Review,قيد المراجعة
 Unit,وحدة
 Unit of Measure,وحدة القياس
+Used for new companies. Migrated numbers are kept as they are.,يستخدم للشركات الجديدة، وتبقى أرقام القيد المرحلة كما هي.
 User,المستخدم
+Valid,ساري
+Valid Certificates,الشهادات السارية
+Verification,التحقق
+Verification Base URL,رابط موقع التحقق
+Verification Code,رمز التحقق
+Verification Page,صفحة التحقق
 View Tree,عرض الشجرة
+Website,الموقع الإلكتروني
+Without Certificate,بدون شهادة
+Workflow State,مرحلة الاعتماد
 Year,السنة
 You are not allowed to create reporting periods.,ليست لديك صلاحية إنشاء الفترات.
 You are not allowed to open or close reporting periods.,ليست لديك صلاحية فتح أو إغلاق الفترات.
 {0} assignments applied,تم تطبيق {0} ربط
-{0} cannot be negative,{0} لا يمكن أن يكون سالباً
+{0} cannot be negative,{0} لا يمكن أن يكون سالبا
 {0} periods created for {1},تم إنشاء {0} فترة لسنة {1}
+{0} registration certificates expire within {1} days,{0} شهادة إثبات قيد تنتهي خلال {1} يوما
+{0} {1} is already registered for company {2},{0} {1} مسجل مسبقا للشركة {2}

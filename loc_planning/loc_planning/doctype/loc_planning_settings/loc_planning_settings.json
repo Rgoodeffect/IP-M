@@ -39,6 +39,13 @@
   "column_break_5",
   "auto_create_supplier",
   "supplier_group",
+  "section_certificate",
+  "company_registration_series",
+  "certificate_series",
+  "column_break_cert",
+  "verification_base_url",
+  "certificate_signatory_title",
+  "certificate_issuer_name",
   "section_periods",
   "enforce_period_lock",
   "column_break_6",
@@ -227,6 +234,47 @@
    "depends_on": "auto_create_supplier"
   },
   {
+   "fieldname": "section_certificate",
+   "fieldtype": "Section Break",
+   "label": "Registration Certificate"
+  },
+  {
+   "fieldname": "company_registration_series",
+   "fieldtype": "Data",
+   "label": "Registration No. Series",
+   "default": "REG-.#####",
+   "description": "Used for new companies. Migrated numbers are kept as they are."
+  },
+  {
+   "fieldname": "certificate_series",
+   "fieldtype": "Data",
+   "label": "Certificate No. Series",
+   "default": "CERT-.YYYY.-.#####"
+  },
+  {
+   "fieldname": "column_break_cert",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verification_base_url",
+   "fieldtype": "Data",
+   "label": "Verification Base URL",
+   "options": "URL",
+   "description": "Public address used in the certificate QR code, e.g. https://erp.example.ly. Leave empty to use this site's address."
+  },
+  {
+   "fieldname": "certificate_signatory_title",
+   "fieldtype": "Data",
+   "label": "Signatory Title",
+   "default": "مدير إدارة الاستثمار والتخطيط الاستراتيجي"
+  },
+  {
+   "fieldname": "certificate_issuer_name",
+   "fieldtype": "Data",
+   "label": "Issuing Department",
+   "default": "إدارة الاستثمار والتخطيط الاستراتيجي"
+  },
+  {
    "fieldname": "section_periods",
    "fieldtype": "Section Break",
    "label": "Reporting Periods"
@@ -256,7 +304,7 @@
  "index_web_pages_for_search": 0,
  "issingle": 1,
  "links": [],
- "modified": "2026-11-25 16:39:09.172129",
+ "modified": "2026-11-25 17:07:58.671766",
  "modified_by": "Administrator",
  "module": "LOC Planning",
  "name": "LOC Planning Settings",

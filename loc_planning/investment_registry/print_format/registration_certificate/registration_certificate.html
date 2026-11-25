@@ -1,0 +1,92 @@
+{#- Registration certificate (provisional layout until the approved design is supplied).
+    Every name, font and logo comes from LOC Planning Settings. -#}
+{%- set ps = get_print_settings() -%}
+{%- set company = frappe.get_doc("Registered Company", doc.registered_company) -%}
+{%- set issued = doc.docstatus == 1 -%}
+<style>
+	{{ ps.font_face }}
+	.cert, .cert * { font-family: {{ ps.font_stack }}; }
+	.cert { direction: rtl; text-align: right; font-size: {{ ps.base_font_size + 2 }}pt; color: #1d2733;
+		border: 3px double #1f4e79; padding: 22px 30px; min-height: 255mm; position: relative; box-sizing: border-box; }
+	.cert-head { text-align: center; border-bottom: 1px solid #1f4e79; padding-bottom: 10px; margin-bottom: 18px; }
+	.cert-head img { max-height: 90px; margin-bottom: 6px; }
+	.cert-head .org { font-size: {{ ps.base_font_size + 6 }}pt; font-weight: bold; }
+	.cert-head .dept { font-size: {{ ps.base_font_size + 2 }}pt; color: #3d4b5c; }
+	.cert-title { text-align: center; font-size: {{ ps.base_font_size + 12 }}pt; font-weight: bold; color: #1f4e79; margin: 14px 0 6px; }
+	.cert-ref { display: table; width: 100%; margin-bottom: 16px; font-size: {{ ps.base_font_size + 1 }}pt; }
+	.cert-ref > div { display: table-cell; }
+	.cert-ref .l { text-align: left; }
+	.cert-body { line-height: 2; margin: 10px 0 16px; text-align: justify; }
+	.cert-table { width: 100%; border-collapse: collapse; margin: 8px 0 18px; }
+	.cert-table th, .cert-table td { border: 1px solid #b8c4d1; padding: 7px 10px; vertical-align: top; }
+	.cert-table th { background: #eef3f8; width: 32%; font-weight: bold; }
+	.num { direction: ltr; unicode-bidi: embed; white-space: nowrap; }
+	.cert-validity { font-weight: bold; margin: 10px 0 28px; }
+	.cert-foot { display: table; width: 100%; margin-top: 30px; }
+	.cert-foot > div { display: table-cell; vertical-align: bottom; width: 50%; }
+	.cert-sign { text-align: center; }
+	.cert-sign .line { margin-top: 55px; border-top: 1px dotted #555; width: 70%; margin-right: auto; margin-left: auto; }
+	.cert-qr { text-align: left; font-size: {{ ps.base_font_size - 2 }}pt; color: #3d4b5c; }
+	.cert-qr img { width: 32mm; height: 32mm; display: block; margin-bottom: 4px; }
+	.cert-note { position: absolute; bottom: 10px; right: 30px; left: 30px; text-align: center;
+		font-size: {{ ps.base_font_size - 2 }}pt; color: #5f6b7a; border-top: 1px solid #d5dce4; padding-top: 6px; }
+	.cert-draft { position: absolute; top: 40%; left: 0; right: 0; text-align: center; font-size: 90pt;
+		color: rgba(200, 30, 30, 0.12); transform: rotate(-30deg); font-weight: bold; }
+</style>
+
+<div class="cert">
+	{%- if doc.docstatus == 2 or doc.status == "Cancelled" %}<div class="cert-draft">ملغاة</div>
+	{%- elif doc.docstatus == 0 %}<div class="cert-draft">مسودة</div>{% endif %}
+
+	<div class="cert-head">
+		{% if ps.logo %}<img src="{{ ps.logo }}" alt="">{% endif %}
+		<div class="org">{{ ps.company_name }}</div>
+		<div class="dept">{{ ps.issuer_name }}</div>
+		{% if ps.header_text %}<div class="dept">{{ ps.header_text }}</div>{% endif %}
+	</div>
+
+	<div class="cert-title">شهادة إثبات قيد</div>
+
+	<div class="cert-ref">
+		<div>رقم الشهادة: <span class="num">{{ doc.certificate_no or doc.name }}</span></div>
+		<div class="l">تاريخ الإصدار: {{ format_arabic_date(doc.issue_date) if doc.issue_date else "-" }}</div>
+	</div>
+
+	<div class="cert-body">
+		تشهد {{ ps.issuer_name }} بأن الشركة المبينة بياناتها أدناه مقيدة بسجل الشركات والموردين
+		لدى {{ ps.company_name }} تحت رقم القيد (<span class="num">{{ company.registration_no }}</span>)
+		{%- if doc.classification %} بتصنيف ({{ doc.classification }}){% endif %}.
+	</div>
+
+	<table class="cert-table">
+		<tr><th>اسم الشركة</th><td>{{ doc.company_name }}</td></tr>
+		{% if company.company_name_en %}<tr><th>الاسم بالإنجليزية</th><td class="num">{{ company.company_name_en }}</td></tr>{% endif %}
+		<tr><th>رقم القيد</th><td><span class="num">{{ company.registration_no }}</span></td></tr>
+		{% if doc.classification %}<tr><th>التصنيف</th><td>{{ doc.classification }}</td></tr>{% endif %}
+		{% if company.commercial_register_no %}<tr><th>رقم السجل التجاري</th><td><span class="num">{{ company.commercial_register_no }}</span></td></tr>{% endif %}
+		{% if company.tax_id %}<tr><th>الرقم الضريبي</th><td><span class="num">{{ company.tax_id }}</span></td></tr>{% endif %}
+		{% if company.chamber_of_commerce_no %}<tr><th>رقم القيد بالغرفة التجارية</th><td><span class="num">{{ company.chamber_of_commerce_no }}</span></td></tr>{% endif %}
+		{% if company.legal_representative %}<tr><th>الممثل القانوني</th><td>{{ company.legal_representative }}</td></tr>{% endif %}
+		{% if company.address or company.city %}<tr><th>العنوان</th><td>{{ company.address or "" }}{% if company.city %}، {{ company.city }}{% endif %}</td></tr>{% endif %}
+	</table>
+
+	<div class="cert-validity">
+		تسري هذه الشهادة من {{ format_arabic_date(doc.issue_date) if doc.issue_date else "-" }}
+		حتى {{ format_arabic_date(doc.expiry_date) if doc.expiry_date else "-" }}.
+	</div>
+
+	<div class="cert-foot">
+		<div class="cert-sign">
+			<div>{{ ps.signatory_title }}</div>
+			<div class="line"></div>
+		</div>
+		<div class="cert-qr">
+			{%- if issued and doc.verification_code %}
+			<img src="{{ get_certificate_qr(doc) }}" alt="">
+			<div>للتحقق من صحة الشهادة امسح الرمز</div>
+			{%- endif %}
+		</div>
+	</div>
+
+	{% if ps.footer_text %}<div class="cert-note">{{ ps.footer_text }}</div>{% endif %}
+</div>

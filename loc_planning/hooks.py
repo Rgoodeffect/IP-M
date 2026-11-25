@@ -18,9 +18,41 @@ LOC_ROLES = [
 	"Executive Viewer",
 ]
 
+
+def _fixture_names():
+	import json
+	import os
+
+	with open(
+		os.path.join(os.path.dirname(__file__), "config", "fixture_names.json"), encoding="utf-8"
+	) as fh:
+		return json.load(fh)
+
+
+_FIXTURE_NAMES = _fixture_names()
+
 fixtures = [
 	{"dt": "Role", "filters": [["name", "in", LOC_ROLES]]},
+	{"dt": "Workflow State", "filters": [["name", "in", _FIXTURE_NAMES["states"]]]},
+	{"dt": "Workflow Action Master", "filters": [["name", "in", _FIXTURE_NAMES["actions"]]]},
+	{"dt": "Workflow", "filters": [["name", "in", _FIXTURE_NAMES["workflows"]]]},
 ]
+
+# Jinja helpers available in print formats
+jinja = {
+	"methods": [
+		"loc_planning.investment_registry.utils.get_certificate_qr",
+		"loc_planning.investment_registry.utils.verification_url",
+		"loc_planning.utils.print_utils.get_print_settings",
+		"loc_planning.utils.print_utils.format_arabic_date",
+	],
+}
+
+scheduler_events = {
+	"daily": [
+		"loc_planning.investment_registry.tasks.daily",
+	],
+}
 
 required_apps = ["erpnext"]
 

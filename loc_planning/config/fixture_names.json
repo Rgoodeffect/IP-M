@@ -1,0 +1,22 @@
+{
+ "states": [
+  "Cancelled",
+  "Issued",
+  "Pending Approval",
+  "Rejected",
+  "Requested",
+  "Under Review"
+ ],
+ "actions": [
+  "Approve",
+  "Cancel",
+  "Reject",
+  "Reopen",
+  "Return for Revision",
+  "Send for Approval",
+  "Submit for Review"
+ ],
+ "workflows": [
+  "Registration Certificate Approval"
+ ]
+}

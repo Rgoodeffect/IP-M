@@ -66,3 +66,4 @@ docstring-code-format = true
 
 [tool.ruff.lint.per-file-ignores]
 "dev_tools/**" = ["RUF005"]
+"loc_planning/utils/arabic.py" = ["RUF001"]

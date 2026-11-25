@@ -1,18 +1,81 @@
 {
  "app": "loc_planning",
  "charts": [],
- "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC User Setup\", \"col\": 3}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
+ "content": "[{\"id\": \"locheader01\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>منظومة التخطيط والاستثمار</b></span>\", \"col\": 12}}, {\"id\": \"locshort000\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registered Company\", \"col\": 3}}, {\"id\": \"locshort001\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Registration Certificate\", \"col\": 3}}, {\"id\": \"locshort002\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Company Registry\", \"col\": 3}}, {\"id\": \"locshort003\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Reporting Period\", \"col\": 3}}, {\"id\": \"locshort004\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Department\", \"col\": 3}}, {\"id\": \"locshort005\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"LOC Planning Settings\", \"col\": 3}}, {\"id\": \"locspacer01\", \"type\": \"spacer\", \"data\": {\"col\": 12}}, {\"id\": \"loccard0000\", \"type\": \"card\", \"data\": {\"card_name\": \"Investment Section\", \"col\": 4}}, {\"id\": \"loccard0001\", \"type\": \"card\", \"data\": {\"card_name\": \"Settings\", \"col\": 4}}]",
  "creation": "2026-11-25 12:00:00.000000",
  "custom_blocks": [],
  "docstatus": 0,
  "doctype": "Workspace",
  "for_user": "",
- "hide_custom": 0,
+ "hide_custom": 1,
  "icon": "briefcase",
  "idx": 0,
  "is_hidden": 0,
  "label": "LOC Planning",
  "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Investment Section",
+   "link_count": 5,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registered Company",
+   "link_count": 0,
+   "link_to": "Registered Company",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Registration Certificate",
+   "link_count": 0,
+   "link_to": "Registration Certificate",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Company Registry",
+   "link_count": 0,
+   "link_to": "Company Registry",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company Classification",
+   "link_count": 0,
+   "link_to": "Company Classification",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Company Document Type",
+   "link_count": 0,
+   "link_to": "Company Document Type",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
   {
    "hidden": 0,
    "is_query_report": 0,
@@ -22,6 +85,7 @@
    "type": "Card Break"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
    "label": "LOC Planning Settings",
@@ -29,10 +93,10 @@
    "link_to": "LOC Planning Settings",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link",
-   "dependencies": ""
+   "type": "Link"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
    "label": "LOC Department",
@@ -40,10 +104,10 @@
    "link_to": "LOC Department",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link",
-   "dependencies": ""
+   "type": "Link"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
    "label": "LOC Region",
@@ -51,10 +115,10 @@
    "link_to": "LOC Region",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link",
-   "dependencies": ""
+   "type": "Link"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
    "label": "Reporting Period",
@@ -62,10 +126,10 @@
    "link_to": "Reporting Period",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link",
-   "dependencies": ""
+   "type": "Link"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
    "label": "Fuel Product",
@@ -73,10 +137,10 @@
    "link_to": "Fuel Product",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link",
-   "dependencies": ""
+   "type": "Link"
   },
   {
+   "dependencies": "",
    "hidden": 0,
    "is_query_report": 0,
    "label": "LOC User Setup",
@@ -84,11 +148,10 @@
    "link_to": "LOC User Setup",
    "link_type": "DocType",
    "onboard": 0,
-   "type": "Link",
-   "dependencies": ""
+   "type": "Link"
   }
  ],
- "modified": "2026-11-25 12:00:00.000000",
+ "modified": "2026-11-25 17:18:46.942892",
  "modified_by": "Administrator",
  "module": "LOC Planning",
  "name": "LOC Planning",
@@ -101,6 +164,27 @@
  "roles": [],
  "sequence_id": 50.0,
  "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Registered Company",
+   "link_to": "Registered Company",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Registration Certificate",
+   "link_to": "Registration Certificate",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "",
+   "label": "Company Registry",
+   "link_to": "Company Registry",
+   "type": "Report"
+  },
   {
    "color": "Grey",
    "doc_view": "List",
@@ -121,21 +205,17 @@
    "label": "LOC Planning Settings",
    "link_to": "LOC Planning Settings",
    "type": "DocType"
-  },
-  {
-   "color": "Grey",
-   "doc_view": "",
-   "label": "LOC User Setup",
-   "link_to": "LOC User Setup",
-   "type": "DocType"
   }
  ],
  "sidebar_items": [
   {
+   "added": 0,
    "child": 0,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "house",
    "indent": 0,
+   "is_default_module": 0,
    "keep_closed": 0,
    "label": "Home",
    "link_to": "LOC Planning",
@@ -145,10 +225,108 @@
    "type": "Link"
   },
   {
+   "added": 0,
    "child": 0,
    "collapsible": 1,
+   "hidden": 0,
+   "icon": "building-2",
+   "indent": 1,
+   "is_default_module": 0,
+   "keep_closed": 0,
+   "label": "Investment Section",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Section Break"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
+   "label": "Registered Company",
+   "link_to": "Registered Company",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
+   "label": "Registration Certificate",
+   "link_to": "Registration Certificate",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
+   "label": "Company Registry",
+   "link_to": "Company Registry",
+   "link_type": "Report",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
+   "label": "Company Classification",
+   "link_to": "Company Classification",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 1,
+   "collapsible": 1,
+   "hidden": 0,
+   "icon": "",
+   "indent": 0,
+   "is_default_module": 1,
+   "keep_closed": 0,
+   "label": "Company Document Type",
+   "link_to": "Company Document Type",
+   "link_type": "DocType",
+   "open_in_new_tab": 0,
+   "show_arrow": 0,
+   "type": "Link"
+  },
+  {
+   "added": 0,
+   "child": 0,
+   "collapsible": 1,
+   "hidden": 0,
    "icon": "settings",
    "indent": 1,
+   "is_default_module": 0,
    "keep_closed": 0,
    "label": "Settings",
    "link_type": "DocType",
@@ -157,10 +335,13 @@
    "type": "Section Break"
   },
   {
+   "added": 0,
    "child": 1,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "",
    "indent": 0,
+   "is_default_module": 1,
    "keep_closed": 0,
    "label": "LOC Planning Settings",
    "link_to": "LOC Planning Settings",
@@ -170,10 +351,13 @@
    "type": "Link"
   },
   {
+   "added": 0,
    "child": 1,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "",
    "indent": 0,
+   "is_default_module": 1,
    "keep_closed": 0,
    "label": "LOC Department",
    "link_to": "LOC Department",
@@ -183,10 +367,13 @@
    "type": "Link"
   },
   {
+   "added": 0,
    "child": 1,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "",
    "indent": 0,
+   "is_default_module": 1,
    "keep_closed": 0,
    "label": "LOC Region",
    "link_to": "LOC Region",
@@ -196,10 +383,13 @@
    "type": "Link"
   },
   {
+   "added": 0,
    "child": 1,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "",
    "indent": 0,
+   "is_default_module": 1,
    "keep_closed": 0,
    "label": "Reporting Period",
    "link_to": "Reporting Period",
@@ -209,10 +399,13 @@
    "type": "Link"
   },
   {
+   "added": 0,
    "child": 1,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "",
    "indent": 0,
+   "is_default_module": 1,
    "keep_closed": 0,
    "label": "Fuel Product",
    "link_to": "Fuel Product",
@@ -222,10 +415,13 @@
    "type": "Link"
   },
   {
+   "added": 0,
    "child": 1,
    "collapsible": 1,
+   "hidden": 0,
    "icon": "",
    "indent": 0,
+   "is_default_module": 1,
    "keep_closed": 0,
    "label": "LOC User Setup",
    "link_to": "LOC User Setup",
