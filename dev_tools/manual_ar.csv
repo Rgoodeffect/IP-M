@@ -66,3 +66,59 @@ Verification Page,صفحة التحقق
 New Certificate Request,طلب شهادة جديد
 Certificate,الشهادة
 Investment Registry,سجل الشركات
+{0} is not a sales office,{0} ليس مكتب مبيعات
+Invalid {0},{0} غير صحيح
+Activity {0} is listed more than once,النشاط {0} مكرر
+Monthly data of station {0} for {1} already exists,البيانات الشهرية للمحطة {0} لشهر {1} موجودة مسبقا
+Please select a monthly period,يرجى اختيار فترة شهرية
+Station {0} not found,المحطة {0} غير موجودة
+Station {0} is not active,المحطة {0} غير نشطة
+Row {0}: product {1} is entered twice,الصف {0}: المنتج {1} مكرر
+Row {0}: quantities cannot be negative,الصف {0}: لا يمكن أن تكون الكميات سالبة
+"Stock does not balance for: {0}. Please check opening, received, sales and closing.",المخزون غير متوازن للمنتجات: {0}. يرجى مراجعة أول المدة والوارد والمبيعات وآخر المدة.
+Stopped days cannot exceed {0},أيام التوقف لا يمكن أن تتجاوز {0}
+Please write the review comment explaining what must be corrected before returning the data.,يرجى كتابة ملاحظات المراجعة وبيان المطلوب تصحيحه قبل إرجاع البيانات.
+Review Comment Required,ملاحظات المراجعة مطلوبة
+Returned for revision: {0},مرجعة للتعديل: {0}
+Monthly Data,البيانات الشهرية
+Please attach the Excel file first,يرجى إرفاق ملف Excel أولا
+You are not allowed to enter data for station {0},ليست لديك صلاحية إدخال بيانات المحطة {0}
+Station {0} does not belong to {1},المحطة {0} لا تتبع {1}
+No station code,لا يوجد رمز محطة
+Empty row,سطر فارغ
+Data for this month is already approved,بيانات هذا الشهر معتمدة مسبقا
+Invalid number: {0},رقم غير صحيح: {0}
+This file is not a station data template. Please download the template again.,هذا الملف ليس قالب بيانات المحطات. يرجى تحميل القالب مجددا.
+Created: {0} | Updated: {1} | Skipped: {2} | Errors: {3},أنشئت: {0} | حدثت: {1} | تخطي: {2} | أخطاء: {3}
+"Validation only, nothing was saved.",تحقق فقط، لم يحفظ شيء.
+"Save first, then download the template, fill it and attach it here.",احفظ أولا، ثم حمل القالب واملأه وأرفقه هنا.
+Download Template,تحميل القالب
+Validate,تحقق
+Import,استيراد
+Processing...,جار المعالجة...
+The start month is after the end month,شهر البداية بعد شهر النهاية
+Group By,تجميع حسب
+From Month,من شهر
+To Month,إلى شهر
+Include Unapproved Data,تضمين البيانات غير المعتمدة
+Stations,المحطات
+Variance,الفرق
+Station Sales Analysis,تحليل مبيعات المحطات
+Station Target vs Actual,المستهدف مقابل الفعلي للمحطات
+Stopped Stations,المحطات المتوقفة
+Missing Station Data,المحطات التي لم ترفع بياناتها
+Days in Status,أيام في الحالة
+Stopped Days in Period,أيام التوقف خلال الفترة
+Not Submitted,لم ترفع
+Not Yet Approved,لم تعتمد بعد
+Data Status,حالة البيانات
+Due Date,تاريخ الاستحقاق
+Days Overdue,أيام التأخير
+Include Approved Stations,تضمين المحطات المعتمدة
+Document,المستند
+Product,المنتج
+Month,الشهر
+Station,المحطة
+Sales Office,مكتب المبيعات
+Region,المنطقة
+Monthly data of {0} stations for {1} is not submitted yet (due {2}),لم ترفع البيانات الشهرية لعدد {0} محطة عن {1} (تاريخ الاستحقاق {2})

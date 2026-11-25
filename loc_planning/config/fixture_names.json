@@ -1,10 +1,14 @@
 {
  "states": [
+  "Approved",
   "Cancelled",
+  "Draft",
   "Issued",
   "Pending Approval",
+  "Pending Review",
   "Rejected",
   "Requested",
+  "Returned",
   "Under Review"
  ],
  "actions": [
@@ -17,6 +21,7 @@
   "Submit for Review"
  ],
  "workflows": [
-  "Registration Certificate Approval"
+  "Registration Certificate Approval",
+  "Station Monthly Data Approval"
  ]
 }

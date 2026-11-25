@@ -1,0 +1,5 @@
+[
+	{"operation_type_name": "مملوكة - تشغيل الشركة", "is_company_owned": 1},
+	{"operation_type_name": "مملوكة - مؤجرة", "is_company_owned": 1},
+	{"operation_type_name": "وكيل", "is_company_owned": 0}
+]

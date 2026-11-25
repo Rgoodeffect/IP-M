@@ -4,6 +4,21 @@ WORKSPACE = "LOC Planning"
 
 SECTIONS = [
 	(
+		"Stations and Support Activities",
+		"fuel",
+		[
+			("Fuel Station", "DocType", "Fuel Station"),
+			("Station Monthly Data", "DocType", "Station Monthly Data"),
+			("Station Data Import", "DocType", "Station Data Import"),
+			("Station Sales Analysis", "Report", "Station Sales Analysis"),
+			("Station Target vs Actual", "Report", "Station Target vs Actual"),
+			("Stopped Stations", "Report", "Stopped Stations"),
+			("Missing Station Data", "Report", "Missing Station Data"),
+			("Station Operation Type", "DocType", "Station Operation Type"),
+			("Support Activity Type", "DocType", "Support Activity Type"),
+		],
+	),
+	(
 		"Investment Section",
 		"building-2",
 		[
@@ -29,6 +44,8 @@ SECTIONS = [
 ]
 
 SHORTCUTS = [
+	("Station Monthly Data", "DocType", "Station Monthly Data", "List"),
+	("Station Data Import", "DocType", "Station Data Import", "List"),
 	("Registered Company", "DocType", "Registered Company", "List"),
 	("Registration Certificate", "DocType", "Registration Certificate", "List"),
 	("Company Registry", "Report", "Company Registry", ""),
@@ -37,4 +54,8 @@ SHORTCUTS = [
 	("LOC Planning Settings", "DocType", "LOC Planning Settings", ""),
 ]
 
-SECTION_AR = {"Investment Section": "قسم الاستثمار", "Settings": "الإعدادات"}
+SECTION_AR = {
+	"Stations and Support Activities": "المحطات والأنشطة المساندة",
+	"Investment Section": "قسم الاستثمار",
+	"Settings": "الإعدادات",
+}

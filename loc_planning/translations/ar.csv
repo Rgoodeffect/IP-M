@@ -1,10 +1,14 @@
 A company with a similar name is already registered: {0},توجد شركة مسجلة باسم مشابه: {0}
 A department cannot be its own parent,لا يمكن أن تكون الجهة تابعة لنفسها
+Achievement %,نسبة التحقيق
 Active,نشط
 Activity,النشاط
 Activity Report Period Type,دورية تقرير النشاط
 Activity Reporting,تقرير النشاط
 Activity Reports,تقارير النشاط
+Activity Type,النشاط المساند
+Activity {0} is listed more than once,النشاط {0} مكرر
+Actual Sales,المبيعات الفعلية
 Address,العنوان
 Address and Contact,العنوان والتواصل
 All periods of {0} already exist,جميع فترات سنة {0} موجودة مسبقا
@@ -14,6 +18,7 @@ Applied,مطبق
 Applied On,تاريخ التطبيق
 Apply,تطبيق
 Approve,اعتماد
+Approved,معتمدة
 Approved documents cannot be deleted. Cancel the document with a reason instead.,لا يمكن حذف المستندات المعتمدة. يمكن إلغاؤها مع ذكر السبب.
 Assignments,الربط
 Attachment,المرفق
@@ -26,6 +31,7 @@ Cancel,إلغاء
 Cancellation Reason,سبب الإلغاء
 Cancellation Reason Required,سبب الإلغاء مطلوب
 Cancelled,ملغاة
+Capacity,السعة
 Certificate,الشهادة
 Certificate Expiring Within (days),شهادات تنتهي خلال (يوم)
 Certificate Expiry,تاريخ انتهاء الشهادة
@@ -40,6 +46,7 @@ Close Period,إغلاق الفترة
 Closed,مغلقة
 Closed By,أغلقت بواسطة
 Closed On,تاريخ الإغلاق
+Closing Stock,مخزون آخر المدة
 Closing the period locks all data linked to it. Continue?,إغلاق الفترة يمنع تعديل كل البيانات المرتبطة بها. هل تريد المتابعة؟
 Code,الرمز
 Commercial Register No.,رقم السجل التجاري
@@ -49,14 +56,21 @@ Company Document Type,نوع مستند الشركة
 Company Logo,شعار الشركة
 Company Name,اسم الشركة
 Company Name (English),اسم الشركة بالإنجليزية
+Company Owned,مملوكة للشركة
 Company Registry,سجل الشركات والموردين
 Company already has a valid certificate {0}. Use a renewal request instead.,للشركة شهادة سارية {0}. استخدم طلب تجديد بدلا من ذلك.
 Company {0} is {1}. A certificate cannot be issued.,حالة الشركة {0} هي {1}، ولا يمكن إصدار شهادة لها.
 Cost Center,مركز التكلفة
 Create Periods for Year,إنشاء فترات السنة
 Create Supplier on Certificate Approval,إنشاء مورد عند اعتماد الشهادة
+Created,أنشئت
+Created: {0} | Updated: {1} | Skipped: {2} | Errors: {3},أنشئت: {0} | حدثت: {1} | تخطي: {2} | أخطاء: {3}
 Current Certificate,الشهادة الحالية
 Cylinder,أسطوانة
+Data Status,حالة البيانات
+Data for this month is already approved,بيانات هذا الشهر معتمدة مسبقا
+Days Overdue,أيام التأخير
+Days in Status,أيام في الحالة
 Days to Expiry,الأيام المتبقية
 Deadline (days after period end),الموعد النهائي (أيام بعد نهاية الفترة)
 Deadline Override (days after period end),الموعد النهائي الخاص (أيام بعد نهاية الفترة)
@@ -69,39 +83,58 @@ Department Type,نوع الجهة
 Department {0} already exists,الجهة {0} موجودة مسبقا
 Description,الوصف
 Display Order,ترتيب العرض
+Document,المستند
 Document No.,رقم المستند
 Document Type,نوع المستند
 Documents,المستندات
+Download Template,تحميل القالب
 Draft,مسودة
+Due Date,تاريخ الاستحقاق
 ERPNext Department,القسم في ERPNext
 ERPNext Link,الربط مع ERPNext
 ERPNext Supplier,المورد في ERPNext
 Email,البريد الإلكتروني
+Employees,عدد العاملين
+Empty row,سطر فارغ
+Error,خطأ
+Excel File,ملف Excel
 Executive Viewer,الإدارة العليا
 Expired,منتهي
 Expiring Soon,قارب على الانتهاء
 Expiry Alert (days before),التنبيه قبل انتهاء الشهادة (بالأيام)
 Expiry Date,تاريخ الانتهاء
 Expiry date cannot be before the issue date,لا يمكن أن يكون تاريخ الانتهاء قبل تاريخ الإصدار
+Failed,فشل
 Fallback Font Family,الخط البديل
 Finance Budget,الإدارة المالية - الموازنة
 Fonts and Printing,الخطوط والطباعة
 From Date,من تاريخ
+From Month,من شهر
 Fuel,وقود
 Fuel Product,المنتج
+Fuel Station,محطة وقود
+Fuel Station Tank,خزان
 Gas,غاز
 General,عام
+Group By,تجميع حسب
 Half-Yearly,نصف سنوي
 Has Expiry Date,له تاريخ انتهاء
+Has Revenue,له إيراد
 Head,المسؤول
 Help,مساعدة
 Home,الرئيسية
+Import,استيراد
+Imported,تم الاستيراد
 Inactive,غير نشطة
+Include Approved Stations,تضمين المحطات المعتمدة
 Include Sub-Departments,تشمل الجهات التابعة
+Include Unapproved Data,تضمين البيانات غير المعتمدة
 Invalid Thresholds,عتبات غير صحيحة
+Invalid number: {0},رقم غير صحيح: {0}
 Invalid period type {0},نوع فترة غير صحيح {0}
 Invalid status,حالة غير صحيحة
 Invalid year {0},سنة غير صحيحة {0}
+Invalid {0},{0} غير صحيح
 Investment Registry,سجل الشركات
 Investment Section,قسم الاستثمار
 Is Group,تتبعها جهات
@@ -115,6 +148,9 @@ LOC Planning Settings,إعدادات منظومة التخطيط والاستث�
 LOC Region,المنطقة
 LOC User Assignment,ربط مستخدم
 LOC User Setup,ربط المستخدمين بالأدوار والجهات
+Last Safety Inspection,آخر تفتيش سلامة
+Latitude,خط العرض
+Leave empty to include all stations you can access,اتركه فارغا لتشمل كل المحطات المتاحة لك
 Leave empty to number automatically,اتركه فارغا ليرقم تلقائيا
 Leave empty to use the default in LOC Planning Settings,اتركه فارغا لاستخدام القيمة العامة في إعدادات المنظومة
 Legacy ID,المعرف في النظام السابق
@@ -122,42 +158,76 @@ Legal Information,البيانات القانونية
 Legal Representative,الممثل القانوني
 Limit Exceeded Above (%),تجاوز الحد أعلى من (%)
 Litre,لتر
+Location,الموقع
 Lock Data of Closed Periods,منع تعديل بيانات الفترات المغلقة
+Log,السجل
+Longitude,خط الطول
 Lubricant,زيوت
+Map,الخريطة
 Maximum Overdue Reminders,أقصى عدد لتذكيرات التأخير
+Message,الرسالة
 Migrated,مرحلة
 Migration,الترحيل
 Missing Documents,مستندات ناقصة
+Missing Station Data,المحطات التي لم ترفع بياناتها
+Month,الشهر
 "Month 1-12, quarter 1-4 or half 1-2",الشهر 1-12 أو الربع 1-4 أو النصف 1-2
 Monthly,شهري
+Monthly Data,البيانات الشهرية
 Monthly Station Data Due Day (of following month),يوم استحقاق بيانات المحطات الشهرية (من الشهر التالي)
+Monthly data of station {0} for {1} already exists,البيانات الشهرية للمحطة {0} لشهر {1} موجودة مسبقا
+Monthly data of {0} stations for {1} is not submitted yet (due {2}),لم ترفع البيانات الشهرية لعدد {0} محطة عن {1} (تاريخ الاستحقاق {2})
+Municipality,البلدية
 New,جديد
 New Certificate Request,طلب شهادة جديد
 No Expiry,بدون انتهاء
+No station code,لا يوجد رمز محطة
 None,لا توجد
 Not Allowed,غير مسموح
+Not Submitted,لم ترفع
+Not Yet Approved,لم تعتمد بعد
+Notes,ملاحظات
+Nozzles,عدد المسدسات
+Number of Tanks,عدد الخزانات
 Office,مكتب
 Official Company Name,الاسم الرسمي للشركة
 Only an issued certificate can be renewed,لا يمكن تجديد إلا شهادة صادرة
 Open,مفتوحة
+Opening + Received - Sales - Closing,أول المدة + الوارد - المبيعات - آخر المدة
+Opening Stock,مخزون أول المدة
+Operated By,الجهة المشغلة
+Operating,عاملة
+Operation,التشغيل
+Operation Start Date,تاريخ التشغيل
+Operation Type,نوع التشغيل
 Other,أخرى
 Parent Department,الجهة الأم
 Parent department {0} must be marked as Is Group,الجهة الأم {0} يجب أن تكون معلمة بأنها تتبعها جهات
+Partially Imported,استيراد جزئي
 Pending,بانتظار التطبيق
 Pending Approval,بانتظار الاعتماد
+Pending Review,بانتظار المراجعة
 Period Closed,الفترة مغلقة
 Period No.,رقم الفترة
 Period Type,نوع الفترة
 Period number must be between 1 and {0},رقم الفترة يجب أن يكون بين 1 و {0}
 Phone,الهاتف
+Please attach the Excel file first,يرجى إرفاق ملف Excel أولا
 Please enter the cancellation reason before cancelling.,يرجى إدخال سبب الإلغاء قبل الإلغاء.
 Please enter the reason for the status {0},يرجى إدخال سبب الحالة {0}
+Please select a monthly period,يرجى اختيار فترة شهرية
 Please select the certificate being renewed,يرجى اختيار الشهادة المراد تجديدها
+Please write the review comment explaining what must be corrected before returning the data.,يرجى كتابة ملاحظات المراجعة وبيان المطلوب تصحيحه قبل إرجاع البيانات.
+Processing...,جار المعالجة...
+Product,المنتج
 Product Code,رمز المنتج
 Product Group,مجموعة المنتج
 Product Name,اسم المنتج
+Products,المنتجات
 "Public address used in the certificate QR code, e.g. https://erp.example.ly. Leave empty to use this site's address.",العنوان العام المستخدم في رمز QR بالشهادة. اتركه فارغا لاستخدام عنوان هذا الموقع.
+Pumps,عدد المضخات
 Quarterly,ربع سنوي
+Received,الوارد
 Region,المنطقة
 Region Code,رمز المنطقة
 Region Name,اسم المنطقة
@@ -196,44 +266,106 @@ Request Date,تاريخ الطلب
 Request Type,نوع الطلب
 Requested,طلب
 Required for Certificate,مطلوب لإصدار الشهادة
+Required when returning the data for revision,إلزامية عند إرجاع البيانات للتعديل
 Requires Activity Report,مطلوب منه تقرير نشاط
+Result,النتيجة
 Return for Revision,إرجاع للتعديل
+Returned,مرجعة للتعديل
+Returned for revision: {0},مرجعة للتعديل: {0}
+Revenue,الإيراد
+Revenues,الإيرادات
 Review,المراجعة
+Review Comment,ملاحظات المراجعة
+Review Comment Required,ملاحظات المراجعة مطلوبة
 Review Notes,ملاحظات المراجعة
 Role,الدور
+Row,السطر
 Row {0}: a department or sales office is required for role {1},الصف {0}: يجب تحديد الجهة أو مكتب المبيعات للدور {1}
+Row {0}: product {1} is entered twice,الصف {0}: المنتج {1} مكرر
+Row {0}: quantities cannot be negative,الصف {0}: لا يمكن أن تكون الكميات سالبة
 Row {0}: role {1} is not a role of this system,الصف {0}: الدور {1} ليس من أدوار المنظومة
 Row {0}: {1} is not a sales office,الصف {0}: {1} ليس مكتب مبيعات
 Sales Office,مكتب مبيعات
 Sales Office User,مكتب مبيعات
+Sales and Stock,المبيعات والمخزون
+"Save first, then download the template, fill it and attach it here.",احفظ أولا، ثم حمل القالب واملأه وأرفقه هنا.
 Section,قسم
 Send for Approval,إرسال للاعتماد
 Settings,الإعدادات
 Signatory Title,صفة الموقع
+Skipped,تخطي
 Slow Execution Below (%),بطء التنفيذ أقل من (%)
+Station,المحطة
+Station Code,رمز المحطة
+Station Data Import,استيراد بيانات المحطات
+Station Data Import Log,سجل الاستيراد
+Station Monthly Data,البيانات الشهرية للمحطة
+Station Monthly Data Approval,اعتماد البيانات الشهرية للمحطات
+Station Monthly Product,بيانات منتج شهرية
+Station Name,اسم المحطة
+Station Operation Type,نوع تشغيل المحطة
+Station Sales Analysis,تحليل مبيعات المحطات
+Station Support Activity,نشاط مساند بالمحطة
+Station Support Revenue,إيراد نشاط مساند
+Station Target vs Actual,المستهدف مقابل الفعلي للمحطات
 Station data due day must be between 1 and 28,يوم استحقاق بيانات المحطات يجب أن يكون بين 1 و 28
+Station {0} does not belong to {1},المحطة {0} لا تتبع {1}
+Station {0} is not active,المحطة {0} غير نشطة
+Station {0} not found,المحطة {0} غير موجودة
 Stations,المحطات
+Stations and Support Activities,المحطات والأنشطة المساندة
 Statistics & Data,قسم الإحصاء والبيانات
 Status,الحالة
 Status Reason,سبب الحالة
+Status Since,تاريخ الحالة
+Stock Variance,فرق المخزون
+"Stock does not balance for: {0}. Please check opening, received, sales and closing.",المخزون غير متوازن للمنتجات: {0}. يرجى مراجعة أول المدة والوارد والمبيعات وآخر المدة.
+Stop Notes,ملاحظات التوقف
+Stop Reason,سبب التوقف
+Stopped,متوقفة
+Stopped Days,أيام التوقف
+Stopped Days in Period,أيام التوقف خلال الفترة
+Stopped Stations,المحطات المتوقفة
+Stopped days cannot exceed {0},أيام التوقف لا يمكن أن تتجاوز {0}
 Strategic Planning,قسم التخطيط الاستراتيجي
 Submit for Review,إرسال للمراجعة
+Summary,الملخص
 Superseded,مجددة
 Supplier Group,مجموعة الموردين
+Support Activities,الأنشطة المساندة
+Support Activities Revenue,إيرادات الأنشطة المساندة
+Support Activity Type,نوع النشاط المساند
 Suspended,موقوفة
+Tank No.,رقم الخزان
+Tanks,الخزانات
+Tanks and Equipment,الخزانات والمعدات
+Target,المستهدف
 Tax No.,الرقم الضريبي
 The following required documents are missing or expired: {0},المستندات المطلوبة التالية غير مرفقة أو منتهية: {0}
 The renewed certificate belongs to another company,الشهادة المراد تجديدها تخص شركة أخرى
+The start month is after the end month,شهر البداية بعد شهر النهاية
+This file is not a station data template. Please download the template again.,هذا الملف ليس قالب بيانات المحطات. يرجى تحميل القالب مجددا.
 Title,العنوان
 To Date,إلى تاريخ
+To Month,إلى شهر
 "To cancel this certificate, enter the cancellation reason and save first.",لإلغاء الشهادة أدخل سبب الإلغاء واحفظ أولا.
+Total Capacity,إجمالي السعة
+Total Support Revenue,إجمالي إيرادات الأنشطة المساندة
+Under Construction,تحت الإنشاء
+Under Maintenance,تحت الصيانة
 Under Review,قيد المراجعة
 Unit,وحدة
 Unit of Measure,وحدة القياس
+Updated,حدثت
+Use the downloaded template,استخدم القالب المحمل من هذه الصفحة
 Used for new companies. Migrated numbers are kept as they are.,يستخدم للشركات الجديدة، وتبقى أرقام القيد المرحلة كما هي.
 User,المستخدم
 Valid,ساري
 Valid Certificates,الشهادات السارية
+Validate,تحقق
+Validated,تم التحقق
+"Validation only, nothing was saved.",تحقق فقط، لم يحفظ شيء.
+Variance,الفرق
 Verification,التحقق
 Verification Base URL,رابط موقع التحقق
 Verification Code,رمز التحقق
@@ -244,9 +376,11 @@ Without Certificate,بدون شهادة
 Workflow State,مرحلة الاعتماد
 Year,السنة
 You are not allowed to create reporting periods.,ليست لديك صلاحية إنشاء الفترات.
+You are not allowed to enter data for station {0},ليست لديك صلاحية إدخال بيانات المحطة {0}
 You are not allowed to open or close reporting periods.,ليست لديك صلاحية فتح أو إغلاق الفترات.
 {0} assignments applied,تم تطبيق {0} ربط
 {0} cannot be negative,{0} لا يمكن أن يكون سالبا
+{0} is not a sales office,{0} ليس مكتب مبيعات
 {0} periods created for {1},تم إنشاء {0} فترة لسنة {1}
 {0} registration certificates expire within {1} days,{0} شهادة إثبات قيد تنتهي خلال {1} يوما
 {0} {1} is already registered for company {2},{0} {1} مسجل مسبقا للشركة {2}

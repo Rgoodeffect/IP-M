@@ -10,7 +10,7 @@
 |---|---|---|
 | 1 | الأساس: البيانات الرئيسية، الأدوار، الإعدادات، قفل الفترات، Workspace | منجزة |
 | 2 | سجل الشركات والشهادات + الترحيل من Access | منجزة |
-| 3 | المحطات والبيانات الشهرية | — |
+| 3 | المحطات والبيانات الشهرية | منجزة |
 | 4 | الموازنة والموقف التنفيذي | — |
 | 5 | نشاط الإدارات + Workflow + التذكير | — |
 | 6 | تقرير النشاط المتكامل (PDF/Word) | — |
@@ -42,6 +42,7 @@ loc_planning/                 # الحزمة (app)
   utils/print_utils.py        # الخط والشعار والتواريخ في المخرجات الرسمية
   investment_registry/        # سجل الشركات، الشهادات، الترحيل، المهام اليومية
   www/verify-certificate.*    # صفحة التحقق العامة من الشهادة
+  stations/                   # المحطات، البيانات الشهرية، الاستيراد من Excel، التقارير، التذكير
   loc_planning/               # Module: LOC Planning (Masters + Settings + Workspace + Sidebar)
   budget/ stations/ activity_report/ investment_registry/   # بقية الوحدات
   dock/ desktop_icon/         # التنقل في واجهة v16

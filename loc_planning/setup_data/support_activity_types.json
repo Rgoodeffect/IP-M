@@ -1,0 +1,7 @@
+[
+	{"activity_type_name": "غسيل وتشحيم", "display_order": 1},
+	{"activity_type_name": "ماركت", "display_order": 2},
+	{"activity_type_name": "تغيير زيوت", "display_order": 3},
+	{"activity_type_name": "مطعم / كافتيريا", "display_order": 4},
+	{"activity_type_name": "ميزان هواء", "display_order": 5, "has_revenue": 0}
+]

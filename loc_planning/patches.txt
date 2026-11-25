@@ -5,3 +5,4 @@
 [post_model_sync]
 # Patches added in this section will be executed after doctypes are migrated
 loc_planning.patches.v0_2.seed_investment_registry
+loc_planning.patches.v0_3.seed_stations
